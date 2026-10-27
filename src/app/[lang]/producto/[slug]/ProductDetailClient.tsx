@@ -31,8 +31,9 @@ export default function ProductDetailClient({
   const color = product.colors.find((c) => c.id === colorId) || product.colors[0];
   const gallery = useMemo(() => {
     const imgs = color.images.gallery.filter(Boolean);
-    return [...new Set(imgs)];
-  }, [color]);
+    const all = product.modelImage ? [product.modelImage, ...imgs] : imgs;
+    return [...new Set(all)];
+  }, [color, product.modelImage]);
   const [active, setActive] = useState(0);
 
   const cartPayload = () => ({
@@ -97,16 +98,27 @@ export default function ProductDetailClient({
             {gallery[active] && (
               <Image
                 src={gallery[active]}
-                alt={`${product.name[locale]} — ${active === 0 ? (locale === "es" ? "vista frontal" : "front view") : locale === "es" ? "vista trasera" : "back view"}`}
+                alt={
+                  product.modelImage && active === 0
+                    ? `${product.name[locale]} — ${locale === "es" ? "foto de modelo en entorno urbano" : "urban model photograph"}`
+                    : `${product.name[locale]} — ${active === 0 || (product.modelImage && active === 1) ? (locale === "es" ? "vista frontal" : "front view") : locale === "es" ? "vista trasera" : "back view"}`
+                }
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             )}
-            <span className="absolute top-4 left-4 bg-gold text-ink text-[11px] font-extrabold uppercase tracking-wider px-3 py-1.5 rounded-full">
-              {t("product.unisex", locale)}
-            </span>
+            <div className="absolute top-4 left-4 flex flex-col gap-2">
+              <span className="bg-gold text-ink text-[11px] font-extrabold uppercase tracking-wider px-3 py-1.5 rounded-full">
+                {t("product.unisex", locale)}
+              </span>
+              {product.modelImage && active === 0 && (
+                <span className="bg-forest text-white text-[11px] font-extrabold uppercase tracking-wider px-3 py-1.5 rounded-full">
+                  {locale === "es" ? "Foto real de modelo" : "Real model shot"}
+                </span>
+              )}
+            </div>
           </div>
         </div>
 
@@ -256,22 +268,51 @@ export default function ProductDetailClient({
         </div>
       </div>
 
-      {/* MODELO IA (placeholder para siguientes fases) */}
-      <div className="mt-14 rounded-2xl border border-dashed border-forest/40 bg-forest-soft p-8 flex flex-col sm:flex-row items-center gap-5">
-        <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shrink-0">
-          <User2 size={26} className="text-forest" />
+      {/* FOTO DE MODELO */}
+      {product.modelImage ? (
+        <section className="mt-16">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-10 h-10 rounded-full bg-forest text-white flex items-center justify-center shrink-0">
+              <User2 size={19} />
+            </span>
+            <div>
+              <h2 className="font-display font-extrabold text-xl">
+                {locale === "es" ? "Llevada en la calle" : "Worn on the street"}
+              </h2>
+              <p className="text-sm text-smoke">
+                {locale === "es"
+                  ? "Así queda esta prenda en un look real de ciudad."
+                  : "How this piece looks in a real city outfit."}
+              </p>
+            </div>
+          </div>
+          <div className="relative w-full max-w-md mx-auto aspect-[4/5] rounded-2xl overflow-hidden bg-cream">
+            <Image
+              src={product.modelImage}
+              alt={`${product.name[locale]} — ${locale === "es" ? "modelo en entorno urbano" : "urban model shot"}`}
+              fill
+              sizes="(max-width: 768px) 100vw, 448px"
+              className="object-cover"
+            />
+          </div>
+        </section>
+      ) : (
+        <div className="mt-14 rounded-2xl border border-dashed border-forest/40 bg-forest-soft p-8 flex flex-col sm:flex-row items-center gap-5">
+          <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shrink-0">
+            <User2 size={26} className="text-forest" />
+          </div>
+          <div>
+            <h2 className="font-display font-extrabold text-lg">
+              {locale === "es" ? "Fotografía de modelo en camino" : "Model photography on the way"}
+            </h2>
+            <p className="text-sm text-smoke mt-1">
+              {locale === "es"
+                ? "Muy pronto verás esta prenda llevada por modelos reales en entorno urbano. Mientras tanto, las imágenes de producto muestran el diseño exacto por delante y por detrás."
+                : "Real-model urban lifestyle shots are coming very soon. Meanwhile, the product images show the exact front and back design."}
+            </p>
+          </div>
         </div>
-        <div>
-          <h2 className="font-display font-extrabold text-lg">
-            {locale === "es" ? "Fotografía de modelo en camino" : "Model photography on the way"}
-          </h2>
-          <p className="text-sm text-smoke mt-1">
-            {locale === "es"
-              ? "Muy pronto verás esta prenda llevada por modelos reales en entorno urbano. Mientras tanto, las imágenes de producto muestran el diseño exacto por delante y por detrás."
-              : "Real-model urban lifestyle shots are coming very soon. Meanwhile, the product images show the exact front and back design."}
-          </p>
-        </div>
-      </div>
+      )}
 
       {/* RELACIONADOS */}
       {related.length > 0 && (

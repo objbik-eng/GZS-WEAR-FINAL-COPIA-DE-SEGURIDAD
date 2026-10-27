@@ -17,7 +17,7 @@ const LEGAL_EN_TO_ES: Record<string, string> = {
   "shipping-returns": "envios-devoluciones",
 };
 
-const SYSTEM = ["/api", "/_next", "/favicon", "/robots.txt", "/sitemap.xml", "/google", "/brand", "/images"];
+const SYSTEM = ["/api", "/_next", "/favicon", "/robots.txt", "/sitemap.xml", "/google", "/brand", "/images", "/models"];
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
@@ -57,5 +57,5 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|google.*\\.html|brand/|images/).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|google.*\\.html|brand/|images/|models/).*)"],
 };
