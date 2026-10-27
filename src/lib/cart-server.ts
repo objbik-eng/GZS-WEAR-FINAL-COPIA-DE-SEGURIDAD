@@ -1,5 +1,5 @@
 import "server-only";
-import { getProductByPrintifyId, PRODUCTS, type Product } from "@/lib/catalog";
+import { getProductByProductId, PRODUCTS, type Product } from "@/lib/catalog";
 import { quoteShipping, type CartLine, type ShippingQuote } from "@/lib/shipping";
 import type { Locale } from "@/i18n/dict";
 import { ApiError } from "@/lib/supabase";
@@ -31,7 +31,7 @@ export function validateCart(rawItems: unknown): PricedLine[] {
   if (rawItems.length > 30) throw new ApiError(400, "Demasiadas líneas en la cesta");
   const lines: PricedLine[] = [];
   for (const raw of rawItems as RawCartItem[]) {
-    const product = getProductByPrintifyId(String(raw?.id || ""));
+    const product = getProductByProductId(String(raw?.id || ""));
     if (!product) throw new ApiError(400, "Producto no disponible");
     const qty = Number(raw.qty);
     if (!Number.isInteger(qty) || qty < 1 || qty > MAX_QTY) throw new ApiError(400, "Cantidad no válida");
@@ -40,7 +40,7 @@ export function validateCart(rawItems: unknown): PricedLine[] {
     const variantId = color?.variants[size];
     if (!variantId) throw new ApiError(400, `Variante no disponible: ${product.slug.es}`);
     lines.push({
-      product_id: product.printifyId,
+      product_id: product.productId,
       slug: product.slug,
       name: product.name,
       type: product.type,
@@ -69,7 +69,7 @@ export function computeOrder(lines: PricedLine[], countryCode: string) {
 
 export function catalogSummary(locale: Locale) {
   return PRODUCTS.map((p) => ({
-    id: p.printifyId,
+    id: p.productId,
     slug: p.slug[locale],
     name: p.name[locale],
     price: p.priceEurCents,

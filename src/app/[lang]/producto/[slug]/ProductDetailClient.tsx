@@ -37,7 +37,7 @@ export default function ProductDetailClient({
   const [active, setActive] = useState(0);
 
   const cartPayload = () => ({
-    id: product.printifyId,
+    id: product.productId,
     slugEs: product.slug.es,
     slugEn: product.slug.en,
     nameEs: product.name.es,
@@ -320,7 +320,7 @@ export default function ProductDetailClient({
           <h2 className="text-[clamp(22px,2.8vw,32px)] font-black mb-8">{t("product.related", locale)}</h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10">
             {related.map((p) => (
-              <ProductCard key={p.printifyId} product={p} locale={locale} />
+              <ProductCard key={p.productId} product={p} locale={locale} />
             ))}
           </div>
           <Link href={shopPath(locale)} className="btn btn-outline mt-10">

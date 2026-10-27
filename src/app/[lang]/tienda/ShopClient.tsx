@@ -67,7 +67,7 @@ export default function ShopClient({
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10">
         {visible.map((p, i) => (
-          <ProductCard key={p.printifyId} product={p} locale={locale} priority={i < 4} />
+          <ProductCard key={p.productId} product={p} locale={locale} priority={i < 4} />
         ))}
       </div>
     </>

@@ -189,7 +189,7 @@ for (const file of files) {
   const gpsr = gpsrFor(p.id);
 
   products.push({
-    printifyId: p.id,
+    productId: p.id,
     blueprintId: p.blueprint_id,
     providerId: p.print_provider_id,
     type: c.type,

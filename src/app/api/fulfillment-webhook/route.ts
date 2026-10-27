@@ -66,10 +66,10 @@ export async function POST(req: NextRequest) {
 
   try {
     const topic = event.type || event.topic || "";
-    const printifyId = event.resource?.id || (event.data as { id?: string } | undefined)?.id;
-    if (!printifyId) return NextResponse.json({ received: true, ignored: "sin id" });
+    const providerOrderId = event.resource?.id || (event.data as { id?: string } | undefined)?.id;
+    if (!providerOrderId) return NextResponse.json({ received: true, ignored: "sin id" });
 
-    const pOrder = await getPrintifyOrder(printifyId);
+    const pOrder = await getPrintifyOrder(providerOrderId);
     const sessionId = pOrder.external_id;
     let rows: { id: string; email: string | null; customer_name: string | null }[] = [];
     if (sessionId) {
@@ -79,7 +79,7 @@ export async function POST(req: NextRequest) {
     }
     if (!rows.length) {
       rows = await sb(
-        `orders?printify_order_id=eq.${encodeURIComponent(printifyId)}&select=id,email,customer_name,fulfillment_status`,
+        `orders?printify_order_id=eq.${encodeURIComponent(providerOrderId)}&select=id,email,customer_name,fulfillment_status`,
       );
     }
     const order = rows[0];

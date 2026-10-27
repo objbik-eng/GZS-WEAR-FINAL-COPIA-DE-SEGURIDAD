@@ -71,7 +71,7 @@ for (const file of files) {
   const raw = JSON.parse(readFileSync(join(SOURCE, file), "utf8"));
   if (idArg && raw.id !== idArg) continue;
   const c = curations[raw.id];
-  const cat = catalog.products.find((p) => p.printifyId === raw.id);
+  const cat = catalog.products.find((p) => p.productId === raw.id);
   if (!c || !cat) { console.warn("saltar (sin curaduría):", raw.id); continue; }
 
   const variants = raw.variants.map((v) => {

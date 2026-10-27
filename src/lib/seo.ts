@@ -91,7 +91,7 @@ export function productJsonLd(p: Product, locale: Locale) {
     name: p.name[locale],
     description: p.description[locale],
     image: images,
-    sku: `GZS-${p.printifyId.slice(-8).toUpperCase()}`,
+    sku: `GZS-${p.productId.slice(-8).toUpperCase()}`,
     category: p.type,
     brand: { "@type": "Brand", name: SITE_NAME },
     url: absoluteUrl(path),

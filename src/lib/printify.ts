@@ -1,5 +1,5 @@
 import "server-only";
-import { SHOP_ID, getProductByPrintifyId } from "@/lib/catalog";
+import { SHOP_ID, getProductByProductId } from "@/lib/catalog";
 
 export interface PrintifyLine {
   product_id: string;
@@ -36,7 +36,7 @@ export async function createPrintifyOrder(opts: {
   const sinMapear: string[] = [];
 
   for (const it of opts.items) {
-    const product = getProductByPrintifyId(it.product_id);
+    const product = getProductByProductId(it.product_id);
     if (!product) { sinMapear.push(it.product_id); continue; }
     const color = product.colors.find((c) => c.id === it.colorId) || product.colors[0];
     const variantId = color?.variants[it.size];

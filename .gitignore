@@ -27,3 +27,6 @@ pnpm-debug.log*
 # Printify source snapshots (se regeneran con npm run catalog)
 scripts/source/
 scripts/.tmp-req.json
+
+# Mapas internos con URLs del proveedor de imágenes
+scripts/image-map.json

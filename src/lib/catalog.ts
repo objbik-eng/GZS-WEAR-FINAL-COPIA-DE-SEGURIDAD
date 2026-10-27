@@ -22,7 +22,7 @@ export interface ProductColor {
 }
 
 export interface Product {
-  printifyId: string;
+  productId: string;
   blueprintId: number;
   providerId: number;
   type: ProductType;
@@ -55,8 +55,8 @@ export function getProductBySlug(slug: string, locale: Locale): Product | undefi
   return PRODUCTS.find((p) => p.slug[locale] === slug);
 }
 
-export function getProductByPrintifyId(id: string): Product | undefined {
-  return PRODUCTS.find((p) => p.printifyId === id);
+export function getProductByProductId(id: string): Product | undefined {
+  return PRODUCTS.find((p) => p.productId === id);
 }
 
 export function getProductsByType(types: ProductType[]): Product[] {

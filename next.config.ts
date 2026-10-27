@@ -5,11 +5,6 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   images: {
     formats: ["image/avif", "image/webp"],
-    remotePatterns: [
-      { protocol: "https", hostname: "images-api.printify.com" },
-      { protocol: "https", hostname: "images.printify.com" },
-      { protocol: "https", hostname: "images.pexels.com" },
-    ],
   },
   async headers() {
     return [

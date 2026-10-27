@@ -10,9 +10,9 @@ export async function GET() {
     service: "gzs-wear-brands",
     time: new Date().toISOString(),
     catalog: PRODUCTS.length,
-    printifyShop: SHOP_ID,
+    catalogShop: SHOP_ID,
     stripeConfigured: Boolean(process.env.STRIPE_SECRET_KEY),
-    printifyConfigured: Boolean(process.env.PRINTIFY_TOKEN),
+    catalogConfigured: Boolean(process.env.PRINTIFY_TOKEN),
     supabaseConfigured: Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SECRET),
     emailsEnabled: process.env.EMAILS_ENABLED === "true",
   });

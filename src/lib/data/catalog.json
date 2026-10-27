@@ -3,7 +3,7 @@
   "generatedAt": "2026-10-27T13:33:17.744Z",
   "products": [
     {
-      "printifyId": "6adfa05af621e0ea4a0e2979",
+      "productId": "6adfa05af621e0ea4a0e2979",
       "blueprintId": 6,
       "providerId": 402,
       "type": "tee",
@@ -59,13 +59,13 @@
             11960
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/102005/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=front-2",
-            "back": "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/102006/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=back-2",
+            "front": "/catalog/79f54aedbe23970f.jpg",
+            "back": "/catalog/3ebbc2ebb8334fde.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/102005/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=front-2",
-              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/102006/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=back-2",
-              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/102001/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=folded",
-              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/127735/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=folded-2"
+              "/catalog/79f54aedbe23970f.jpg",
+              "/catalog/3ebbc2ebb8334fde.jpg",
+              "/catalog/033104d92200a4b0.jpg",
+              "/catalog/8f72838c42ef7c19.jpg"
             ]
           }
         }
@@ -137,7 +137,7 @@
       "updatedAt": "2026-10-27 12:49:21+00:00"
     },
     {
-      "printifyId": "6adfa05af621e0ea4a0e297a",
+      "productId": "6adfa05af621e0ea4a0e297a",
       "blueprintId": 6,
       "providerId": 402,
       "type": "tee",
@@ -193,13 +193,13 @@
             12104
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/102005/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=front-2",
-            "back": "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/102006/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=back-2",
+            "front": "/catalog/ec449971c637a0ff.jpg",
+            "back": "/catalog/b0686ff24104d3e6.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/102005/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=front-2",
-              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/102006/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=back-2",
-              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/102001/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=folded",
-              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/127735/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=folded-2"
+              "/catalog/ec449971c637a0ff.jpg",
+              "/catalog/b0686ff24104d3e6.jpg",
+              "/catalog/942cbd9a73ce195e.jpg",
+              "/catalog/102888ee30a4d99b.jpg"
             ]
           }
         }
@@ -271,7 +271,7 @@
       "updatedAt": "2026-10-26 18:47:54+00:00"
     },
     {
-      "printifyId": "6adfa053d57b64376b0ba0e8",
+      "productId": "6adfa053d57b64376b0ba0e8",
       "blueprintId": 6,
       "providerId": 402,
       "type": "tee",
@@ -327,13 +327,13 @@
             12128
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/102005/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=front-2",
-            "back": "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/102006/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=back-2",
+            "front": "/catalog/1739bf042decfab5.jpg",
+            "back": "/catalog/e4b0c6d2a13c0395.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/102005/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=front-2",
-              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/102006/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=back-2",
-              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/102001/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=folded",
-              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/127735/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=folded-2"
+              "/catalog/1739bf042decfab5.jpg",
+              "/catalog/e4b0c6d2a13c0395.jpg",
+              "/catalog/0279d175b0ef33a9.jpg",
+              "/catalog/4028094b48fa402b.jpg"
             ]
           }
         }
@@ -405,7 +405,7 @@
       "updatedAt": "2026-10-26 18:47:47+00:00"
     },
     {
-      "printifyId": "6adfa057d57b64376b0ba0f0",
+      "productId": "6adfa057d57b64376b0ba0f0",
       "blueprintId": 6,
       "providerId": 402,
       "type": "tee",
@@ -461,13 +461,13 @@
             12128
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/102005/street-league-racing-graphic-t-shirt.jpg?camera_label=front-2",
-            "back": "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/102006/street-league-racing-graphic-t-shirt.jpg?camera_label=back-2",
+            "front": "/catalog/a3425212be21501a.jpg",
+            "back": "/catalog/fe031437361f43a4.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/102005/street-league-racing-graphic-t-shirt.jpg?camera_label=front-2",
-              "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/102006/street-league-racing-graphic-t-shirt.jpg?camera_label=back-2",
-              "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/102001/street-league-racing-graphic-t-shirt.jpg?camera_label=folded",
-              "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/127735/street-league-racing-graphic-t-shirt.jpg?camera_label=folded-2"
+              "/catalog/a3425212be21501a.jpg",
+              "/catalog/fe031437361f43a4.jpg",
+              "/catalog/b286670fba1f1e09.jpg",
+              "/catalog/d664869d30ae7597.jpg"
             ]
           }
         }
@@ -539,7 +539,7 @@
       "updatedAt": "2026-10-26 18:47:51+00:00"
     },
     {
-      "printifyId": "6adfa056d57b64376b0ba0ef",
+      "productId": "6adfa056d57b64376b0ba0ef",
       "blueprintId": 1627,
       "providerId": 26,
       "type": "oversize",
@@ -595,13 +595,13 @@
             116355
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/106706/not-today-sorry-wings-graphic-tee.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/109200/not-today-sorry-wings-graphic-tee.jpg?camera_label=back",
+            "front": "/catalog/60767a506c7de67d.jpg",
+            "back": "/catalog/5ecc5cf7a44321c3.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/106706/not-today-sorry-wings-graphic-tee.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/109200/not-today-sorry-wings-graphic-tee.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/106708/not-today-sorry-wings-graphic-tee.jpg?camera_label=person-front",
-              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/106709/not-today-sorry-wings-graphic-tee.jpg?camera_label=person-back"
+              "/catalog/60767a506c7de67d.jpg",
+              "/catalog/5ecc5cf7a44321c3.jpg",
+              "/catalog/bef8b8310d5bc090.jpg",
+              "/catalog/372c622102be5922.jpg"
             ]
           }
         }
@@ -673,7 +673,7 @@
       "updatedAt": "2026-10-26 18:47:50+00:00"
     },
     {
-      "printifyId": "6adfa0523da78a12770adc33",
+      "productId": "6adfa0523da78a12770adc33",
       "blueprintId": 1627,
       "providerId": 26,
       "type": "oversize",
@@ -729,13 +729,13 @@
             116373
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/106706/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/109200/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=back",
+            "front": "/catalog/9284d268c15dc1f5.jpg",
+            "back": "/catalog/3770b3821107b93e.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/106706/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/109200/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/106708/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=person-front",
-              "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/106709/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=person-back"
+              "/catalog/9284d268c15dc1f5.jpg",
+              "/catalog/3770b3821107b93e.jpg",
+              "/catalog/e675cb3781bfdfc1.jpg",
+              "/catalog/64add695edf88c90.jpg"
             ]
           }
         }
@@ -807,7 +807,7 @@
       "updatedAt": "2026-10-26 18:47:46+00:00"
     },
     {
-      "printifyId": "6adfa058f621e0ea4a0e2976",
+      "productId": "6adfa058f621e0ea4a0e2976",
       "blueprintId": 1627,
       "providerId": 26,
       "type": "oversize",
@@ -863,13 +863,13 @@
             116307
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/106706/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/109200/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=back",
+            "front": "/catalog/ddb6358e2eda6bf5.jpg",
+            "back": "/catalog/d27c094cf33f0fff.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/106706/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/109200/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/106708/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=person-front",
-              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/106709/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=person-back"
+              "/catalog/ddb6358e2eda6bf5.jpg",
+              "/catalog/d27c094cf33f0fff.jpg",
+              "/catalog/5e4724fe661deec4.jpg",
+              "/catalog/8c130e57e8b60570.jpg"
             ]
           }
         }
@@ -941,7 +941,7 @@
       "updatedAt": "2026-10-27 12:26:59+00:00"
     },
     {
-      "printifyId": "6adfa058f621e0ea4a0e2975",
+      "productId": "6adfa058f621e0ea4a0e2975",
       "blueprintId": 1627,
       "providerId": 26,
       "type": "oversize",
@@ -997,13 +997,13 @@
             116331
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/106706/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/109200/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=back",
+            "front": "/catalog/f9bc34157e6ce8c0.jpg",
+            "back": "/catalog/700935c474a984ba.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/106706/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/109200/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/106708/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=person-front",
-              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/106709/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=person-back"
+              "/catalog/f9bc34157e6ce8c0.jpg",
+              "/catalog/700935c474a984ba.jpg",
+              "/catalog/2328da869422132b.jpg",
+              "/catalog/5b1e7ba073b3d6b0.jpg"
             ]
           }
         }
@@ -1075,7 +1075,7 @@
       "updatedAt": "2026-10-26 18:47:52+00:00"
     },
     {
-      "printifyId": "6adfa059f621e0ea4a0e2977",
+      "productId": "6adfa059f621e0ea4a0e2977",
       "blueprintId": 49,
       "providerId": 402,
       "type": "crewneck",
@@ -1131,13 +1131,13 @@
             25521
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/98502/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/98503/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=back",
+            "front": "/catalog/3615a37ebb41bcc1.jpg",
+            "back": "/catalog/a4c859db520d9026.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/98502/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/98503/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/128101/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=folded-2",
-              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/128102/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=lifestyle-2"
+              "/catalog/3615a37ebb41bcc1.jpg",
+              "/catalog/a4c859db520d9026.jpg",
+              "/catalog/95ec33876861d342.jpg",
+              "/catalog/331f0f0326814ba5.jpg"
             ]
           }
         }
@@ -1209,7 +1209,7 @@
       "updatedAt": "2026-10-26 18:47:53+00:00"
     },
     {
-      "printifyId": "6adfa054d57b64376b0ba0ea",
+      "productId": "6adfa054d57b64376b0ba0ea",
       "blueprintId": 49,
       "providerId": 402,
       "type": "crewneck",
@@ -1265,13 +1265,13 @@
             25520
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/98502/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/98503/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=back",
+            "front": "/catalog/97431a9b47b7314e.jpg",
+            "back": "/catalog/b44006e923201b1a.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/98502/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/98503/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/128101/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=folded-2",
-              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/128102/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=lifestyle-2"
+              "/catalog/97431a9b47b7314e.jpg",
+              "/catalog/b44006e923201b1a.jpg",
+              "/catalog/f75717fec97c5d51.jpg",
+              "/catalog/35d1e66442389ad7.jpg"
             ]
           }
         }
@@ -1343,7 +1343,7 @@
       "updatedAt": "2026-10-26 18:47:48+00:00"
     },
     {
-      "printifyId": "6adfa055d57b64376b0ba0ec",
+      "productId": "6adfa055d57b64376b0ba0ec",
       "blueprintId": 49,
       "providerId": 402,
       "type": "crewneck",
@@ -1399,13 +1399,13 @@
             25520
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/98502/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/98503/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=back",
+            "front": "/catalog/48f791a6f479ae20.jpg",
+            "back": "/catalog/596e65a9fd61eea1.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/98502/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/98503/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/128101/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=folded-2",
-              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/128102/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=lifestyle-2"
+              "/catalog/48f791a6f479ae20.jpg",
+              "/catalog/596e65a9fd61eea1.jpg",
+              "/catalog/f1a8f231727f725f.jpg",
+              "/catalog/e308d442904eb77a.jpg"
             ]
           }
         }
@@ -1477,7 +1477,7 @@
       "updatedAt": "2026-10-27 12:07:50+00:00"
     },
     {
-      "printifyId": "6adfa055d57b64376b0ba0ed",
+      "productId": "6adfa055d57b64376b0ba0ed",
       "blueprintId": 49,
       "providerId": 402,
       "type": "crewneck",
@@ -1533,13 +1533,13 @@
             25515
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/98502/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/98503/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=back",
+            "front": "/catalog/2f2c2775a454ff0f.jpg",
+            "back": "/catalog/2603afee932cd371.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/98502/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/98503/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/128101/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=folded-2",
-              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/128102/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=lifestyle-2"
+              "/catalog/2f2c2775a454ff0f.jpg",
+              "/catalog/2603afee932cd371.jpg",
+              "/catalog/d9eecdd49b9a575d.jpg",
+              "/catalog/666d9997c7d27ad8.jpg"
             ]
           }
         }
@@ -1611,7 +1611,7 @@
       "updatedAt": "2026-10-26 18:47:49+00:00"
     },
     {
-      "printifyId": "6adfa056d57b64376b0ba0ee",
+      "productId": "6adfa056d57b64376b0ba0ee",
       "blueprintId": 77,
       "providerId": 402,
       "type": "hoodie",
@@ -1667,13 +1667,13 @@
             42239
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/98424/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/98425/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=back",
+            "front": "/catalog/8b12692020fe0626.jpg",
+            "back": "/catalog/729949c3dbccc013.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/98424/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/98425/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/98432/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=folded",
-              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/100685/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=front-collar-closeup"
+              "/catalog/8b12692020fe0626.jpg",
+              "/catalog/729949c3dbccc013.jpg",
+              "/catalog/6c53d700f103902c.jpg",
+              "/catalog/0950750cca12126b.jpg"
             ]
           }
         }
@@ -1745,7 +1745,7 @@
       "updatedAt": "2026-10-26 18:47:50+00:00"
     },
     {
-      "printifyId": "6adfa053d57b64376b0ba0e9",
+      "productId": "6adfa053d57b64376b0ba0e9",
       "blueprintId": 77,
       "providerId": 402,
       "type": "hoodie",
@@ -1801,13 +1801,13 @@
             42152
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/98424/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/98425/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=back",
+            "front": "/catalog/40d51bd5b000a25d.jpg",
+            "back": "/catalog/a95f2fc56435cbde.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/98424/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/98425/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/98432/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=folded",
-              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/100685/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=front-collar-closeup"
+              "/catalog/40d51bd5b000a25d.jpg",
+              "/catalog/a95f2fc56435cbde.jpg",
+              "/catalog/3dffd08ee02b5f88.jpg",
+              "/catalog/64eec703aca9ebcb.jpg"
             ]
           }
         }
@@ -1879,7 +1879,7 @@
       "updatedAt": "2026-10-26 18:47:47+00:00"
     },
     {
-      "printifyId": "6adfa059f621e0ea4a0e2978",
+      "productId": "6adfa059f621e0ea4a0e2978",
       "blueprintId": 77,
       "providerId": 402,
       "type": "hoodie",
@@ -1935,13 +1935,13 @@
             32922
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/98424/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/98425/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=back",
+            "front": "/catalog/d88059b4fd9d0339.jpg",
+            "back": "/catalog/74703b39b1af35b0.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/98424/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/98425/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/98432/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=folded",
-              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/100685/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=front-collar-closeup"
+              "/catalog/d88059b4fd9d0339.jpg",
+              "/catalog/74703b39b1af35b0.jpg",
+              "/catalog/ba97e19cc2b6c0b3.jpg",
+              "/catalog/2aeb0f29ba072693.jpg"
             ]
           }
         }
@@ -2013,7 +2013,7 @@
       "updatedAt": "2026-10-27 12:57:17+00:00"
     },
     {
-      "printifyId": "6adfa054d57b64376b0ba0eb",
+      "productId": "6adfa054d57b64376b0ba0eb",
       "blueprintId": 77,
       "providerId": 402,
       "type": "hoodie",
@@ -2069,13 +2069,13 @@
             32914
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/98424/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=front",
-            "back": "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/98425/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=back",
+            "front": "/catalog/6b831137f58e82a0.jpg",
+            "back": "/catalog/84dbd57e85154e42.jpg",
             "gallery": [
-              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/98424/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/98425/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/98432/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=folded",
-              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/100685/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=front-collar-closeup"
+              "/catalog/6b831137f58e82a0.jpg",
+              "/catalog/84dbd57e85154e42.jpg",
+              "/catalog/d6ea7e42443adc58.jpg",
+              "/catalog/2b5a6832712b85d8.jpg"
             ]
           }
         }
@@ -2147,7 +2147,7 @@
       "updatedAt": "2026-10-26 18:47:48+00:00"
     },
     {
-      "printifyId": "6ae0726312b6ccc4ad0420de",
+      "productId": "6ae0726312b6ccc4ad0420de",
       "blueprintId": 1741,
       "providerId": 410,
       "type": "cap",
@@ -2191,12 +2191,12 @@
             118690
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118690/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+            "front": "/catalog/9471ca5573e67ef0.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118690/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118690/109470/embroidered-cherry-design-baseball-cap.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118690/110063/embroidered-cherry-design-baseball-cap.jpg?camera_label=person-1-front"
+              "/catalog/9471ca5573e67ef0.jpg",
+              "/catalog/0656c14f0b4bbfa9.jpg",
+              "/catalog/6f68570882a02f64.jpg"
             ]
           }
         },
@@ -2212,12 +2212,12 @@
             118692
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118692/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+            "front": "/catalog/7af4a6f09e4d463b.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118692/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118692/109470/embroidered-cherry-design-baseball-cap.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118692/110063/embroidered-cherry-design-baseball-cap.jpg?camera_label=person-1-front"
+              "/catalog/7af4a6f09e4d463b.jpg",
+              "/catalog/bf3c8ccb006a1771.jpg",
+              "/catalog/7420907106a2ae7d.jpg"
             ]
           }
         },
@@ -2233,12 +2233,12 @@
             118693
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118693/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+            "front": "/catalog/1a223bafd03c3a6c.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118693/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118693/109470/embroidered-cherry-design-baseball-cap.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118693/110063/embroidered-cherry-design-baseball-cap.jpg?camera_label=person-1-front"
+              "/catalog/1a223bafd03c3a6c.jpg",
+              "/catalog/c15bab650d314e09.jpg",
+              "/catalog/dd38ccf01e6da453.jpg"
             ]
           }
         },
@@ -2254,12 +2254,12 @@
             118694
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118694/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+            "front": "/catalog/d60b1e135f88c46e.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118694/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118694/109470/embroidered-cherry-design-baseball-cap.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118694/110063/embroidered-cherry-design-baseball-cap.jpg?camera_label=person-1-front"
+              "/catalog/d60b1e135f88c46e.jpg",
+              "/catalog/167a933fcff3b475.jpg",
+              "/catalog/b25313bc082b2778.jpg"
             ]
           }
         }
@@ -2317,7 +2317,7 @@
       "updatedAt": "2026-10-27 09:44:03+00:00"
     },
     {
-      "printifyId": "6ae07261136de5382006afc6",
+      "productId": "6ae07261136de5382006afc6",
       "blueprintId": 1741,
       "providerId": 410,
       "type": "cap",
@@ -2361,12 +2361,12 @@
             118690
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118690/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
+            "front": "/catalog/96a9df72c6b47236.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118690/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118690/109470/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118690/110063/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=person-1-front"
+              "/catalog/96a9df72c6b47236.jpg",
+              "/catalog/2a5b42d451a1cd7a.jpg",
+              "/catalog/6542799aaa09bce9.jpg"
             ]
           }
         },
@@ -2382,12 +2382,12 @@
             118692
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118692/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
+            "front": "/catalog/6149faacc5e61d01.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118692/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118692/109470/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118692/110063/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=person-1-front"
+              "/catalog/6149faacc5e61d01.jpg",
+              "/catalog/2b176391e8bd7d0e.jpg",
+              "/catalog/bea56393da1bca8f.jpg"
             ]
           }
         },
@@ -2403,12 +2403,12 @@
             118694
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118694/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
+            "front": "/catalog/15ebfc8a4781706f.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118694/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118694/109470/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=back",
-              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118694/110063/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=person-1-front"
+              "/catalog/15ebfc8a4781706f.jpg",
+              "/catalog/30249ce952353ccf.jpg",
+              "/catalog/6f9fb57993a473af.jpg"
             ]
           }
         }
@@ -2466,7 +2466,7 @@
       "updatedAt": "2026-10-27 09:44:01+00:00"
     },
     {
-      "printifyId": "6ae0773575e663e3a60cd4bf",
+      "productId": "6ae0773575e663e3a60cd4bf",
       "blueprintId": 1691,
       "providerId": 410,
       "type": "beanie",
@@ -2510,11 +2510,11 @@
             116416
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116416/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "front": "/catalog/39fb4ead24ccd2e3.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116416/109382/cherry-embroidery-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116416/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+              "/catalog/39fb4ead24ccd2e3.jpg",
+              "/catalog/305a3b3d86ed32ef.jpg"
             ]
           }
         },
@@ -2530,11 +2530,11 @@
             116417
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116417/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "front": "/catalog/daca1e2b60038289.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116417/109382/cherry-embroidery-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116417/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+              "/catalog/daca1e2b60038289.jpg",
+              "/catalog/03974a5e1411ed11.jpg"
             ]
           }
         },
@@ -2550,11 +2550,11 @@
             116419
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116419/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "front": "/catalog/a8d6668c3e4c5121.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116419/109382/cherry-embroidery-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116419/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+              "/catalog/a8d6668c3e4c5121.jpg",
+              "/catalog/83c9ec4ea6be235a.jpg"
             ]
           }
         },
@@ -2570,11 +2570,11 @@
             116421
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116421/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "front": "/catalog/898ccc975db2e9a9.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116421/109382/cherry-embroidery-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116421/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+              "/catalog/898ccc975db2e9a9.jpg",
+              "/catalog/92983221d815bc0f.jpg"
             ]
           }
         },
@@ -2590,11 +2590,11 @@
             116422
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116422/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "front": "/catalog/2a22cc83c7ad27b1.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116422/109382/cherry-embroidery-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116422/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+              "/catalog/2a22cc83c7ad27b1.jpg",
+              "/catalog/2e630dcff97d6540.jpg"
             ]
           }
         },
@@ -2610,11 +2610,11 @@
             116425
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116425/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "front": "/catalog/b1510653c6047a15.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116425/109382/cherry-embroidery-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116425/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+              "/catalog/b1510653c6047a15.jpg",
+              "/catalog/007eaf12532cb394.jpg"
             ]
           }
         },
@@ -2630,11 +2630,11 @@
             116426
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116426/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "front": "/catalog/a065424a0a259439.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116426/109382/cherry-embroidery-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116426/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+              "/catalog/a065424a0a259439.jpg",
+              "/catalog/210f940b31a38ae1.jpg"
             ]
           }
         },
@@ -2650,11 +2650,11 @@
             116432
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116432/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "front": "/catalog/f44f7ecd5e3c3cb1.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116432/109382/cherry-embroidery-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116432/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+              "/catalog/f44f7ecd5e3c3cb1.jpg",
+              "/catalog/a598cf7d5d466dd7.jpg"
             ]
           }
         },
@@ -2670,11 +2670,11 @@
             116433
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116433/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "front": "/catalog/c9c839ff99cfe56f.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116433/109382/cherry-embroidery-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116433/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+              "/catalog/c9c839ff99cfe56f.jpg",
+              "/catalog/ccb5caa8d919963c.jpg"
             ]
           }
         },
@@ -2690,11 +2690,11 @@
             118271
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/118271/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "front": "/catalog/ab40721eb401f21b.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/118271/109382/cherry-embroidery-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/118271/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+              "/catalog/ab40721eb401f21b.jpg",
+              "/catalog/af06b379a4aa3c14.jpg"
             ]
           }
         }
@@ -2754,7 +2754,7 @@
       "updatedAt": "2026-10-27 12:26:58+00:00"
     },
     {
-      "printifyId": "6ae075cf9d3ed354f7003d89",
+      "productId": "6ae075cf9d3ed354f7003d89",
       "blueprintId": 1691,
       "providerId": 410,
       "type": "beanie",
@@ -2798,11 +2798,11 @@
             116416
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116416/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "front": "/catalog/f153ddd131733d44.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116416/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116416/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+              "/catalog/f153ddd131733d44.jpg",
+              "/catalog/d1bd529b6567d574.jpg"
             ]
           }
         },
@@ -2818,11 +2818,11 @@
             116417
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116417/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "front": "/catalog/75c3a64f44c30841.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116417/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116417/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+              "/catalog/75c3a64f44c30841.jpg",
+              "/catalog/442ac57986333463.jpg"
             ]
           }
         },
@@ -2838,11 +2838,11 @@
             116419
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116419/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "front": "/catalog/dc7f181c0342e1b5.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116419/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116419/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+              "/catalog/dc7f181c0342e1b5.jpg",
+              "/catalog/4dd50f13d37b2376.jpg"
             ]
           }
         },
@@ -2858,11 +2858,11 @@
             116421
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116421/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "front": "/catalog/94c50d26bdcb6838.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116421/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116421/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+              "/catalog/94c50d26bdcb6838.jpg",
+              "/catalog/c65f95b52c3e1178.jpg"
             ]
           }
         },
@@ -2878,11 +2878,11 @@
             116422
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116422/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "front": "/catalog/cff9db1b40359cf3.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116422/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116422/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+              "/catalog/cff9db1b40359cf3.jpg",
+              "/catalog/388baf2150fd568a.jpg"
             ]
           }
         },
@@ -2898,11 +2898,11 @@
             116425
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116425/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "front": "/catalog/141b263df0113214.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116425/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116425/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+              "/catalog/141b263df0113214.jpg",
+              "/catalog/9e15ffc86362e40c.jpg"
             ]
           }
         },
@@ -2918,11 +2918,11 @@
             116433
           ],
           "images": {
-            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116433/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "front": "/catalog/2da5853e3392d2c9.jpg",
             "back": null,
             "gallery": [
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116433/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
-              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116433/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+              "/catalog/2da5853e3392d2c9.jpg",
+              "/catalog/da4aaff75cf83e63.jpg"
             ]
           }
         }

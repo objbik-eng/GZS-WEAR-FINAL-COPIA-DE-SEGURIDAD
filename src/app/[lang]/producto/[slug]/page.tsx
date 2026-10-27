@@ -45,11 +45,11 @@ export default async function ProductPage({ params }: { params: Promise<{ lang: 
   if (!product) notFound();
 
   const related = getAllProducts()
-    .filter((p) => p.type === product.type && p.printifyId !== product.printifyId)
+    .filter((p) => p.type === product.type && p.productId !== product.productId)
     .slice(0, 4);
   const fallbackRelated = related.length
     ? related
-    : getAllProducts().filter((p) => p.printifyId !== product.printifyId).slice(0, 4);
+    : getAllProducts().filter((p) => p.productId !== product.productId).slice(0, 4);
 
   const jsonLd = [
     productJsonLd(product, locale),
