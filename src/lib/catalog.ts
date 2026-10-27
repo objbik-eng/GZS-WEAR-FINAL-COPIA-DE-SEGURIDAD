@@ -1,47 +1,92 @@
-import { db } from "@/db";
-import { products, reviews } from "@/db/schema";
-import { PRODUCTS, REVIEWS_SEED, DEFAULT_REVIEWS } from "./seed-data";
-import { eq, desc } from "drizzle-orm";
+import snapshot from "@/lib/data/catalog.json";
+import type { Locale } from "@/i18n/dict";
 
-let seeded = false;
-export async function ensureSeeded(){
-  if(seeded) return;
-  try{
-    const existing = await db.select({id:products.id}).from(products).limit(1);
-    if(existing.length===0){
-      const inserted = await db.insert(products).values(PRODUCTS.map(p=>({
-        slug:p.slug, name:p.name, category:p.category, collection:p.collection, price:p.price, compareAt:p.compareAt||null,
-        description:p.description, fabric:p.fabric, fit:p.fit, images:p.images, sizes:p.sizes, colors:p.colors, tag:p.tag||null, isNew:!!p.isNew, isBestSeller:!!p.isBestSeller, stock:p.stock
-      }))).returning();
-      for(const prod of inserted){
-        const revs = REVIEWS_SEED[prod.slug] || DEFAULT_REVIEWS;
-        await db.insert(reviews).values(revs.map(r=>({ productId:prod.id, author:r.author, rating:r.rating, title:r.title, body:r.body, sizeBought:r.sizeBought||null })));
-      }
-    }
-    seeded = true;
-  }catch(e){ console.error("seed error", e); }
+export type ProductType = "tee" | "oversize" | "crewneck" | "hoodie" | "cap" | "beanie";
+
+export interface SizeGuide {
+  unit: string;
+  sizes: string[];
+  rows: { labelEs: string; labelEn: string; values: (number | string)[] }[];
+  toleranceEs: string;
+  toleranceEn: string;
 }
 
-export async function getProducts(){
-  await ensureSeeded();
-  try{ return await db.select().from(products).orderBy(desc(products.createdAt), products.id); }
-  catch{ return PRODUCTS.map((p,i)=>({id:i+1, ...p, compareAt:p.compareAt||null, tag:p.tag||null, isNew:!!p.isNew, isBestSeller:!!p.isBestSeller, createdAt:new Date()})) as any[]; }
+export interface ProductColor {
+  id: string;
+  nameEn: string;
+  nameEs: string;
+  hex: string;
+  variants: Record<string, number>;
+  variantIds: number[];
+  images: { front: string | null; back: string | null; gallery: string[] };
 }
-export async function getProductBySlug(slug:string){
-  await ensureSeeded();
-  try{
-    const [p] = await db.select().from(products).where(eq(products.slug, slug)).limit(1);
-    if(!p) return null;
-    const revs = await db.select().from(reviews).where(eq(reviews.productId, p.id)).orderBy(desc(reviews.createdAt));
-    return {...p, reviews: revs};
-  }catch{
-    const p = PRODUCTS.find(x=>x.slug===slug); if(!p) return null;
-    return {...p, id:1, compareAt:p.compareAt||null, tag:p.tag||null, isNew:!!p.isNew, isBestSeller:!!p.isBestSeller, reviews:(REVIEWS_SEED[slug]||DEFAULT_REVIEWS).map((r,i)=>({id:i+1,...r, productId:1, verified:true, createdAt:new Date(), sizeBought:r.sizeBought||null}))} as any;
-  }
+
+export interface Product {
+  printifyId: string;
+  blueprintId: number;
+  providerId: number;
+  type: ProductType;
+  collection: string;
+  slug: { es: string; en: string };
+  name: { es: string; en: string };
+  description: { es: string; en: string };
+  fabric: { es: string; en: string };
+  fit: { es: string; en: string };
+  priceEurCents: number;
+  currency: string;
+  unisex: boolean;
+  sizes: string[];
+  colors: ProductColor[];
+  sizeGuide: SizeGuide;
+  gpsr: Record<string, string> | null;
+  modelImage: string | null;
+  tags: string[];
+  updatedAt: string;
 }
-export function ratingFor(productId:number, slug?:string){
-  // deterministic pseudo rating from slug
-  const seedReviews = slug ? (REVIEWS_SEED[slug]||DEFAULT_REVIEWS) : DEFAULT_REVIEWS;
-  const avg = seedReviews.reduce((a,b)=>a+b.rating,0)/seedReviews.length;
-  return { avg: Math.round(avg*10)/10, count: seedReviews.length + (productId*3)%17 + 6 };
+
+export const PRODUCTS: Product[] = (snapshot as { products: Product[] }).products;
+export const SHOP_ID = (snapshot as { shopId: string }).shopId;
+
+export function getAllProducts(): Product[] {
+  return PRODUCTS;
+}
+
+export function getProductBySlug(slug: string, locale: Locale): Product | undefined {
+  return PRODUCTS.find((p) => p.slug[locale] === slug);
+}
+
+export function getProductByPrintifyId(id: string): Product | undefined {
+  return PRODUCTS.find((p) => p.printifyId === id);
+}
+
+export function getProductsByType(types: ProductType[]): Product[] {
+  return PRODUCTS.filter((p) => types.includes(p.type));
+}
+
+export const TYPE_FILTERS: { id: ProductType | "all"; labelKey: string }[] = [
+  { id: "all", labelKey: "shop.filter.all" },
+  { id: "tee", labelKey: "shop.filter.tees" },
+  { id: "oversize", labelKey: "shop.filter.oversize" },
+  { id: "crewneck", labelKey: "shop.filter.crewneck" },
+  { id: "hoodie", labelKey: "shop.filter.hoodie" },
+  { id: "cap", labelKey: "shop.filter.cap" },
+  { id: "beanie", labelKey: "shop.filter.beanie" },
+];
+
+export function localizeName(p: Product, locale: Locale): string {
+  return p.name[locale];
+}
+
+export function primaryImage(p: Product): string {
+  return p.colors[0]?.images.front || p.colors[0]?.images.gallery[0] || "";
+}
+
+export function backImage(p: Product): string | null {
+  return p.colors[0]?.images.back || null;
+}
+
+/** Variante de Printify para una combinación color/talla (con fallback al primer color). */
+export function resolveVariantId(p: Product, colorId: string, size: string): number | null {
+  const color = p.colors.find((c) => c.id === colorId) || p.colors[0];
+  return color?.variants[size] ?? null;
 }

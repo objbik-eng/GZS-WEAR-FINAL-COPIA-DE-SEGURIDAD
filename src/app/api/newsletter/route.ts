@@ -1,11 +1,19 @@
-import { NextResponse } from "next/server";
-import { db } from "@/db";
-import { subscribers } from "@/db/schema";
-export async function POST(req:Request){
-  try{
-    const {email}=await req.json();
-    if(!email || !email.includes("@")) return NextResponse.json({error:"Introduce un email válido"},{status:400});
-    try{ await db.insert(subscribers).values({email}); }catch{}
-    return NextResponse.json({message:"Ya eres del barrio. Revisa tu email: tienes tu -10% con BARRIO10."});
-  }catch{ return NextResponse.json({error:"Error"},{status:500}); }
+import { NextRequest, NextResponse } from "next/server";
+import { addNewsletterEmail, ApiError } from "@/lib/supabase";
+
+export const runtime = "nodejs";
+
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json();
+    const email = String(body?.email || "").trim().toLowerCase();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || email.length > 160) {
+      return NextResponse.json({ error: "Email no válido" }, { status: 400 });
+    }
+    await addNewsletterEmail(email);
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    const status = err instanceof ApiError ? err.status : 500;
+    return NextResponse.json({ error: err instanceof Error ? err.message : "Error" }, { status });
+  }
 }

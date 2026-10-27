@@ -1,29 +1,64 @@
-"use client";
 import Link from "next/link";
-import { useState } from "react";
-import { LogoMark } from "./Logo";
-import { Camera, Play, Music2, ArrowRight, Check } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+import { getLocale } from "@/lib/locale-server";
+import { t } from "@/i18n/dict";
+import { shopPath, contactPath, cartPath, legalPath } from "@/lib/routes";
+import Logo from "@/components/Logo";
+import NewsletterForm from "@/components/NewsletterForm";
 
-export default function Footer(){
-  const [email,setEmail]=useState(""); const [done,setDone]=useState(false); const [msg,setMsg]=useState("");
-  const submit=async(e:any)=>{ e.preventDefault(); const r=await fetch("/api/newsletter",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email})}); const d=await r.json(); if(r.ok){setDone(true); setMsg(d.message);} else setMsg(d.error||"Error"); };
-  return <footer className="bg-black text-white mt-0">
-    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-14 grid lg:grid-cols-12 gap-10">
-      <div className="lg:col-span-4">
-        <LogoMark variant="white" size={52}/>
-        <p className="text-white/60 text-sm mt-4 max-w-xs leading-relaxed">Ropa urbana de arte disruptivo. Diseñada en el barrio, para gente de 16 a 40 que no viste logos: viste manifiestos.</p>
-        <div className="flex gap-2 mt-5">{[Camera,Play,Music2].map((Icon,i)=><a key={i} href="#" className="w-10 h-10 border border-white/20 grid place-items-center hover:bg-[#5E845F] hover:border-[#5E845F] transition"><Icon size={18}/></a>)}</div>
-        <p className="text-xs text-white/40 mt-4">@gzswear · #VisteElManifiesto</p>
+export default async function Footer() {
+  const locale = await getLocale();
+  const year = new Date().getFullYear();
+  return (
+    <footer className="mt-24 bg-forest-deep text-white/90">
+      <div className="container-gzs py-16 grid gap-12 lg:grid-cols-[1.2fr_1fr_1fr_1.3fr]">
+        <div>
+          <Logo locale={locale} variant="blanco" />
+          <p className="mt-5 text-sm leading-relaxed text-white/70 max-w-xs">{t("footer.tagline", locale)}</p>
+          <a href="mailto:gzswear@roadshop.online" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold hover:underline">
+            <Mail size={16} /> gzswear@roadshop.online
+          </a>
+          <p className="mt-3 flex items-start gap-2 text-xs text-white/60">
+            <MapPin size={14} className="mt-0.5 shrink-0" />
+            Calle Granada 269A, Calypo Fado, 45950 Casarrubios del Monte (Toledo), España · NIF 50633140C
+          </p>
+        </div>
+
+        <nav aria-label="Tienda">
+          <h3 className="font-display text-sm tracking-[0.2em] uppercase text-gold mb-4">{t("footer.shop", locale)}</h3>
+          <ul className="space-y-2.5 text-sm">
+            <li><Link href={shopPath(locale)} className="hover:text-gold transition-colors">{t("nav.shop", locale)}</Link></li>
+            <li><Link href="/tienda?f=tee" className="hover:text-gold transition-colors">{t("nav.tees", locale)}</Link></li>
+            <li><Link href="/tienda?f=hoodie" className="hover:text-gold transition-colors">{t("nav.sweatshirts", locale)}</Link></li>
+            <li><Link href="/tienda?f=cap" className="hover:text-gold transition-colors">{t("nav.accessories", locale)}</Link></li>
+            <li><Link href={cartPath(locale)} className="hover:text-gold transition-colors">{t("nav.cart", locale)}</Link></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Legal">
+          <h3 className="font-display text-sm tracking-[0.2em] uppercase text-gold mb-4">{t("footer.legal", locale)}</h3>
+          <ul className="space-y-2.5 text-sm">
+            <li><Link href={legalPath("aviso-legal", locale)} className="hover:text-gold transition-colors">{t("legal.legalNotice", locale)}</Link></li>
+            <li><Link href={legalPath("privacidad", locale)} className="hover:text-gold transition-colors">{t("legal.privacy", locale)}</Link></li>
+            <li><Link href={legalPath("terminos", locale)} className="hover:text-gold transition-colors">{t("legal.terms", locale)}</Link></li>
+            <li><Link href={legalPath("cookies", locale)} className="hover:text-gold transition-colors">{t("legal.cookies", locale)}</Link></li>
+            <li><Link href={legalPath("envios-devoluciones", locale)} className="hover:text-gold transition-colors">{t("legal.shipping", locale)}</Link></li>
+            <li><Link href={contactPath(locale)} className="hover:text-gold transition-colors">{t("legal.contact", locale)}</Link></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3 className="font-display text-lg font-extrabold text-white leading-tight">{t("newsletter.title", locale)}</h3>
+          <p className="mt-2 text-sm text-white/70 mb-5">{t("newsletter.subtitle", locale)}</p>
+          <NewsletterForm locale={locale} />
+        </div>
       </div>
-      <div className="lg:col-span-2"><h4 className="font-display font-black uppercase text-sm tracking-widest">Tienda</h4><ul className="mt-4 space-y-2.5 text-sm text-white/60">{["Novedades","Camisetas","Hoodies","Pantalones","Chaquetas","Accesorios"].map(x=><li key={x}><Link className="hover:text-[#D39905]" href={x==="Novedades"?"/tienda?filtro=nuevo":`/tienda?categoria=${x}`}>{x}</Link></li>)}</ul></div>
-      <div className="lg:col-span-2"><h4 className="font-display font-black uppercase text-sm tracking-widest">Ayuda</h4><ul className="mt-4 space-y-2.5 text-sm text-white/60"><li>Envíos 24/48h</li><li>Devoluciones 30 días</li><li>Guía de tallas</li><li>Estado de mi pedido</li><li>Contacto: hola@gzswear.es</li></ul></div>
-      <div className="lg:col-span-4">
-        <h4 className="font-display font-black uppercase text-xl">Únete al barrio <span className="text-[#D39905]">*</span></h4>
-        <p className="text-white/60 text-sm mt-2">-10% en tu primera compra con <b className="text-white">BARRIO10</b>. Early access a drops, sin spam.</p>
-        {done? <p className="mt-4 bg-[#5E845F] p-3 text-sm font-bold flex gap-2"><Check/> {msg}</p> : <form onSubmit={submit} className="mt-4 flex"><input required type="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="tu@email.com" className="flex-1 bg-white/10 border border-white/20 px-4 py-3 text-sm placeholder:text-white/40"/><button className="bg-[#D39905] text-black px-4 font-black text-xs tracking-widest uppercase flex items-center gap-1">Unirme <ArrowRight size={14}/></button></form>}
-        {msg && !done && <p className="text-xs text-red-300 mt-2">{msg}</p>}
+      <div className="border-t border-white/10">
+        <div className="container-gzs py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/55">
+          <span>© {year} GZS WEAR BRANDS. {t("footer.rights", locale)}</span>
+          <span>Pagos seguros con Stripe · Visa · Mastercard · Apple Pay · Google Pay · Bizum</span>
+        </div>
       </div>
-    </div>
-    <div className="border-t border-white/10"><div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-white/40"><span>© 2026 GZS WEAR* — Arte disruptivo. Todos los derechos reservados.</span><span>Visa · Mastercard · Bizum · Apple Pay · Klarna</span></div></div>
-  </footer>
+    </footer>
+  );
 }

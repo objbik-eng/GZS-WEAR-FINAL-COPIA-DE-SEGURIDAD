@@ -1,0 +1,2985 @@
+{
+  "shopId": "29488386",
+  "generatedAt": "2026-10-27T13:33:17.744Z",
+  "products": [
+    {
+      "printifyId": "6adfa05af621e0ea4a0e2979",
+      "blueprintId": 6,
+      "providerId": 402,
+      "type": "tee",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "camiseta-archivo-galeria",
+        "en": "gallery-archive-tee"
+      },
+      "name": {
+        "es": "Camiseta Archivo Galería",
+        "en": "Gallery Archive T-Shirt"
+      },
+      "description": {
+        "es": "Tu museo personal, allá donde vayas. Un pórtico clásico ilustrado en azul claro con el sello Lost Frame: arte, arquitectura y streetwear en la misma prenda. Estampación DTG de alto detalle sobre algodón suave que sienta bien desde el primer uso.",
+        "en": "Your personal museum, wherever you go. A classical illustrated arch in soft blue with the Lost Frame seal — art, architecture and streetwear on one garment. High-detail DTG print on soft cotton that feels right from day one."
+      },
+      "fabric": {
+        "es": "Algodón peinado 100%, 185 g/m² · Cuello redondo reforzado · Costuras dobles",
+        "en": "100% combed cotton, 185 GSM · Reinforced crew neck · Double-stitched seams"
+      },
+      "fit": {
+        "es": "Fit regular unisex · Si buscas un look más holgado, pide una talla más",
+        "en": "Unisex regular fit · Size up for a looser look"
+      },
+      "priceEurCents": 2795,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Light Blue",
+          "nameEn": "Light Blue",
+          "nameEs": "Azul claro",
+          "hex": "#BFDCEC",
+          "variants": {
+            "L": 11956,
+            "M": 11957,
+            "S": 11958,
+            "XL": 11959,
+            "2XL": 11960
+          },
+          "variantIds": [
+            11956,
+            11957,
+            11958,
+            11959,
+            11960
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/102005/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=front-2",
+            "back": "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/102006/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=back-2",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/102005/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=front-2",
+              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/102006/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=back-2",
+              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/102001/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=folded",
+              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e2979/11956/127735/gallery-archive-museum-poster-t-shirt-art-history-graphic-tee.jpg?camera_label=folded-2"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              46,
+              51,
+              56,
+              61,
+              66
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              71,
+              74,
+              76,
+              79,
+              81
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              38,
+              42,
+              46,
+              50,
+              53
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 5000, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: low heat, Do not iron, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "T-shirts",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Regular fit",
+        "Crew neck",
+        "Neck Labels"
+      ],
+      "updatedAt": "2026-10-27 12:49:21+00:00"
+    },
+    {
+      "printifyId": "6adfa05af621e0ea4a0e297a",
+      "blueprintId": 6,
+      "providerId": 402,
+      "type": "tee",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "camiseta-florece-donde-estes",
+        "en": "bloom-where-you-are-tee"
+      },
+      "name": {
+        "es": "Camiseta Florece Donde Estés",
+        "en": "Bloom Where You Are T-Shirt"
+      },
+      "description": {
+        "es": "Rococó revisitado con ojos del siglo XXI. Un retrato botánico rodeado de flores sobre blanco roto: romance, jardín y actitud disruptiva en el mismo trazo. Algodón ligero y transpirable, ideal para llevar solo o en capas.",
+        "en": "Rococo revisited through 21st-century eyes. A botanical portrait framed by florals on off-white — romance, garden and disruptive attitude in a single stroke. Light, breathable cotton, perfect alone or layered."
+      },
+      "fabric": {
+        "es": "Algodón peinado 100%, 185 g/m² · Cuello redondo reforzado · Costuras dobles",
+        "en": "100% combed cotton, 185 GSM · Reinforced crew neck · Double-stitched seams"
+      },
+      "fit": {
+        "es": "Fit regular unisex · Si buscas un look más holgado, pide una talla más",
+        "en": "Unisex regular fit · Size up for a looser look"
+      },
+      "priceEurCents": 2795,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "White",
+          "nameEn": "White",
+          "nameEs": "Blanco",
+          "hex": "#FFFFFF",
+          "variants": {
+            "L": 12100,
+            "M": 12101,
+            "S": 12102,
+            "XL": 12103,
+            "2XL": 12104
+          },
+          "variantIds": [
+            12100,
+            12101,
+            12102,
+            12103,
+            12104
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/102005/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=front-2",
+            "back": "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/102006/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=back-2",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/102005/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=front-2",
+              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/102006/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=back-2",
+              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/102001/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=folded",
+              "https://images-api.printify.com/mockup/6adfa05af621e0ea4a0e297a/12100/127735/bloom-where-youre-planted-floral-t-shirt.jpg?camera_label=folded-2"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              46,
+              51,
+              56,
+              61,
+              66
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              71,
+              74,
+              76,
+              79,
+              81
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              38,
+              42,
+              46,
+              50,
+              53
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 5000, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: low heat, Do not iron, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "T-shirts",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Regular fit",
+        "Crew neck",
+        "Neck Labels"
+      ],
+      "updatedAt": "2026-10-26 18:47:54+00:00"
+    },
+    {
+      "printifyId": "6adfa053d57b64376b0ba0e8",
+      "blueprintId": 6,
+      "providerId": 402,
+      "type": "tee",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "camiseta-globo-calma",
+        "en": "globe-calm-tee"
+      },
+      "name": {
+        "es": "Camiseta Globo Calma",
+        "en": "Calm Globe T-Shirt"
+      },
+      "description": {
+        "es": "La calma no es quietud, es confianza. Un globo terráqueo wireframe en rosa sobre negro serio, con el espíritu de galería urbana de GZS. Algodón peinado de tacto premium, estampado DTG que respira y no se cuartea. Para quien se mueve sin pedir permiso.",
+        "en": "Calm isn't stillness, it's confidence. A pink wireframe globe on deep black with GZS's urban-gallery attitude. Premium combed cotton, breathable DTG print that won't crack. For those who move without asking permission."
+      },
+      "fabric": {
+        "es": "Algodón peinado 100%, 185 g/m² · Cuello redondo reforzado · Costuras dobles",
+        "en": "100% combed cotton, 185 GSM · Reinforced crew neck · Double-stitched seams"
+      },
+      "fit": {
+        "es": "Fit regular unisex · Si buscas un look más holgado, pide una talla más",
+        "en": "Unisex regular fit · Size up for a looser look"
+      },
+      "priceEurCents": 2795,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Black",
+          "nameEn": "Black",
+          "nameEs": "Negro",
+          "hex": "#151515",
+          "variants": {
+            "L": 12124,
+            "M": 12125,
+            "S": 12126,
+            "XL": 12127,
+            "2XL": 12128
+          },
+          "variantIds": [
+            12124,
+            12125,
+            12126,
+            12127,
+            12128
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/102005/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=front-2",
+            "back": "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/102006/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=back-2",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/102005/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=front-2",
+              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/102006/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=back-2",
+              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/102001/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=folded",
+              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e8/12124/127735/calm-is-confidence-globe-graphic-t-shirt.jpg?camera_label=folded-2"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              46,
+              51,
+              56,
+              61,
+              66
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              71,
+              74,
+              76,
+              79,
+              81
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              38,
+              42,
+              46,
+              50,
+              53
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 5000, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: low heat, Do not iron, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "T-shirts",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Regular fit",
+        "Crew neck",
+        "Neck Labels"
+      ],
+      "updatedAt": "2026-10-26 18:47:47+00:00"
+    },
+    {
+      "printifyId": "6adfa057d57b64376b0ba0f0",
+      "blueprintId": 6,
+      "providerId": 402,
+      "type": "tee",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "camiseta-street-league",
+        "en": "street-league-tee"
+      },
+      "name": {
+        "es": "Camiseta Street League Serpiente",
+        "en": "Street League Snake T-Shirt"
+      },
+      "description": {
+        "es": "Para los que compiten en su propia liga. La serpiente enrollada y la estética racing de fin de semana se encuentran en un gráfico frontal lleno de carácter. Negro intenso, trazo limpio y actitud de barrio. Una básica que nunca pasa desapercibida.",
+        "en": "For those racing in their own league. A coiled snake meets weekend racing aesthetics in a front print full of character. Deep black, clean lines, street attitude. A basic that never flies under the radar."
+      },
+      "fabric": {
+        "es": "Algodón peinado 100%, 185 g/m² · Cuello redondo reforzado · Costuras dobles",
+        "en": "100% combed cotton, 185 GSM · Reinforced crew neck · Double-stitched seams"
+      },
+      "fit": {
+        "es": "Fit regular unisex · Si buscas un look más holgado, pide una talla más",
+        "en": "Unisex regular fit · Size up for a looser look"
+      },
+      "priceEurCents": 2795,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Black",
+          "nameEn": "Black",
+          "nameEs": "Negro",
+          "hex": "#151515",
+          "variants": {
+            "L": 12124,
+            "M": 12125,
+            "S": 12126,
+            "XL": 12127,
+            "2XL": 12128
+          },
+          "variantIds": [
+            12124,
+            12125,
+            12126,
+            12127,
+            12128
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/102005/street-league-racing-graphic-t-shirt.jpg?camera_label=front-2",
+            "back": "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/102006/street-league-racing-graphic-t-shirt.jpg?camera_label=back-2",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/102005/street-league-racing-graphic-t-shirt.jpg?camera_label=front-2",
+              "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/102006/street-league-racing-graphic-t-shirt.jpg?camera_label=back-2",
+              "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/102001/street-league-racing-graphic-t-shirt.jpg?camera_label=folded",
+              "https://images-api.printify.com/mockup/6adfa057d57b64376b0ba0f0/12124/127735/street-league-racing-graphic-t-shirt.jpg?camera_label=folded-2"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              46,
+              51,
+              56,
+              61,
+              66
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              71,
+              74,
+              76,
+              79,
+              81
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              38,
+              42,
+              46,
+              50,
+              53
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 5000, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: low heat, Do not iron, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "T-shirts",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Regular fit",
+        "Crew neck",
+        "Neck Labels"
+      ],
+      "updatedAt": "2026-10-26 18:47:51+00:00"
+    },
+    {
+      "printifyId": "6adfa056d57b64376b0ba0ef",
+      "blueprintId": 1627,
+      "providerId": 26,
+      "type": "oversize",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "oversize-alas-silencio",
+        "en": "silence-wings-oversize-tee"
+      },
+      "name": {
+        "es": "Camiseta Oversize Alas del Silencio",
+        "en": "Wings of Silence Oversize T-Shirt"
+      },
+      "description": {
+        "es": "En silencio, crecemos. Un ángel alado con el lema In Silence We Grow serigrafiado en verde oliva: misticismo urbano para quien no necesita gritar. Silueta oversize de algodón denso que mantiene su forma lavado tras lavado.",
+        "en": "In silence, we grow. A winged angel with the In Silence We Grow motto on olive green — urban mysticism for those who never need to shout. Heavyweight cotton oversized silhouette that holds its shape wash after wash."
+      },
+      "fabric": {
+        "es": "Algodón 100% ring-spun, 240 g/m² · Tejido grueso de tacto premium",
+        "en": "100% ring-spun cotton, 240 GSM · Heavyweight premium hand-feel"
+      },
+      "fit": {
+        "es": "Fit oversize unisex · Hombro caído y caja ancha · Pide tu talla habitual",
+        "en": "Unisex oversized fit · Dropped shoulders, boxy cut · Take your usual size"
+      },
+      "priceEurCents": 3995,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Olive",
+          "nameEn": "Olive",
+          "nameEs": "Oliva",
+          "hex": "#6B6F4E",
+          "variants": {
+            "S": 116351,
+            "M": 116352,
+            "L": 116353,
+            "XL": 116354,
+            "2XL": 116355
+          },
+          "variantIds": [
+            116351,
+            116352,
+            116353,
+            116354,
+            116355
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/106706/not-today-sorry-wings-graphic-tee.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/109200/not-today-sorry-wings-graphic-tee.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/106706/not-today-sorry-wings-graphic-tee.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/109200/not-today-sorry-wings-graphic-tee.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/106708/not-today-sorry-wings-graphic-tee.jpg?camera_label=person-front",
+              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ef/116353/106709/not-today-sorry-wings-graphic-tee.jpg?camera_label=person-back"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              76,
+              78,
+              80,
+              82,
+              84
+            ]
+          },
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              57,
+              60,
+              63,
+              66,
+              69
+            ]
+          },
+          {
+            "labelEs": "Largo de manga",
+            "labelEn": "Sleeve length",
+            "values": [
+              21,
+              22,
+              23,
+              24,
+              25
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±2,5 cm · Corte oversize con hombro caído",
+        "toleranceEn": "Approx. tolerance ±2.5 cm · Oversize dropped-shoulder cut"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Build Your Brand BY102, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), with similar colors , Non-chlorine: bleach as needed, Tumble dry: low heat, Iron, steam or dry: low heat, do not iron on print, Do not dryclean, Keep away from fire"
+      },
+      "modelImage": null,
+      "tags": [
+        "Premium Apparel",
+        "T-shirts",
+        "Men's Clothing",
+        "Women's Clothing",
+        "DTG",
+        "Cotton",
+        "Crew neck",
+        "Unisex"
+      ],
+      "updatedAt": "2026-10-26 18:47:50+00:00"
+    },
+    {
+      "printifyId": "6adfa0523da78a12770adc33",
+      "blueprintId": 1627,
+      "providerId": 26,
+      "type": "oversize",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "oversize-jaque-mate",
+        "en": "checkmate-oversize-tee"
+      },
+      "name": {
+        "es": "Camiseta Oversize Jaque Mate",
+        "en": "Checkmate Oversize T-Shirt"
+      },
+      "description": {
+        "es": "La partida es tuya. Tres piezas de ajedrez en negro sobre blanco con iconos florales: estrategia, juego y estética fanzine en una camiseta de caída oversize auténtica. Hombro caído, cuerpo ancho y presencia de sobra. Juega tus cartas sin prisa.",
+        "en": "The game is yours. Three black chess pieces on white with floral icons — strategy, play and fanzine aesthetics on a true dropped-shoulder oversized tee. Wide body, relaxed drape, maximum presence. Play your hand, no rush."
+      },
+      "fabric": {
+        "es": "Algodón 100% ring-spun, 240 g/m² · Tejido grueso de tacto premium",
+        "en": "100% ring-spun cotton, 240 GSM · Heavyweight premium hand-feel"
+      },
+      "fit": {
+        "es": "Fit oversize unisex · Hombro caído y caja ancha · Pide tu talla habitual",
+        "en": "Unisex oversized fit · Dropped shoulders, boxy cut · Take your usual size"
+      },
+      "priceEurCents": 3995,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Blanc White",
+          "nameEn": "Blanc White",
+          "nameEs": "Blanco",
+          "hex": "#FFFFFF",
+          "variants": {
+            "S": 116369,
+            "M": 116370,
+            "L": 116371,
+            "XL": 116372,
+            "2XL": 116373
+          },
+          "variantIds": [
+            116369,
+            116370,
+            116371,
+            116372,
+            116373
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/106706/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/109200/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/106706/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/109200/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/106708/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=person-front",
+              "https://images-api.printify.com/mockup/6adfa0523da78a12770adc33/116371/106709/chess-pieces-and-floral-icons-lets-play-t-shirt.jpg?camera_label=person-back"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              76,
+              78,
+              80,
+              82,
+              84
+            ]
+          },
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              57,
+              60,
+              63,
+              66,
+              69
+            ]
+          },
+          {
+            "labelEs": "Largo de manga",
+            "labelEn": "Sleeve length",
+            "values": [
+              21,
+              22,
+              23,
+              24,
+              25
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±2,5 cm · Corte oversize con hombro caído",
+        "toleranceEn": "Approx. tolerance ±2.5 cm · Oversize dropped-shoulder cut"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Build Your Brand BY102, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), with similar colors , Non-chlorine: bleach as needed, Tumble dry: low heat, Iron, steam or dry: low heat, do not iron on print, Do not dryclean, Keep away from fire"
+      },
+      "modelImage": null,
+      "tags": [
+        "Premium Apparel",
+        "T-shirts",
+        "Men's Clothing",
+        "Women's Clothing",
+        "DTG",
+        "Cotton",
+        "Crew neck",
+        "Unisex"
+      ],
+      "updatedAt": "2026-10-26 18:47:46+00:00"
+    },
+    {
+      "printifyId": "6adfa058f621e0ea4a0e2976",
+      "blueprintId": 1627,
+      "providerId": 26,
+      "type": "oversize",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "oversize-menos-es-mas",
+        "en": "less-but-better-oversize-tee"
+      },
+      "name": {
+        "es": "Camiseta Oversize Menos Es Más",
+        "en": "Less But Better Oversize T-Shirt"
+      },
+      "description": {
+        "es": "La pieza más GZS de la colección: tipografía verde less, but better rematada con el asterisco dorado de la casa. Minimalismo con punto exacto de orgullo. Algodón denso blanco, caída oversize impecable y un mensaje que resume toda la filosofía de la marca.",
+        "en": "The most GZS piece in the drop: green less, but better lettering finished with the house gold asterisk. Minimalism with exactly enough pride. Heavyweight white cotton, flawless oversized drape, a message that sums up the whole brand philosophy."
+      },
+      "fabric": {
+        "es": "Algodón 100% ring-spun, 240 g/m² · Tejido grueso de tacto premium",
+        "en": "100% ring-spun cotton, 240 GSM · Heavyweight premium hand-feel"
+      },
+      "fit": {
+        "es": "Fit oversize unisex · Hombro caído y caja ancha · Pide tu talla habitual",
+        "en": "Unisex oversized fit · Dropped shoulders, boxy cut · Take your usual size"
+      },
+      "priceEurCents": 3995,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "White",
+          "nameEn": "White",
+          "nameEs": "Blanco",
+          "hex": "#FFFFFF",
+          "variants": {
+            "S": 116303,
+            "M": 116304,
+            "L": 116305,
+            "XL": 116306,
+            "2XL": 116307
+          },
+          "variantIds": [
+            116303,
+            116304,
+            116305,
+            116306,
+            116307
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/106706/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/109200/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/106706/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/109200/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/106708/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=person-front",
+              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2976/116305/106709/less-but-better-typography-and-monet-garden-bridge-art-t-shirt.jpg?camera_label=person-back"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              76,
+              78,
+              80,
+              82,
+              84
+            ]
+          },
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              57,
+              60,
+              63,
+              66,
+              69
+            ]
+          },
+          {
+            "labelEs": "Largo de manga",
+            "labelEn": "Sleeve length",
+            "values": [
+              21,
+              22,
+              23,
+              24,
+              25
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±2,5 cm · Corte oversize con hombro caído",
+        "toleranceEn": "Approx. tolerance ±2.5 cm · Oversize dropped-shoulder cut"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Build Your Brand BY102, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), with similar colors , Non-chlorine: bleach as needed, Tumble dry: low heat, Iron, steam or dry: low heat, do not iron on print, Do not dryclean, Keep away from fire"
+      },
+      "modelImage": null,
+      "tags": [
+        "Premium Apparel",
+        "T-shirts",
+        "Men's Clothing",
+        "Women's Clothing",
+        "DTG",
+        "Cotton",
+        "Crew neck",
+        "Unisex"
+      ],
+      "updatedAt": "2026-10-27 12:26:59+00:00"
+    },
+    {
+      "printifyId": "6adfa058f621e0ea4a0e2975",
+      "blueprintId": 1627,
+      "providerId": 26,
+      "type": "oversize",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "oversize-sin-reglas",
+        "en": "no-rules-oversize-tee"
+      },
+      "name": {
+        "es": "Camiseta Oversize Sin Reglas",
+        "en": "No Rules Oversize T-Shirt"
+      },
+      "description": {
+        "es": "No Rules, Just Moves. Formas líquidas y tipografía retorcida sobre arena: un gráfico hipnótico que no sigue ninguna cuadrícula. Confección oversize en crudo cálido, suave por dentro y con carácter por fuera. Muévete primero, que las reglas vienen detrás.",
+        "en": "No Rules, Just Moves. Liquid shapes and twisted type on warm sand — a hypnotic print that answers to no grid. Raw oversized build, soft inside, loud outside. Move first; the rules can catch up later."
+      },
+      "fabric": {
+        "es": "Algodón 100% ring-spun, 240 g/m² · Tejido grueso de tacto premium",
+        "en": "100% ring-spun cotton, 240 GSM · Heavyweight premium hand-feel"
+      },
+      "fit": {
+        "es": "Fit oversize unisex · Hombro caído y caja ancha · Pide tu talla habitual",
+        "en": "Unisex oversized fit · Dropped shoulders, boxy cut · Take your usual size"
+      },
+      "priceEurCents": 3995,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Sand",
+          "nameEn": "Sand",
+          "nameEs": "Arena",
+          "hex": "#D8C8AE",
+          "variants": {
+            "S": 116327,
+            "M": 116328,
+            "L": 116329,
+            "XL": 116330,
+            "2XL": 116331
+          },
+          "variantIds": [
+            116327,
+            116328,
+            116329,
+            116330,
+            116331
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/106706/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/109200/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/106706/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/109200/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/106708/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=person-front",
+              "https://images-api.printify.com/mockup/6adfa058f621e0ea4a0e2975/116329/106709/inspirational-floral-quote-graphic-tee-bloom-where-youre-planted.jpg?camera_label=person-back"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              76,
+              78,
+              80,
+              82,
+              84
+            ]
+          },
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              57,
+              60,
+              63,
+              66,
+              69
+            ]
+          },
+          {
+            "labelEs": "Largo de manga",
+            "labelEn": "Sleeve length",
+            "values": [
+              21,
+              22,
+              23,
+              24,
+              25
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±2,5 cm · Corte oversize con hombro caído",
+        "toleranceEn": "Approx. tolerance ±2.5 cm · Oversize dropped-shoulder cut"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Build Your Brand BY102, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), with similar colors , Non-chlorine: bleach as needed, Tumble dry: low heat, Iron, steam or dry: low heat, do not iron on print, Do not dryclean, Keep away from fire"
+      },
+      "modelImage": null,
+      "tags": [
+        "Premium Apparel",
+        "T-shirts",
+        "Men's Clothing",
+        "Women's Clothing",
+        "DTG",
+        "Cotton",
+        "Crew neck",
+        "Unisex"
+      ],
+      "updatedAt": "2026-10-26 18:47:52+00:00"
+    },
+    {
+      "printifyId": "6adfa059f621e0ea4a0e2977",
+      "blueprintId": 49,
+      "providerId": 402,
+      "type": "crewneck",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "sudadera-alter-ego",
+        "en": "alter-ego-sweatshirt"
+      },
+      "name": {
+        "es": "Sudadera Alter Ego",
+        "en": "Alter Ego Sweatshirt"
+      },
+      "description": {
+        "es": "Todos tenemos dos. ALTER EGO en rosa chicle sobre negro absoluto: un contraste dulce y salvaje a la vez. Felpa densa con tacto de algodón cepillado, costuras reforzadas y un fit que funciona igual con cargos que con vaqueros. Saca tu otra versión.",
+        "en": "We all have two. ALTER EGO in bubblegum pink on absolute black — sweet and savage at once. Dense brushed-cotton fleece, reinforced seams, a fit that works with cargos or jeans. Bring out your other side."
+      },
+      "fabric": {
+        "es": "Mezcla de algodón peinado, 320 g/m² · Felpa perchada interior · Puños acanalados",
+        "en": "Combed cotton blend, 320 GSM · Brushed fleece interior · Ribbed cuffs"
+      },
+      "fit": {
+        "es": "Fit regular unisex · Corta recta sobre cadera",
+        "en": "Unisex regular fit · Straight hip-length cut"
+      },
+      "priceEurCents": 4495,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Black",
+          "nameEn": "Black",
+          "nameEs": "Negro",
+          "hex": "#151515",
+          "variants": {
+            "S": 25397,
+            "M": 25428,
+            "L": 25459,
+            "XL": 25490,
+            "2XL": 25521
+          },
+          "variantIds": [
+            25397,
+            25428,
+            25459,
+            25490,
+            25521
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/98502/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/98503/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/98502/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/98503/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/128101/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=folded-2",
+              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2977/25459/128102/alter-ego-duality-study-graphic-sweatshirt.jpg?camera_label=lifestyle-2"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              51,
+              56,
+              61,
+              66,
+              71
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              69,
+              71,
+              74,
+              76,
+              79
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              85,
+              88,
+              90,
+              93,
+              95
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 18000, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: low heat, Do not iron, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "Sweatshirts",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Crew neck",
+        "Regular fit",
+        "Neck Labels"
+      ],
+      "updatedAt": "2026-10-26 18:47:53+00:00"
+    },
+    {
+      "printifyId": "6adfa054d57b64376b0ba0ea",
+      "blueprintId": 49,
+      "providerId": 402,
+      "type": "crewneck",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "sudadera-good-vibes",
+        "en": "good-vibes-sweatshirt"
+      },
+      "name": {
+        "es": "Sudadera Good Vibes",
+        "en": "Good Vibes Sweatshirt"
+      },
+      "description": {
+        "es": "Good vibes, sin subtítulos. Tipografía burbuja en negro sobre felpa blanca: pura energía positiva con estética skater. Interior perchado que abriga sin pesar, puños y cintura acanalados que mantienen la forma. Tu capa de buen humor para el día a día.",
+        "en": "Good vibes, no subtitles needed. Bubble lettering in black on white fleece — pure positive energy with skater aesthetics. Brushed interior that warms without weight, ribbed cuffs and hem that keep their shape. Your everyday good-mood layer."
+      },
+      "fabric": {
+        "es": "Mezcla de algodón peinado, 320 g/m² · Felpa perchada interior · Puños acanalados",
+        "en": "Combed cotton blend, 320 GSM · Brushed fleece interior · Ribbed cuffs"
+      },
+      "fit": {
+        "es": "Fit regular unisex · Corta recta sobre cadera",
+        "en": "Unisex regular fit · Straight hip-length cut"
+      },
+      "priceEurCents": 4495,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "White",
+          "nameEn": "White",
+          "nameEs": "Blanco",
+          "hex": "#FFFFFF",
+          "variants": {
+            "S": 25396,
+            "M": 25427,
+            "L": 25458,
+            "XL": 25489,
+            "2XL": 25520
+          },
+          "variantIds": [
+            25396,
+            25427,
+            25458,
+            25489,
+            25520
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/98502/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/98503/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/98502/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/98503/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/128101/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=folded-2",
+              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0ea/25458/128102/good-vibes-sweatshirt-positive-quote-crewneck.jpg?camera_label=lifestyle-2"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              51,
+              56,
+              61,
+              66,
+              71
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              69,
+              71,
+              74,
+              76,
+              79
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              85,
+              88,
+              90,
+              93,
+              95
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 18000, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: low heat, Do not iron, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "Sweatshirts",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Crew neck",
+        "Regular fit",
+        "Neck Labels"
+      ],
+      "updatedAt": "2026-10-26 18:47:48+00:00"
+    },
+    {
+      "printifyId": "6adfa055d57b64376b0ba0ec",
+      "blueprintId": 49,
+      "providerId": 402,
+      "type": "crewneck",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "sudadera-gorgeous-retrato",
+        "en": "gorgeous-portrait-sweatshirt"
+      },
+      "name": {
+        "es": "Sudadera Gorgeous Retrato",
+        "en": "Gorgeous Portrait Sweatshirt"
+      },
+      "description": {
+        "es": "Un grabado renacentista, una tipografía blackletter y una palabra: GORGEOUS. Arte clásico recontextualizado en una sudadera blanca de felpa premium. Para quienes llevan la cultura en la espalda —literalmente— y el estilo en el día a día.",
+        "en": "A Renaissance engraving, blackletter type, and one word: GORGEOUS. Classical art recontextualized on a premium white fleece sweatshirt. For those who wear culture on their back — literally — and style every single day."
+      },
+      "fabric": {
+        "es": "Mezcla de algodón peinado, 320 g/m² · Felpa perchada interior · Puños acanalados",
+        "en": "Combed cotton blend, 320 GSM · Brushed fleece interior · Ribbed cuffs"
+      },
+      "fit": {
+        "es": "Fit regular unisex · Corta recta sobre cadera",
+        "en": "Unisex regular fit · Straight hip-length cut"
+      },
+      "priceEurCents": 4495,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "White",
+          "nameEn": "White",
+          "nameEs": "Blanco",
+          "hex": "#FFFFFF",
+          "variants": {
+            "S": 25396,
+            "M": 25427,
+            "L": 25458,
+            "XL": 25489,
+            "2XL": 25520
+          },
+          "variantIds": [
+            25396,
+            25427,
+            25458,
+            25489,
+            25520
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/98502/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/98503/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/98502/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/98503/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/128101/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=folded-2",
+              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ec/25458/128102/gorgeous-illustrated-portrait-sweatshirt.jpg?camera_label=lifestyle-2"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              51,
+              56,
+              61,
+              66,
+              71
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              69,
+              71,
+              74,
+              76,
+              79
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              85,
+              88,
+              90,
+              93,
+              95
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 18000, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: low heat, Do not iron, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "Sweatshirts",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Crew neck",
+        "Regular fit",
+        "Neck Labels"
+      ],
+      "updatedAt": "2026-10-27 12:07:50+00:00"
+    },
+    {
+      "printifyId": "6adfa055d57b64376b0ba0ed",
+      "blueprintId": 49,
+      "providerId": 402,
+      "type": "crewneck",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "sudadera-silencio-rojo",
+        "en": "red-silence-sweatshirt"
+      },
+      "name": {
+        "es": "Sudadera Silencio Rojo",
+        "en": "Red Silence Sweatshirt"
+      },
+      "description": {
+        "es": "El rojo más serio de DISRUPTIVE. La palabra SILENCE en vertical dentro de una caja negra: diseño gráfico puro, sin ruido de más. Felpa roja de alto gramaje, cuello redondo cómodo y una actitud que llanta la habitación sin decir ni una palabra.",
+        "en": "The most serious red in DISRUPTIVE. The word SILENCE stacked vertically inside a black box — pure graphic design, zero extra noise. Heavyweight red fleece, comfortable crew neck, an attitude that fills the room without saying a word."
+      },
+      "fabric": {
+        "es": "Mezcla de algodón peinado, 320 g/m² · Felpa perchada interior · Puños acanalados",
+        "en": "Combed cotton blend, 320 GSM · Brushed fleece interior · Ribbed cuffs"
+      },
+      "fit": {
+        "es": "Fit regular unisex · Corta recta sobre cadera",
+        "en": "Unisex regular fit · Straight hip-length cut"
+      },
+      "priceEurCents": 4495,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Red",
+          "nameEn": "Red",
+          "nameEs": "Rojo",
+          "hex": "#B5272D",
+          "variants": {
+            "S": 25391,
+            "M": 25422,
+            "L": 25453,
+            "XL": 25484,
+            "2XL": 25515
+          },
+          "variantIds": [
+            25391,
+            25422,
+            25453,
+            25484,
+            25515
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/98502/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/98503/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/98502/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/98503/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/128101/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=folded-2",
+              "https://images-api.printify.com/mockup/6adfa055d57b64376b0ba0ed/25453/128102/silence-streetwear-graphic-sweatshirt-black-and-white-portrait-design.jpg?camera_label=lifestyle-2"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              51,
+              56,
+              61,
+              66,
+              71
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              69,
+              71,
+              74,
+              76,
+              79
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              85,
+              88,
+              90,
+              93,
+              95
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 18000, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: low heat, Do not iron, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "Sweatshirts",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Crew neck",
+        "Regular fit",
+        "Neck Labels"
+      ],
+      "updatedAt": "2026-10-26 18:47:49+00:00"
+    },
+    {
+      "printifyId": "6adfa056d57b64376b0ba0ee",
+      "blueprintId": 77,
+      "providerId": 402,
+      "type": "hoodie",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "hoodie-cerezas-less-noise",
+        "en": "cherries-less-noise-hoodie"
+      },
+      "name": {
+        "es": "Sudadera con Capucha Cerezas Less Noise",
+        "en": "Cherries Less Noise Hoodie"
+      },
+      "description": {
+        "es": "Less Noise, More You. Un escudo de cerezas bordado en azul bebé con tipografía serif: dulce por fuera, rebelde por dentro. Capucha forrada, felpa suave y un fit relajado que invita a no quitártela. Tu uniforme para días de bajo ruido y alto estilo.",
+        "en": "Less Noise, More You. A cherry crest in baby blue with serif lettering — sweet on the outside, rebellious within. Lined hood, soft fleece, a relaxed fit you'll never want to take off. Your uniform for low-noise, high-style days."
+      },
+      "fabric": {
+        "es": "Felpa perchada 80% algodón / 20% poliéster reciclado, 380 g/m² · Capucha doble",
+        "en": "Brushed fleece 80% cotton / 20% recycled polyester, 380 GSM · Double-lined hood"
+      },
+      "fit": {
+        "es": "Fit oversize unisex · Capucha con cordones · Bolsillo canguro",
+        "en": "Unisex oversized fit · Drawstring hood · Kangaroo pocket"
+      },
+      "priceEurCents": 4995,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Light Blue",
+          "nameEn": "Light Blue",
+          "nameEs": "Azul claro",
+          "hex": "#BFDCEC",
+          "variants": {
+            "S": 42235,
+            "M": 42236,
+            "L": 42237,
+            "XL": 42238,
+            "2XL": 42239
+          },
+          "variantIds": [
+            42235,
+            42236,
+            42237,
+            42238,
+            42239
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/98424/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/98425/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/98424/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/98425/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/98432/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=folded",
+              "https://images-api.printify.com/mockup/6adfa056d57b64376b0ba0ee/42237/100685/cherry-fruit-graphic-hoodie-less-noisse-more-you.jpg?camera_label=front-collar-closeup"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              51,
+              56,
+              61,
+              66,
+              71
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              69,
+              71,
+              74,
+              76,
+              79
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              85,
+              88,
+              90,
+              93,
+              95
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 18500, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: medium, Iron, steam or dry: low heat, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "Hoodies",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Regular fit",
+        "Neck Labels",
+        "TikTok"
+      ],
+      "updatedAt": "2026-10-26 18:47:50+00:00"
+    },
+    {
+      "printifyId": "6adfa053d57b64376b0ba0e9",
+      "blueprintId": 77,
+      "providerId": 402,
+      "type": "hoodie",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "hoodie-memory-rosa",
+        "en": "memory-pink-hoodie"
+      },
+      "name": {
+        "es": "Sudadera con Capucha Memory Rosa",
+        "en": "Memory Pink Hoodie"
+      },
+      "description": {
+        "es": "MEMORY, repetido como un recuerdo que no se va. Capucha doble, bolsillo canguro y felpa rosa empolvada de 380 g/m²: la prenda refugio de la colección. Estampado tonal monocromo, cordones a juego y una calidez que se siente en cuanto te la pones.",
+        "en": "MEMORY, repeated like a feeling you can't shake. Double-lined hood, kangaroo pocket and dusty-pink 380 GSM fleece — the collection's refuge piece. Tonal monochrome print, matching drawstrings, instant warmth the second you put it on."
+      },
+      "fabric": {
+        "es": "Felpa perchada 80% algodón / 20% poliéster reciclado, 380 g/m² · Capucha doble",
+        "en": "Brushed fleece 80% cotton / 20% recycled polyester, 380 GSM · Double-lined hood"
+      },
+      "fit": {
+        "es": "Fit oversize unisex · Capucha con cordones · Bolsillo canguro",
+        "en": "Unisex oversized fit · Drawstring hood · Kangaroo pocket"
+      },
+      "priceEurCents": 4995,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Light Pink",
+          "nameEn": "Light Pink",
+          "nameEs": "Rosa claro",
+          "hex": "#F3CCDC",
+          "variants": {
+            "S": 42148,
+            "M": 42149,
+            "L": 42150,
+            "XL": 42151,
+            "2XL": 42152
+          },
+          "variantIds": [
+            42148,
+            42149,
+            42150,
+            42151,
+            42152
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/98424/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/98425/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/98424/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/98425/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/98432/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=folded",
+              "https://images-api.printify.com/mockup/6adfa053d57b64376b0ba0e9/42150/100685/memory-graphic-hoodie-pink-vintage-photo-design.jpg?camera_label=front-collar-closeup"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              51,
+              56,
+              61,
+              66,
+              71
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              69,
+              71,
+              74,
+              76,
+              79
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              85,
+              88,
+              90,
+              93,
+              95
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 18500, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: medium, Iron, steam or dry: low heat, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "Hoodies",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Regular fit",
+        "Neck Labels",
+        "TikTok"
+      ],
+      "updatedAt": "2026-10-26 18:47:47+00:00"
+    },
+    {
+      "printifyId": "6adfa059f621e0ea4a0e2978",
+      "blueprintId": 77,
+      "providerId": 402,
+      "type": "hoodie",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "hoodie-no-rules",
+        "en": "no-rules-hoodie"
+      },
+      "name": {
+        "es": "Sudadera con Capucha No Rules",
+        "en": "No Rules Hoodie"
+      },
+      "description": {
+        "es": "La versión con capucha del manifiesto. Una tarjeta verde con trébol sobre negro: mínimo en la superficie, directa al mensaje. Felpa premium de 380 g/m², capucha doble y costuras que aguantan el ritmo de la calle. Ninguna regla, todo estilo.",
+        "en": "The hoodie version of the manifesto. A green clover card on black — minimal on the surface, direct in message. Premium 380 GSM fleece, double-lined hood and seams built for street pace. No rules, all style."
+      },
+      "fabric": {
+        "es": "Felpa perchada 80% algodón / 20% poliéster reciclado, 380 g/m² · Capucha doble",
+        "en": "Brushed fleece 80% cotton / 20% recycled polyester, 380 GSM · Double-lined hood"
+      },
+      "fit": {
+        "es": "Fit oversize unisex · Capucha con cordones · Bolsillo canguro",
+        "en": "Unisex oversized fit · Drawstring hood · Kangaroo pocket"
+      },
+      "priceEurCents": 4995,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "Black",
+          "nameEn": "Black",
+          "nameEs": "Negro",
+          "hex": "#151515",
+          "variants": {
+            "S": 32918,
+            "M": 32919,
+            "L": 32920,
+            "XL": 32921,
+            "2XL": 32922
+          },
+          "variantIds": [
+            32918,
+            32919,
+            32920,
+            32921,
+            32922
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/98424/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/98425/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/98424/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/98425/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/98432/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=folded",
+              "https://images-api.printify.com/mockup/6adfa059f621e0ea4a0e2978/32920/100685/no-rules-just-moves-dance-graphic-hoodie.jpg?camera_label=front-collar-closeup"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              51,
+              56,
+              61,
+              66,
+              71
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              69,
+              71,
+              74,
+              76,
+              79
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              85,
+              88,
+              90,
+              93,
+              95
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 18500, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: medium, Iron, steam or dry: low heat, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "Hoodies",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Regular fit",
+        "Neck Labels",
+        "TikTok"
+      ],
+      "updatedAt": "2026-10-27 12:57:17+00:00"
+    },
+    {
+      "printifyId": "6adfa054d57b64376b0ba0eb",
+      "blueprintId": 77,
+      "providerId": 402,
+      "type": "hoodie",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "hoodie-rock-band-90",
+        "en": "rock-band-90-hoodie"
+      },
+      "name": {
+        "es": "Sudadera con Capucha Rock Band 90",
+        "en": "Rock Band 90 Hoodie"
+      },
+      "description": {
+        "es": "Como la camiseta de gira que llevaste hasta romperla. Cartel vintage Since 1990 en blanco, gráfico de merch clásico y esa nostalgia de los 90 que nunca envejece. Felpa blanca de alto gramaje con capucha amplia: música, actitud y abrigo en una sola prenda.",
+        "en": "Like the tour tee you wore until it fell apart. A vintage Since 1990 poster in white, classic merch graphics and '90s nostalgia that never ages. Heavyweight white fleece with a roomy hood — music, attitude and warmth in one piece."
+      },
+      "fabric": {
+        "es": "Felpa perchada 80% algodón / 20% poliéster reciclado, 380 g/m² · Capucha doble",
+        "en": "Brushed fleece 80% cotton / 20% recycled polyester, 380 GSM · Double-lined hood"
+      },
+      "fit": {
+        "es": "Fit oversize unisex · Capucha con cordones · Bolsillo canguro",
+        "en": "Unisex oversized fit · Drawstring hood · Kangaroo pocket"
+      },
+      "priceEurCents": 4995,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        {
+          "id": "White",
+          "nameEn": "White",
+          "nameEs": "Blanco",
+          "hex": "#FFFFFF",
+          "variants": {
+            "S": 32910,
+            "M": 32911,
+            "L": 32912,
+            "XL": 32913,
+            "2XL": 32914
+          },
+          "variantIds": [
+            32910,
+            32911,
+            32912,
+            32913,
+            32914
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/98424/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=front",
+            "back": "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/98425/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=back",
+            "gallery": [
+              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/98424/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/98425/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/98432/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=folded",
+              "https://images-api.printify.com/mockup/6adfa054d57b64376b0ba0eb/32912/100685/rock-band-since-1990-graphic-hoodie-vintage-music-design.jpg?camera_label=front-collar-closeup"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "rows": [
+          {
+            "labelEs": "Ancho de pecho",
+            "labelEn": "Chest width",
+            "values": [
+              51,
+              56,
+              61,
+              66,
+              71
+            ]
+          },
+          {
+            "labelEs": "Largo total",
+            "labelEn": "Total length",
+            "values": [
+              69,
+              71,
+              74,
+              76,
+              79
+            ]
+          },
+          {
+            "labelEs": "Largo de manga (desde centro espalda)",
+            "labelEn": "Sleeve length (center back)",
+            "values": [
+              85,
+              88,
+              90,
+              93,
+              95
+            ]
+          }
+        ],
+        "toleranceEs": "Tolerancia aproximada ±4 cm",
+        "toleranceEn": "Approx. tolerance ±4 cm"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Gildan 18500, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Machine wash: cold (max 30C or 90F), Non-chlorine: bleach as needed, Tumble dry: medium, Iron, steam or dry: low heat, Do not dryclean"
+      },
+      "modelImage": null,
+      "tags": [
+        "Men's Clothing",
+        "Hoodies",
+        "Women's Clothing",
+        "DTG",
+        "Unisex",
+        "Regular fit",
+        "Neck Labels",
+        "TikTok"
+      ],
+      "updatedAt": "2026-10-26 18:47:48+00:00"
+    },
+    {
+      "printifyId": "6ae0726312b6ccc4ad0420de",
+      "blueprintId": 1741,
+      "providerId": 410,
+      "type": "cap",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "gorra-cerezas",
+        "en": "cherries-cap"
+      },
+      "name": {
+        "es": "Gorra Cerezas",
+        "en": "Cherries Cap"
+      },
+      "description": {
+        "es": "Dos cerezas bordadas y cero complicaciones. Gorra dad hat en crudo con bordado frontal de alto detalle y visera curva de corte clásico. Algodón cepillado, cierre ajustable y esa actitud relajada que eleva cualquier conjunto en dos segundos.",
+        "en": "Two embroidered cherries, zero complications. Off-white dad hat with a high-detail front embroidery and a classic curved visor. Brushed cotton, adjustable closure, relaxed attitude that lifts any outfit in two seconds."
+      },
+      "fabric": {
+        "es": "Sarga de algodón lavado · Cierre metálico ajustable · Seis paneles",
+        "en": "Washed cotton twill · Adjustable metal closure · Six-panel build"
+      },
+      "fit": {
+        "es": "Talla única ajustable (52–60 cm de contorno)",
+        "en": "One size, adjustable (52–60 cm circumference)"
+      },
+      "priceEurCents": 3295,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "Única"
+      ],
+      "colors": [
+        {
+          "id": "Black",
+          "nameEn": "Black",
+          "nameEs": "Negro",
+          "hex": "#151515",
+          "variants": {
+            "Única": 118690
+          },
+          "variantIds": [
+            118690
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118690/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118690/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118690/109470/embroidered-cherry-design-baseball-cap.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118690/110063/embroidered-cherry-design-baseball-cap.jpg?camera_label=person-1-front"
+            ]
+          }
+        },
+        {
+          "id": "Pacific",
+          "nameEn": "Pacific",
+          "nameEs": "Pacífico",
+          "hex": "#4A7A8C",
+          "variants": {
+            "Única": 118692
+          },
+          "variantIds": [
+            118692
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118692/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118692/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118692/109470/embroidered-cherry-design-baseball-cap.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118692/110063/embroidered-cherry-design-baseball-cap.jpg?camera_label=person-1-front"
+            ]
+          }
+        },
+        {
+          "id": "Jungle",
+          "nameEn": "Jungle",
+          "nameEs": "Jungla",
+          "hex": "#4A5D3A",
+          "variants": {
+            "Única": 118693
+          },
+          "variantIds": [
+            118693
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118693/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118693/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118693/109470/embroidered-cherry-design-baseball-cap.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118693/110063/embroidered-cherry-design-baseball-cap.jpg?camera_label=person-1-front"
+            ]
+          }
+        },
+        {
+          "id": "Oyster",
+          "nameEn": "Oyster",
+          "nameEs": "Crudo Oyster",
+          "hex": "#E8E0D2",
+          "variants": {
+            "Única": 118694
+          },
+          "variantIds": [
+            118694
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118694/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118694/109469/embroidered-cherry-design-baseball-cap.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118694/109470/embroidered-cherry-design-baseball-cap.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6ae0726312b6ccc4ad0420de/118694/110063/embroidered-cherry-design-baseball-cap.jpg?camera_label=person-1-front"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "Única"
+        ],
+        "rows": [
+          {
+            "labelEs": "Contorno ajustable",
+            "labelEn": "Adjustable circumference",
+            "values": [
+              "52–60"
+            ]
+          },
+          {
+            "labelEs": "Altura de copa",
+            "labelEn": "Crown height",
+            "values": [
+              11
+            ]
+          },
+          {
+            "labelEs": "Ancho de visera",
+            "labelEn": "Visor width",
+            "values": [
+              18
+            ]
+          },
+          {
+            "labelEs": "Largo de visera",
+            "labelEn": "Visor length",
+            "values": [
+              7
+            ]
+          }
+        ],
+        "toleranceEs": "Cierre metálico regulable",
+        "toleranceEn": "Adjustable metal closure"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Econscious EC7000, two year warranty in the EU and Northern Ireland",
+        "Care instructions": "Use warm water and dish soap and clean spots off your hat. It's not necessary to soak the whole item. For hard to clean spots use a soft bristled brush."
+      },
+      "modelImage": null,
+      "tags": [
+        "Unisex",
+        "Hats",
+        "Embroidery",
+        "Accessories"
+      ],
+      "updatedAt": "2026-10-27 09:44:03+00:00"
+    },
+    {
+      "printifyId": "6ae07261136de5382006afc6",
+      "blueprintId": 1741,
+      "providerId": 410,
+      "type": "cap",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "gorra-flair",
+        "en": "flair-cap"
+      },
+      "name": {
+        "es": "Gorra Flair Llama",
+        "en": "Flair Flame Cap"
+      },
+      "description": {
+        "es": "Bordado con fuego, nunca con prisa. Letras flame multicolor en la parte frontal de una gorra dad hat de sarga lavada. Cierre metálico ajustable, seis paneles y copa de tacto blando. El remate que cambia por completo cualquier look básico.",
+        "en": "Embroidered with fire, never in a hurry. Multicolor flame lettering on the front of a washed-twill dad hat. Adjustable metal closure, six panels, soft unstructured crown. The finishing touch that completely changes any basic look."
+      },
+      "fabric": {
+        "es": "Sarga de algodón lavado · Cierre metálico ajustable · Seis paneles",
+        "en": "Washed cotton twill · Adjustable metal closure · Six-panel build"
+      },
+      "fit": {
+        "es": "Talla única ajustable (52–60 cm de contorno)",
+        "en": "One size, adjustable (52–60 cm circumference)"
+      },
+      "priceEurCents": 3295,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "Única"
+      ],
+      "colors": [
+        {
+          "id": "Black",
+          "nameEn": "Black",
+          "nameEs": "Negro",
+          "hex": "#151515",
+          "variants": {
+            "Única": 118690
+          },
+          "variantIds": [
+            118690
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118690/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118690/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118690/109470/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118690/110063/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=person-1-front"
+            ]
+          }
+        },
+        {
+          "id": "Pacific",
+          "nameEn": "Pacific",
+          "nameEs": "Pacífico",
+          "hex": "#4A7A8C",
+          "variants": {
+            "Única": 118692
+          },
+          "variantIds": [
+            118692
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118692/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118692/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118692/109470/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118692/110063/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=person-1-front"
+            ]
+          }
+        },
+        {
+          "id": "Oyster",
+          "nameEn": "Oyster",
+          "nameEs": "Crudo Oyster",
+          "hex": "#E8E0D2",
+          "variants": {
+            "Única": 118694
+          },
+          "variantIds": [
+            118694
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118694/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118694/109469/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118694/109470/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=back",
+              "https://images-api.printify.com/mockup/6ae07261136de5382006afc6/118694/110063/abstract-multicolor-embroidery-baseball-cap.jpg?camera_label=person-1-front"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "Única"
+        ],
+        "rows": [
+          {
+            "labelEs": "Contorno ajustable",
+            "labelEn": "Adjustable circumference",
+            "values": [
+              "52–60"
+            ]
+          },
+          {
+            "labelEs": "Altura de copa",
+            "labelEn": "Crown height",
+            "values": [
+              11
+            ]
+          },
+          {
+            "labelEs": "Ancho de visera",
+            "labelEn": "Visor width",
+            "values": [
+              18
+            ]
+          },
+          {
+            "labelEs": "Largo de visera",
+            "labelEn": "Visor length",
+            "values": [
+              7
+            ]
+          }
+        ],
+        "toleranceEs": "Cierre metálico regulable",
+        "toleranceEn": "Adjustable metal closure"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Econscious EC7000, two year warranty in the EU and Northern Ireland",
+        "Care instructions": "Use warm water and dish soap and clean spots off your hat. It's not necessary to soak the whole item. For hard to clean spots use a soft bristled brush."
+      },
+      "modelImage": null,
+      "tags": [
+        "Unisex",
+        "Hats",
+        "Embroidery",
+        "Accessories"
+      ],
+      "updatedAt": "2026-10-27 09:44:01+00:00"
+    },
+    {
+      "printifyId": "6ae0773575e663e3a60cd4bf",
+      "blueprintId": 1691,
+      "providerId": 410,
+      "type": "beanie",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "gorro-cerezas-sold",
+        "en": "cherries-sold-beanie"
+      },
+      "name": {
+        "es": "Gorro Cerezas Sold",
+        "en": "Cherries Sold Beanie"
+      },
+      "description": {
+        "es": "Cerezas con sello vintage SOLD: pequeño detalle, mucha personalidad. Gorro blanco de punto grueso con puño, ideal para rematar sudaderas y abrigos. Calidez ligera, caída perfecta y un bordado que la gente te preguntará por la calle.",
+        "en": "Cherries with a vintage SOLD tag — small detail, big personality. White chunky-knit cuffed beanie, made to finish off hoodies and coats. Lightweight warmth, perfect slouch, an embroidery people will stop you to ask about."
+      },
+      "fabric": {
+        "es": "Punto elástico de tacto suave · Puño doblado · Bordado frontal",
+        "en": "Soft-touch stretch knit · Folded cuff · Front embroidery"
+      },
+      "fit": {
+        "es": "Talla única (44–47 cm de contorno, punto elástico)",
+        "en": "One size (44–47 cm circumference, stretch knit)"
+      },
+      "priceEurCents": 2895,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "Única"
+      ],
+      "colors": [
+        {
+          "id": "Baby Pink",
+          "nameEn": "Baby Pink",
+          "nameEs": "Rosa bebé",
+          "hex": "#F4C9D4",
+          "variants": {
+            "Única": 116416
+          },
+          "variantIds": [
+            116416
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116416/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116416/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116416/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Black",
+          "nameEn": "Black",
+          "nameEs": "Negro",
+          "hex": "#151515",
+          "variants": {
+            "Única": 116417
+          },
+          "variantIds": [
+            116417
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116417/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116417/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116417/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Brown",
+          "nameEn": "Brown",
+          "nameEs": "Marrón",
+          "hex": "#7A5230",
+          "variants": {
+            "Única": 116419
+          },
+          "variantIds": [
+            116419
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116419/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116419/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116419/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Dark Grey",
+          "nameEn": "Dark Grey",
+          "nameEs": "Gris oscuro",
+          "hex": "#565656",
+          "variants": {
+            "Única": 116421
+          },
+          "variantIds": [
+            116421
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116421/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116421/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116421/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Gold",
+          "nameEn": "Gold",
+          "nameEs": "Oro",
+          "hex": "#C9A227",
+          "variants": {
+            "Única": 116422
+          },
+          "variantIds": [
+            116422
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116422/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116422/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116422/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Navy",
+          "nameEn": "Navy",
+          "nameEs": "Marino",
+          "hex": "#202C47",
+          "variants": {
+            "Única": 116425
+          },
+          "variantIds": [
+            116425
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116425/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116425/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116425/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Olive",
+          "nameEn": "Olive",
+          "nameEs": "Oliva",
+          "hex": "#6B6F4E",
+          "variants": {
+            "Única": 116426
+          },
+          "variantIds": [
+            116426
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116426/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116426/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116426/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Spruce",
+          "nameEn": "Spruce",
+          "nameEs": "Abeto",
+          "hex": "#2F5D50",
+          "variants": {
+            "Única": 116432
+          },
+          "variantIds": [
+            116432
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116432/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116432/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116432/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "White",
+          "nameEn": "White",
+          "nameEs": "Blanco",
+          "hex": "#FFFFFF",
+          "variants": {
+            "Única": 116433
+          },
+          "variantIds": [
+            116433
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116433/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116433/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/116433/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Heather Grey",
+          "nameEn": "Heather Grey",
+          "nameEs": "Gris jaspeado",
+          "hex": "#B5B3B0",
+          "variants": {
+            "Única": 118271
+          },
+          "variantIds": [
+            118271
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/118271/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/118271/109382/cherry-embroidery-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae0773575e663e3a60cd4bf/118271/109401/cherry-embroidery-beanie.jpg?camera_label=back"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "Única"
+        ],
+        "rows": [
+          {
+            "labelEs": "Largo sin doblar",
+            "labelEn": "Length uncuffed",
+            "values": [
+              30
+            ]
+          },
+          {
+            "labelEs": "Largo con puño",
+            "labelEn": "Length cuffed",
+            "values": [
+              23
+            ]
+          },
+          {
+            "labelEs": "Ancho",
+            "labelEn": "Width",
+            "values": [
+              21
+            ]
+          },
+          {
+            "labelEs": "Contorno (punto elástico)",
+            "labelEn": "Circumference (stretch knit)",
+            "values": [
+              "44–47"
+            ]
+          }
+        ],
+        "toleranceEs": "Tejido elástico, se adapta al contorno",
+        "toleranceEn": "Stretch knit adapts to head size"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Yupoong 1501KC, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Use warm water and dish soap and clean spots off your hat. It's not necessary to soak the whole item. For hard to clean spots use a soft bristled brush."
+      },
+      "modelImage": null,
+      "tags": [
+        "Embroidery",
+        "Hats",
+        "Accessories",
+        "Unisex",
+        "Beanies"
+      ],
+      "updatedAt": "2026-10-27 12:26:58+00:00"
+    },
+    {
+      "printifyId": "6ae075cf9d3ed354f7003d89",
+      "blueprintId": 1691,
+      "providerId": 410,
+      "type": "beanie",
+      "collection": "DISRUPTIVE",
+      "slug": {
+        "es": "gorro-flair",
+        "en": "flair-beanie"
+      },
+      "name": {
+        "es": "Gorro Flair",
+        "en": "Flair Beanie"
+      },
+      "description": {
+        "es": "El invierno también tiene estilo. Gorro de punto con puño y bordado flame FLAIR en colores: tejido elástico que abraza sin apretar y mantiene la forma día tras día. Combínalo con la gorra a juego o roba el protagonismo tú solo.",
+        "en": "Winter has style too. Cuffed knit beanie with a multicolor FLAIR flame embroidery — stretchy knit that hugs without squeezing and keeps its shape day after day. Match it with the cap or let it steal the show alone."
+      },
+      "fabric": {
+        "es": "Punto elástico de tacto suave · Puño doblado · Bordado frontal",
+        "en": "Soft-touch stretch knit · Folded cuff · Front embroidery"
+      },
+      "fit": {
+        "es": "Talla única (44–47 cm de contorno, punto elástico)",
+        "en": "One size (44–47 cm circumference, stretch knit)"
+      },
+      "priceEurCents": 2895,
+      "currency": "EUR",
+      "unisex": true,
+      "sizes": [
+        "Única"
+      ],
+      "colors": [
+        {
+          "id": "Baby Pink",
+          "nameEn": "Baby Pink",
+          "nameEs": "Rosa bebé",
+          "hex": "#F4C9D4",
+          "variants": {
+            "Única": 116416
+          },
+          "variantIds": [
+            116416
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116416/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116416/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116416/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Black",
+          "nameEn": "Black",
+          "nameEs": "Negro",
+          "hex": "#151515",
+          "variants": {
+            "Única": 116417
+          },
+          "variantIds": [
+            116417
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116417/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116417/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116417/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Brown",
+          "nameEn": "Brown",
+          "nameEs": "Marrón",
+          "hex": "#7A5230",
+          "variants": {
+            "Única": 116419
+          },
+          "variantIds": [
+            116419
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116419/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116419/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116419/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Dark Grey",
+          "nameEn": "Dark Grey",
+          "nameEs": "Gris oscuro",
+          "hex": "#565656",
+          "variants": {
+            "Única": 116421
+          },
+          "variantIds": [
+            116421
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116421/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116421/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116421/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Gold",
+          "nameEn": "Gold",
+          "nameEs": "Oro",
+          "hex": "#C9A227",
+          "variants": {
+            "Única": 116422
+          },
+          "variantIds": [
+            116422
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116422/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116422/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116422/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "Navy",
+          "nameEn": "Navy",
+          "nameEs": "Marino",
+          "hex": "#202C47",
+          "variants": {
+            "Única": 116425
+          },
+          "variantIds": [
+            116425
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116425/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116425/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116425/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+            ]
+          }
+        },
+        {
+          "id": "White",
+          "nameEn": "White",
+          "nameEs": "Blanco",
+          "hex": "#FFFFFF",
+          "variants": {
+            "Única": 116433
+          },
+          "variantIds": [
+            116433
+          ],
+          "images": {
+            "front": "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116433/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+            "back": null,
+            "gallery": [
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116433/109382/colorful-embroidered-text-beanie.jpg?camera_label=front",
+              "https://images-api.printify.com/mockup/6ae075cf9d3ed354f7003d89/116433/109401/colorful-embroidered-text-beanie.jpg?camera_label=back"
+            ]
+          }
+        }
+      ],
+      "sizeGuide": {
+        "unit": "cm",
+        "sizes": [
+          "Única"
+        ],
+        "rows": [
+          {
+            "labelEs": "Largo sin doblar",
+            "labelEn": "Length uncuffed",
+            "values": [
+              30
+            ]
+          },
+          {
+            "labelEs": "Largo con puño",
+            "labelEn": "Length cuffed",
+            "values": [
+              23
+            ]
+          },
+          {
+            "labelEs": "Ancho",
+            "labelEn": "Width",
+            "values": [
+              21
+            ]
+          },
+          {
+            "labelEs": "Contorno (punto elástico)",
+            "labelEn": "Circumference (stretch knit)",
+            "values": [
+              "44–47"
+            ]
+          }
+        ],
+        "toleranceEs": "Tejido elástico, se adapta al contorno",
+        "toleranceEn": "Stretch knit adapts to head size"
+      },
+      "gpsr": {
+        "EU representative": "HONSON VENTURES LIMITED, gpsr@honsonventures.com, 3, Gnaftis House flat 102, Limassol, Mesa Geitonia, 4003, CY",
+        "Product information": "Yupoong 1501KC, two year warranty in the EU and Northern Ireland",
+        "Warnings, Hazard": "For adults",
+        "Care instructions": "Use warm water and dish soap and clean spots off your hat. It's not necessary to soak the whole item. For hard to clean spots use a soft bristled brush."
+      },
+      "modelImage": null,
+      "tags": [
+        "Embroidery",
+        "Hats",
+        "Accessories",
+        "Unisex",
+        "Beanies"
+      ],
+      "updatedAt": "2026-10-27 12:26:59+00:00"
+    }
+  ]
+}
