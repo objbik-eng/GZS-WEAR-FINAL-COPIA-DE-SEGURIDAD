@@ -18,29 +18,29 @@ const SITE_URL = process.env.SITE_URL || "https://gzswear.roadshop.online";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "GZS WEAR BRANDS — Streetwear exclusivo hecho en Europa",
-    template: "%s · GZS WEAR BRANDS",
+    default: "GZS WEAR — Streetwear exclusivo hecho en Europa",
+    template: "%s · GZS WEAR",
   },
   description:
-    "Camisetas, sudaderas, gorras y gorros unisex de diseño exclusivo. Fabricación bajo pedido en Europa, envío gratis desde 60 € en la UE y devoluciones 30 días.",
+    "Camisetas, sudaderas, gorras y gorros unisex de diseño exclusivo. Colección DISRUPTIVE: envío gratis desde 60 € en la UE y devoluciones 14 días.",
   keywords: [
     "streetwear", "ropa urbana", "camisetas oversize", "sudaderas con capucha",
     "GZS WEAR", "moda unisex", "diseño exclusivo", "hoodie", "gorras", "gorros",
   ],
-  applicationName: "GZS WEAR BRANDS",
-  authors: [{ name: "GZS WEAR BRANDS" }],
-  creator: "GZS WEAR BRANDS",
-  publisher: "GZS WEAR BRANDS",
+  applicationName: "GZS WEAR",
+  authors: [{ name: "GZS WEAR" }],
+  creator: "GZS WEAR",
+  publisher: "GZS WEAR",
   alternates: {
     canonical: "/",
     languages: { "es-ES": "/", "en-US": "/en", en: "/en", "x-default": "/" },
   },
   openGraph: {
-    siteName: "GZS WEAR BRANDS",
+    siteName: "GZS WEAR",
     type: "website",
     locale: "es_ES",
     alternateLocale: "en_US",
-    images: [{ url: "/brand/og-default.jpg", width: 1200, height: 630, alt: "GZS WEAR BRANDS" }],
+    images: [{ url: "/brand/og-default.jpg", width: 1200, height: 630, alt: "GZS WEAR" }],
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },

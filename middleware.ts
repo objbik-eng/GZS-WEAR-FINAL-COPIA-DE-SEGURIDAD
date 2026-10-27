@@ -7,6 +7,9 @@ const EN_ALIAS: Record<string, string> = {
   cart: "carrito",
   contact: "contacto",
   legal: "legal",
+  "t-shirts": "camisetas",
+  sweatshirts: "sudaderas",
+  accessories: "accesorios",
 };
 
 const LEGAL_EN_TO_ES: Record<string, string> = {
@@ -17,7 +20,7 @@ const LEGAL_EN_TO_ES: Record<string, string> = {
   "shipping-returns": "envios-devoluciones",
 };
 
-const SYSTEM = ["/api", "/_next", "/favicon", "/robots.txt", "/sitemap.xml", "/google", "/brand", "/images", "/models", "/catalog"];
+const SYSTEM = ["/api", "/_next", "/favicon", "/robots.txt", "/sitemap.xml", "/google", "/brand", "/images", "/models", "/catalog", "/icon"];
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;

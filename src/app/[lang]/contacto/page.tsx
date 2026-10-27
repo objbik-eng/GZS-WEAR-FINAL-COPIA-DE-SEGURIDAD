@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     locale,
     titleEs: "Contacto",
     titleEn: "Contact",
-    descriptionEs: "Contacta con GZS WEAR BRANDS: dudas sobre pedidos, tallas, envíos y devoluciones. Respondemos en menos de 24 h laborables.",
-    descriptionEn: "Contact GZS WEAR BRANDS about orders, sizing, shipping and returns. We reply within 24 working hours.",
+    descriptionEs: "Contacta con GZS WEAR: dudas sobre pedidos, tallas, envíos y devoluciones. Escríbenos y te ayudamos.",
+    descriptionEn: "Contact GZS WEAR about orders, sizing, shipping and returns. Write to us and we'll help.",
     esPath: "/contacto",
     enPath: "/en/contact",
   });

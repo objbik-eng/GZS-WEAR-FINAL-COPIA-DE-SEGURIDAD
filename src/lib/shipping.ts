@@ -118,6 +118,31 @@ export interface ShippingQuote {
   labelEn: string;
 }
 
+export interface ZonePreview {
+  zone: Exclude<ShippingZone, "eu">;
+  labelEs: string;
+  labelEn: string;
+  firstItemCents: number;
+  windowEs: string;
+  windowEn: string;
+}
+
+const ZONE_META: Record<Exclude<ShippingZone, "eu">, { labelEs: string; labelEn: string; windowEs: string; windowEn: string }> = {
+  ie: { labelEs: "Irlanda", labelEn: "Ireland", windowEs: "5–15 días laborables", windowEn: "5–15 business days" },
+  uk: { labelEs: "Reino Unido", labelEn: "United Kingdom", windowEs: "5–15 días laborables", windowEn: "5–15 business days" },
+  us: { labelEs: "Estados Unidos", labelEn: "United States", windowEs: "10–30 días laborables", windowEn: "10–30 business days" },
+  efta: { labelEs: "EFTA (Noruega, Islandia, Suiza, Liechtenstein)", labelEn: "EFTA (Norway, Iceland, Switzerland, Liechtenstein)", windowEs: "5–15 días laborables", windowEn: "5–15 business days" },
+};
+
+/** Tarifa real del primer artículo de un tipo de prenda en cada zona fuera de la UE. */
+export function internationalPreview(type: ProductType): ZonePreview[] {
+  return (["ie", "uk", "us", "efta"] as const).map((zone) => ({
+    zone,
+    ...ZONE_META[zone],
+    firstItemCents: Math.round(ratesFor(zone)[type].first * 100),
+  }));
+}
+
 export function quoteShipping(lines: CartLine[], subtotalCents: number, countryCode: string): ShippingQuote {
   const zone = zoneForCountry(countryCode);
   if (zone === "eu") {

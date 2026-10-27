@@ -13,7 +13,7 @@ const eur = (cents: number) =>
   new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR" }).format((Number(cents) || 0) / 100);
 
 const site = () => process.env.SITE_URL || "https://gzswear.roadshop.online";
-const from = () => process.env.RESEND_FROM || "GZS WEAR BRANDS <gzswear@roadshop.online>";
+const from = () => process.env.RESEND_FROM || "GZS WEAR <gzswear@roadshop.online>";
 
 async function send({ to, subject, html, text, idempotencyKey }: {
   to: string; subject: string; html: string; text: string; idempotencyKey?: string;
@@ -46,7 +46,7 @@ function shell(title: string, body: string): string {
       ${body}
     </div>
     <div style="padding:22px 30px;background:#fafafa;border-top:1px solid #eee;font-size:12px;color:#6b726b">
-      GZS WEAR BRANDS · Moda de diseño exclusivo fabricada bajo pedido en Europa.<br>
+      GZS WEAR · Moda de diseño exclusivo. Colección DISRUPTIVE.<br>
       Ayuda: <a href="mailto:gzswear@roadshop.online" style="color:${GREEN}">gzswear@roadshop.online</a>
     </div>
   </div>
@@ -67,15 +67,15 @@ export async function sendOrderConfirmation(opts: {
   }).join("");
   const link = `${site()}/pedido?session_id=${encodeURIComponent(sessionId)}`;
   const html = shell("Pedido confirmado", `
-    <p>Hola${name ? ` ${esc(name)}` : ""}, hemos recibido tu pago y tu pedido ya está en producción en nuestro taller europeo.</p>
+    <p>Hola${name ? ` ${esc(name)}` : ""}, hemos recibido tu pago y tu pedido ya se está preparando.</p>
     <p style="color:#777;font-size:13px">Referencia: <b>${esc(sessionId)}</b></p>
     <table style="width:100%;border-collapse:collapse;margin:20px 0">${rows}
       <tr><td style="padding:16px 0"><b>Total pagado</b></td><td style="padding:16px 0;text-align:right"><b>${eur(totalCents)}</b></td></tr>
     </table>
     <p>Te avisaremos por email cuando el paquete salga con su seguimiento.</p>
     <p style="margin:26px 0"><a href="${esc(link)}" style="background:${GREEN};color:#fff;padding:14px 22px;border-radius:8px;text-decoration:none;display:inline-block;font-weight:700">Consultar mi pedido</a></p>`);
-  const text = `GZS WEAR BRANDS — Pedido confirmado\nHola${name ? ` ${name}` : ""}, tu pago está confirmado y el pedido en producción.\nTotal: ${eur(totalCents)}\nEstado: ${link}\nAyuda: gzswear@roadshop.online`;
-  return send({ to, subject: "Pedido confirmado · GZS WEAR BRANDS", html, text, idempotencyKey: `gzs-order-${sessionId}` });
+  const text = `GZS WEAR — Pedido confirmado\nHola${name ? ` ${name}` : ""}, tu pago está confirmado y el pedido se está preparando.\nTotal: ${eur(totalCents)}\nEstado: ${link}\nAyuda: gzswear@roadshop.online`;
+  return send({ to, subject: "Pedido confirmado · GZS WEAR", html, text, idempotencyKey: `gzs-order-${sessionId}` });
 }
 
 export async function sendShipmentNotification(opts: {
@@ -91,14 +91,14 @@ export async function sendShipmentNotification(opts: {
   }).join("");
   const link = `${site()}/pedido?session_id=${encodeURIComponent(sessionId)}`;
   const html = shell("Tu pedido está en camino", `
-    <p>Hola${name ? ` ${esc(name)}` : ""}, tu pedido ha salido del taller.</p>
+    <p>Hola${name ? ` ${esc(name)}` : ""}, tu pedido ha salido de nuestras instalaciones.</p>
     <p style="color:#777;font-size:13px">Referencia: <b>${esc(sessionId)}</b></p>
     ${tracking ? `<ul style="padding-left:18px">${tracking}</ul>` : "<p>El transportista está preparando el enlace de seguimiento; consulta esta página más tarde.</p>"}
     <p style="margin:26px 0"><a href="${esc(link)}" style="background:${GREEN};color:#fff;padding:14px 22px;border-radius:8px;text-decoration:none;display:inline-block;font-weight:700">Ver estado del pedido</a></p>`);
-  const text = `GZS WEAR BRANDS — Pedido en camino\nReferencia: ${sessionId}\nEstado: ${link}`;
+  const text = `GZS WEAR — Pedido en camino\nReferencia: ${sessionId}\nEstado: ${link}`;
   return send({
     to,
-    subject: "Tu pedido está en camino · GZS WEAR BRANDS",
+    subject: "Tu pedido está en camino · GZS WEAR",
     html,
     text,
     idempotencyKey: `gzs-shipment-${sessionId}-${shipments.map((s) => s.tracking_number || "x").join("-")}`.slice(0, 180),

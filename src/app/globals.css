@@ -11,6 +11,7 @@
   --color-ink: #141414;
   --color-smoke: #6b726b;
   --color-line: #e4e8e3;
+  --color-brand-red: #c1272d;
   --font-display: var(--font-archivo), "Archivo", system-ui, sans-serif;
   --font-body: var(--font-inter), "Inter", system-ui, sans-serif;
   --font-logo: var(--font-pirata), "Pirata One", Georgia, serif;
@@ -231,7 +232,52 @@ input, select, textarea {
 @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 .animate-fadeUp { animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-.animate-marquee { animation: marquee 26s linear infinite; }
+/* El track contiene dos grupos idénticos con su propio padding derecho:
+   el -50% encaja exactamente y el bucle no muestra cortes ni huecos. */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+.marquee-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding-right: 2.5rem;
+  gap: 2.5rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+/* Carrusel horizontal móvil con snap */
+.snap-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 6px;
+}
+.snap-row > * {
+  scroll-snap-align: start;
+  flex: 0 0 78%;
+  max-width: 78%;
+}
+@media (min-width: 1024px) {
+  .snap-row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    overflow: visible;
+    scroll-snap-type: none;
+    gap: 1rem 1rem;
+  }
+  .snap-row > * {
+    flex: initial;
+    max-width: none;
+    scroll-snap-align: none;
+  }
+}
 @keyframes zoomSlow { from { transform: scale(1); } to { transform: scale(1.07); } }
 .animate-zoomSlow { animation: zoomSlow 9s ease-out both; }
 @keyframes spinStar { from { transform: rotate(0); } to { transform: rotate(360deg); } }

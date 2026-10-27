@@ -18,8 +18,27 @@ export const LEGAL_SLUGS: Record<string, { es: string; en: string }> = {
   "envios-devoluciones": { es: "envios-devoluciones", en: "shipping-returns" },
 };
 
+export type CategoryId = "camisetas" | "sudaderas" | "accesorios";
+
+export const CATEGORY_SLUGS: Record<CategoryId, { es: string; en: string }> = {
+  camisetas: { es: "camisetas", en: "t-shirts" },
+  sudaderas: { es: "sudaderas", en: "sweatshirts" },
+  accesorios: { es: "accesorios", en: "accessories" },
+};
+
+export const CATEGORY_TYPES: Record<CategoryId, Product["type"][]> = {
+  camisetas: ["tee", "oversize"],
+  sudaderas: ["crewneck", "hoodie"],
+  accesorios: ["cap", "beanie"],
+};
+
 export function homePath(locale: Locale): string {
   return locale === "es" ? "/" : "/en";
+}
+
+export function categoryPath(cat: CategoryId, locale: Locale): string {
+  const slug = CATEGORY_SLUGS[cat][locale === "es" ? "es" : "en"];
+  return locale === "es" ? `/${slug}` : `/en/${slug}`;
 }
 
 export function shopPath(locale: Locale): string {

@@ -4,7 +4,7 @@ import type { Locale } from "@/i18n/dict";
 import { absoluteUrl, productPath } from "@/lib/routes";
 import { primaryImage } from "@/lib/catalog";
 
-const SITE_NAME = "GZS WEAR BRANDS";
+const SITE_NAME = "GZS WEAR";
 
 export function pageMetadata(opts: {
   locale: Locale;
@@ -62,7 +62,7 @@ export function organizationJsonLd() {
     logo: absoluteUrl("/brand/logo-verde.png"),
     email: "gzswear@roadshop.online",
     description:
-      "Marca de streetwear de diseño exclusivo. Camisetas, sudaderas, gorras y gorros unisex fabricados bajo pedido en Europa.",
+      "Marca de streetwear de diseño exclusivo. Camisetas, sudaderas, gorras y gorros unisex. Colección DISRUPTIVE.",
     areaServed: ["ES", "EU", "GB", "US"],
   };
 }
@@ -99,7 +99,7 @@ export function productJsonLd(p: Product, locale: Locale) {
     hasMerchantReturnPolicy: {
       "@type": "MerchantReturnPolicy",
       returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
-      merchantReturnDays: 30,
+      merchantReturnDays: 14,
       returnMethod: "https://schema.org/ReturnByMail",
       applicableCountry: ["ES", "DE", "FR", "IT", "PT", "NL", "BE", "IE"],
     },

@@ -1,23 +1,26 @@
 import Link from "next/link";
 import { getLocale } from "@/lib/locale-server";
 import { t } from "@/i18n/dict";
-import { shopPath, contactPath } from "@/lib/routes";
+import { shopPath, contactPath, categoryPath, type CategoryId } from "@/lib/routes";
 import Logo from "@/components/Logo";
 import { CartButton, LanguageSwitch, MobileMenu } from "@/components/HeaderClient";
+
+const NAV_CATS: CategoryId[] = ["camisetas", "sudaderas", "accesorios"];
+const NAV_KEYS = ["nav.tees", "nav.sweatshirts", "nav.accessories"] as const;
 
 export default async function Header() {
   const locale = await getLocale();
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-line">
       <div className="bg-forest text-white">
-        <div className="container-gzs overflow-hidden py-2">
-          <div className="flex whitespace-nowrap animate-marquee gap-10 text-[12px] font-semibold tracking-wide w-max">
+        <div className="overflow-hidden py-2">
+          <div className="marquee-track text-[12px] font-semibold tracking-wide">
             {[0, 1].map((k) => (
-              <span key={k} className="flex gap-10">
+              <div key={k} className="marquee-group" aria-hidden={k === 1}>
                 <span>✦ {t("shipping.banner", locale)}</span>
                 <span>✦ {t("newsletter.title", locale)}</span>
                 <span>✦ {t("hero.badge", locale)}</span>
-              </span>
+              </div>
             ))}
           </div>
         </div>
@@ -26,9 +29,9 @@ export default async function Header() {
         <Logo locale={locale} />
         <nav className="hidden lg:flex items-center gap-8">
           <Link href={shopPath(locale)} className="header-link">{t("nav.shop", locale)}</Link>
-          <Link href="/tienda?f=tee" className="header-link">{t("nav.tees", locale)}</Link>
-          <Link href="/tienda?f=hoodie" className="header-link">{t("nav.sweatshirts", locale)}</Link>
-          <Link href="/tienda?f=cap" className="header-link">{t("nav.accessories", locale)}</Link>
+          {NAV_CATS.map((cat, i) => (
+            <Link key={cat} href={categoryPath(cat, locale)} className="header-link">{t(NAV_KEYS[i], locale)}</Link>
+          ))}
           <Link href={contactPath(locale)} className="header-link">{t("nav.contact", locale)}</Link>
         </nav>
         <div className="flex items-center gap-2 sm:gap-4">

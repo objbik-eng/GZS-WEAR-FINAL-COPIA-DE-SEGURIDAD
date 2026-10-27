@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllProducts } from "@/lib/catalog";
-import { productPath, shopPath, contactPath, legalPath } from "@/lib/routes";
+import { productPath, shopPath, contactPath, legalPath, categoryPath, type CategoryId } from "@/lib/routes";
 
 const BASE = (process.env.SITE_URL || "https://gzswear.roadshop.online").replace(/\/$/, "");
 
@@ -14,6 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}${contactPath("es")}`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
     { url: `${BASE}${contactPath("en")}`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
   ];
+
+  for (const cat of ["camisetas", "sudaderas", "accesorios"] as CategoryId[]) {
+    entries.push(
+      { url: `${BASE}${categoryPath(cat, "es")}`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
+      { url: `${BASE}${categoryPath(cat, "en")}`, lastModified: now, changeFrequency: "weekly", priority: 0.75 },
+    );
+  }
 
   for (const key of ["aviso-legal", "privacidad", "terminos", "cookies", "envios-devoluciones"]) {
     entries.push({

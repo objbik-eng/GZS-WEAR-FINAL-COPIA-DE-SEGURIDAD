@@ -6,47 +6,69 @@ import { useState } from "react";
 import { Menu, X, ShoppingBag, Globe } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { t, type Locale } from "@/i18n/dict";
-import { shopPath, cartPath, contactPath } from "@/lib/routes";
+import { shopPath, cartPath, contactPath, categoryPath, type CategoryId } from "@/lib/routes";
+import { SLUG_ES_TO_EN, SLUG_EN_TO_ES } from "@/lib/catalog";
 
-const ES_TO_EN: Record<string, string> = {
+/* Mapas explícitos en ambos sentidos para que el cambio de idioma nunca genere
+   una ruta inválida (la causa de que el interruptor se "quedase pillado"). */
+const ES_SEG_TO_EN: Record<string, string> = {
   tienda: "shop",
   producto: "product",
   carrito: "cart",
   contacto: "contact",
   legal: "legal",
+  camisetas: "t-shirts",
+  sudaderas: "sweatshirts",
+  accesorios: "accessories",
 };
-const EN_TO_ES: Record<string, string> = Object.fromEntries(
-  Object.entries(ES_TO_EN).map(([es, en]) => [en, es]),
-);
-const LEGAL_EN_TO_ES: Record<string, string> = {
-  "legal-notice": "aviso-legal",
-  privacy: "privacidad",
-  terms: "terminos",
+const EN_SEG_TO_ES: Record<string, string> = {
+  shop: "tienda",
+  product: "producto",
+  cart: "carrito",
+  contact: "contacto",
+  legal: "legal",
+  "t-shirts": "camisetas",
+  sweatshirts: "sudaderas",
+  accessories: "accesorios",
+};
+const LEGAL_ES_TO_EN: Record<string, string> = {
+  "aviso-legal": "legal-notice",
+  privacidad: "privacy",
+  terminos: "terms",
   cookies: "cookies",
-  "shipping-returns": "envios-devoluciones",
+  "envios-devoluciones": "shipping-returns",
 };
-const LEGAL_ES_TO_EN: Record<string, string> = Object.fromEntries(
-  Object.entries(LEGAL_EN_TO_ES).map(([en, es]) => [es, en]),
+const LEGAL_EN_TO_ES: Record<string, string> = Object.fromEntries(
+  Object.entries(LEGAL_ES_TO_EN).map(([es, en]) => [en, es]),
 );
+
+function buildTarget(pathname: string, locale: Locale): string {
+  const clean = pathname.split("?")[0].split("#")[0];
+  if (locale === "es") {
+    if (clean === "/" || clean === "") return "/en";
+    const seg = clean.split("/").filter(Boolean);
+    if (seg[0]) seg[0] = ES_SEG_TO_EN[seg[0]] || seg[0];
+    if (seg[0] === "legal" && seg[1]) seg[1] = LEGAL_ES_TO_EN[seg[1]] || seg[1];
+    if (seg[0] === "product" && seg[1]) seg[1] = SLUG_ES_TO_EN[seg[1]] || seg[1];
+    return `/en/${seg.join("/")}`;
+  }
+  const rest = clean.replace(/^\/en\/?/, "");
+  if (!rest) return "/";
+  const seg = rest.split("/").filter(Boolean);
+  if (seg[0]) seg[0] = EN_SEG_TO_ES[seg[0]] || seg[0];
+  if (seg[0] === "legal" && seg[1]) seg[1] = LEGAL_EN_TO_ES[seg[1]] || seg[1];
+  if (seg[0] === "producto" && seg[1]) seg[1] = SLUG_EN_TO_ES[seg[1]] || seg[1];
+  return `/${seg.join("/")}`;
+}
 
 export function LanguageSwitch({ locale }: { locale: Locale }) {
   const pathname = usePathname() || "/";
-  let target: string;
-  if (locale === "es") {
-    const seg = pathname.split("/").filter(Boolean);
-    if (seg[0]) seg[0] = ES_TO_EN[seg[0]] || seg[0];
-    if (seg[0] === "legal" && seg[1]) seg[1] = LEGAL_ES_TO_EN[seg[1]] || seg[1];
-    target = `/en/${seg.join("/")}`;
-  } else {
-    const seg = pathname.replace(/^\/en\/?/, "").split("/").filter(Boolean);
-    if (seg[0]) seg[0] = EN_TO_ES[seg[0]] || seg[0];
-    if (seg[0] === "legal" && seg[1]) seg[1] = LEGAL_EN_TO_ES[seg[1]] || seg[1];
-    target = `/${seg.join("/")}`;
-  }
+  const target = buildTarget(pathname, locale);
+  const nextLocale: Locale = locale === "es" ? "en" : "es";
   return (
     <Link
       href={target}
-      hrefLang={locale === "es" ? "en" : "es"}
+      hrefLang={nextLocale}
       className="flex items-center gap-1.5 text-[13px] font-bold tracking-wide hover:text-forest transition-colors"
       aria-label={locale === "es" ? "Switch to English" : "Cambiar a español"}
     >
@@ -75,11 +97,11 @@ export function CartButton({ locale }: { locale: Locale }) {
   );
 }
 
-const NAV_TYPES = [
-  { key: "nav.tees", href: "/tienda?f=tee" },
-  { key: "nav.sweatshirts", href: "/tienda?f=hoodie" },
-  { key: "nav.accessories", href: "/tienda?f=cap" },
-] as const;
+const NAV_CATS: { cat: CategoryId; key: "nav.tees" | "nav.sweatshirts" | "nav.accessories" }[] = [
+  { cat: "camisetas", key: "nav.tees" },
+  { cat: "sudaderas", key: "nav.sweatshirts" },
+  { cat: "accesorios", key: "nav.accessories" },
+];
 
 export function MobileMenu({ locale }: { locale: Locale }) {
   const [open, setOpen] = useState(false);
@@ -98,13 +120,13 @@ export function MobileMenu({ locale }: { locale: Locale }) {
                 <X size={24} />
               </button>
             </div>
-            <nav className="flex flex-col p-5 gap-1 text-[15px] font-semibold">
+            <nav className="flex flex-col p-5 gap-1 text-[15px] font-semibold overflow-y-auto">
               <Link href={shopPath(locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">
                 {t("nav.shop", locale)}
               </Link>
-              {NAV_TYPES.map((n) => (
-                <Link key={n.key} href={n.href} onClick={() => setOpen(false)} className="py-3 border-b border-line">
-                  {t(n.key, locale)}
+              {NAV_CATS.map(({ cat, key }) => (
+                <Link key={cat} href={categoryPath(cat, locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">
+                  {t(key, locale)}
                 </Link>
               ))}
               <Link href={contactPath(locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">

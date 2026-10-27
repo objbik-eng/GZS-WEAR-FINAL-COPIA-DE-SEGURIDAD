@@ -63,6 +63,40 @@ export function getProductsByType(types: ProductType[]): Product[] {
   return PRODUCTS.filter((p) => types.includes(p.type));
 }
 
+/** Slugs ES de la sección "Más vendidos" (orden fijo decidido por la marca). */
+const BEST_SELLER_SLUGS = [
+  "camiseta-florece-donde-estes",
+  "camiseta-street-league",
+  "oversize-alas-silencio",
+  "sudadera-good-vibes",
+  "sudadera-silencio-rojo",
+  "hoodie-cerezas-less-noise",
+];
+
+export function getBestSellers(): Product[] {
+  return BEST_SELLER_SLUGS.map((slug) => PRODUCTS.find((p) => p.slug.es === slug)).filter(
+    (p): p is Product => Boolean(p),
+  );
+}
+
+/** Mapas de slugs para el cambio de idioma en fichas de producto. */
+export const SLUG_ES_TO_EN: Record<string, string> = Object.fromEntries(
+  PRODUCTS.map((p) => [p.slug.es, p.slug.en]),
+);
+export const SLUG_EN_TO_ES: Record<string, string> = Object.fromEntries(
+  PRODUCTS.map((p) => [p.slug.en, p.slug.es]),
+);
+
+/** Productos relacionados aleatorios de entre TODAS las categorías. */
+export function getRelatedRandom(product: Product, n = 4): Product[] {
+  const pool = PRODUCTS.filter((p) => p.productId !== product.productId);
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  return pool.slice(0, n);
+}
+
 export const TYPE_FILTERS: { id: ProductType | "all"; labelKey: string }[] = [
   { id: "all", labelKey: "shop.filter.all" },
   { id: "tee", labelKey: "shop.filter.tees" },

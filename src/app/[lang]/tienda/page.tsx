@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { LOCALES, type Locale } from "@/i18n/dict";
 import { getAllProducts, TYPE_FILTERS, type ProductType } from "@/lib/catalog";
 import { pageMetadata, itemListJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { shopPath, homePath } from "@/lib/routes";
 import ShopClient from "./ShopClient";
+import CategoryCards from "@/components/CategoryCards";
 
 export function generateStaticParams() {
   return LOCALES.map((lang) => ({ lang }));
@@ -15,12 +17,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const locale: Locale = lang === "en" ? "en" : "es";
   return pageMetadata({
     locale,
-    titleEs: "Tienda — Colección DISRUPTIVE",
-    titleEn: "Shop — DISRUPTIVE Collection",
+    titleEs: "Tienda — Colección DISRUPTIVE | GZS WEAR",
+    titleEn: "Shop — DISRUPTIVE Collection | GZS WEAR",
     descriptionEs:
-      "Compra la colección DISRUPTIVE de GZS WEAR: camisetas regulares y oversize, sudaderas con y sin capucha, gorras y gorros unisex. Diseño exclusivo, fabricación bajo pedido en Europa.",
+      "Compra la colección DISRUPTIVE de GZS WEAR: camisetas regulares y oversize, sudaderas con y sin capucha, gorras y gorros unisex de diseño exclusivo.",
     descriptionEn:
-      "Shop the GZS WEAR DISRUPTIVE collection: regular and oversized tees, hoodies and crewnecks, caps and beanies. Exclusive designs made to order in Europe.",
+      "Shop the GZS WEAR DISRUPTIVE collection: regular and oversized tees, hoodies and crewnecks, caps and beanies with exclusive designs.",
     esPath: "/tienda",
     enPath: "/en/shop",
   });
@@ -49,25 +51,45 @@ export default async function ShopPage({
   ];
 
   return (
-    <div className="container-gzs py-10 lg:py-14">
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <nav aria-label="breadcrumb" className="text-xs text-smoke mb-4">
-        <a href={homePath(locale)}>{locale === "es" ? "Inicio" : "Home"}</a>
-        <span className="mx-2">/</span>
-        <span className="text-ink font-semibold">{locale === "es" ? "Tienda" : "Shop"}</span>
-      </nav>
-      <header className="mb-8">
-        <span className="eyebrow">DISRUPTIVE</span>
-        <h1 className="text-[clamp(30px,4.5vw,52px)] font-black mt-2">
-          {locale === "es" ? "Tienda — Colección DISRUPTIVE" : "Shop — DISRUPTIVE Collection"}
-        </h1>
-        <p className="text-smoke mt-2 max-w-2xl">
-          {locale === "es"
-            ? "20 piezas unisex de streetwear. Sin relleno, solo identidad. Todas las prendas se fabrican bajo pedido en talleres europeos."
-            : "20 unisex streetwear pieces. No filler, just identity. Every garment is made to order in European workshops."}
-        </p>
-      </header>
-      <ShopClient products={products} locale={locale} initialFilter={initialFilter} />
+
+      {/* PORTADA */}
+      <section className="relative overflow-hidden bg-ink text-white min-h-[46vh] flex items-center">
+        <Image
+          src="/images/hero-tienda.jpg"
+          alt="Colección DISRUPTIVE de GZS WEAR"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="container-gzs relative z-10 py-20">
+          <h1 className="text-[clamp(38px,7vw,84px)] font-black uppercase leading-none text-white">
+            {t(locale)}
+          </h1>
+          <p className="mt-3 text-brand-red font-display font-extrabold uppercase tracking-[0.25em] text-[clamp(18px,2.6vw,28px)]">
+            Disruptive
+          </p>
+        </div>
+      </section>
+
+      <div className="container-gzs py-14 lg:py-20">
+        <nav aria-label="breadcrumb" className="text-xs text-smoke mb-6">
+          <a href={homePath(locale)}>{locale === "es" ? "Inicio" : "Home"}</a>
+          <span className="mx-2">/</span>
+          <span className="text-ink font-semibold">{locale === "es" ? "Tienda" : "Shop"}</span>
+        </nav>
+
+        <CategoryCards locale={locale} />
+
+        <ShopClient products={products} locale={locale} initialFilter={initialFilter} />
+      </div>
     </div>
   );
+}
+
+function t(locale: Locale) {
+  return locale === "es" ? "Colección" : "Collection";
 }

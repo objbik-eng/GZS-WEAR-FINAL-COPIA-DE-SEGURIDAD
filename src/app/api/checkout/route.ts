@@ -94,7 +94,7 @@ export async function POST(req: NextRequest) {
       },
       payment_intent_data: {
         receipt_email: email,
-        description: "GZS WEAR BRANDS — Colección DISRUPTIVE",
+        description: "GZS WEAR — Colección DISRUPTIVE",
         metadata: { origen: "web", locale },
       },
     });

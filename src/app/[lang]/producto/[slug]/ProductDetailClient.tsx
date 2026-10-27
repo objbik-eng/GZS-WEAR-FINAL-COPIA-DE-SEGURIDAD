@@ -3,12 +3,13 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Check, ChevronDown, ShieldCheck, Truck, RotateCcw, User2 } from "lucide-react";
 import type { Product } from "@/lib/catalog";
 import { t, formatPrice, type Locale } from "@/i18n/dict";
 import { useCart } from "@/context/CartContext";
-import { checkoutPath, shopPath } from "@/lib/routes";
+import { shopPath } from "@/lib/routes";
+import { internationalPreview } from "@/lib/shipping";
+import { localizeGpsr } from "@/lib/gpsr";
 import ProductCard from "@/components/ProductCard";
 
 export default function ProductDetailClient({
@@ -20,8 +21,9 @@ export default function ProductDetailClient({
   related: Product[];
   locale: Locale;
 }) {
-  const router = useRouter();
   const { add } = useCart();
+  const intlZones = internationalPreview(product.type);
+  const gpsrRows = product.gpsr ? localizeGpsr(product.gpsr, locale) : [];
   const [colorId, setColorId] = useState(product.colors[0].id);
   const [size, setSize] = useState<string | null>(product.sizes.length === 1 ? product.sizes[0] : null);
   const [qty, setQty] = useState(1);
@@ -67,12 +69,6 @@ export default function ProductDetailClient({
     add(cartPayload());
     setAdded(true);
     setTimeout(() => setAdded(false), 2200);
-  }
-
-  function handleBuyNow() {
-    if (!validateSize()) return;
-    add(cartPayload());
-    router.push(checkoutPath(locale));
   }
 
   return (
@@ -214,11 +210,16 @@ export default function ProductDetailClient({
             </span>
           </div>
 
-          <div className="mt-5 grid sm:grid-cols-2 gap-3">
-            <button onClick={handleAdd} className="btn btn-primary">
-              {added ? `✓ ${locale === "es" ? "Añadido" : "Added"}` : t("product.addToCart", locale)}
+          <div className="mt-5">
+            <button onClick={handleAdd} className="btn btn-primary w-full text-base py-4">
+              {added ? (
+                <>
+                  <Check size={18} /> {t("product.added", locale)}
+                </>
+              ) : (
+                t("product.addToCart", locale)
+              )}
             </button>
-            <button onClick={handleBuyNow} className="btn btn-dark">{t("product.buyNow", locale)}</button>
           </div>
 
           {/* VENTAJAS */}
@@ -238,28 +239,57 @@ export default function ProductDetailClient({
           {/* DETALLES */}
           <div className="mt-8 space-y-3 text-sm">
             <p><b>{t("product.details", locale)}:</b> <span className="text-smoke">{product.fabric[locale]}</span></p>
-            <p><b>{locale === "es" ? "Fit" : "Fit"}:</b> <span className="text-smoke">{product.fit[locale]}</span></p>
+            <p><b>Fit:</b> <span className="text-smoke">{product.fit[locale]}</span></p>
             <p><b>{t("product.shipping", locale)}:</b>{" "}
-              <span className="text-smoke">
-                {locale === "es"
-                  ? "UE: gratis desde 60 €, si no 4,95 €. Irlanda, Reino Unido, EE. UU. y EFTA: tarifa real según zona. Devoluciones 30 días."
-                  : "EU: free over €60, otherwise €4.95. Ireland, UK, US and EFTA: real zone rate. 30-day returns."}
-              </span>
+              <span className="text-smoke">{t("product.shipping.line", locale)}</span>
             </p>
           </div>
 
-          {/* GPSR */}
+          {/* TARIFAS INTERNACIONALES (fuera de la UE) */}
+          <details className="group mt-4 rounded-xl border border-line overflow-hidden">
+            <summary className="cursor-pointer list-none px-5 py-4 font-bold text-sm flex items-center gap-2 bg-cream">
+              <ChevronDown size={16} className="group-open:rotate-180 transition-transform" />
+              {t("product.shipping.intl.title", locale)}
+            </summary>
+            <div className="p-5">
+              <table className="size-table">
+                <thead>
+                  <tr>
+                    <th>{locale === "es" ? "Zona" : "Zone"}</th>
+                    <th>{locale === "es" ? "Primera prenda" : "First item"}</th>
+                    <th>{locale === "es" ? "Plazo" : "Time"}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {intlZones.map((z) => (
+                    <tr key={z.zone}>
+                      <td>{locale === "es" ? z.labelEs : z.labelEn}</td>
+                      <td>{formatPrice(z.firstItemCents, locale)}</td>
+                      <td>{locale === "es" ? z.windowEs : z.windowEn}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <p className="text-xs text-smoke mt-3">
+                {locale === "es"
+                  ? "Tarifas reales por zona. Las prendas adicionales se calculan en el checkout. Estas zonas no disfrutan del envío gratuito aunque el pedido supere los 60 €."
+                  : "Real zone-based rates. Additional items are calculated at checkout. These zones are not eligible for free shipping even above €60."}
+              </p>
+            </div>
+          </details>
+
+          {/* GPSR (cerrado por defecto y traducido) */}
           {product.gpsr && (
-            <details className="group mt-6 gpsr-box" open>
+            <details className="group mt-4 gpsr-box">
               <summary className="cursor-pointer list-none font-bold text-sm flex items-center gap-2">
                 <ShieldCheck size={17} className="text-forest" />
                 {t("product.safety", locale)}
               </summary>
-              <dl className="mt-3 space-y-2">
-                {Object.entries(product.gpsr).map(([k, v]) => (
-                  <div key={k}>
-                    <dt className="font-bold text-forest-deep">{k}</dt>
-                    <dd className="text-smoke">{v}</dd>
+              <dl className="mt-3 space-y-3">
+                {gpsrRows.map((row) => (
+                  <div key={row.label}>
+                    <dt className="font-bold text-forest-deep">{row.label}</dt>
+                    <dd className="text-smoke">{row.value}</dd>
                   </div>
                 ))}
               </dl>
@@ -318,7 +348,7 @@ export default function ProductDetailClient({
       {related.length > 0 && (
         <section className="mt-20">
           <h2 className="text-[clamp(22px,2.8vw,32px)] font-black mb-8">{t("product.related", locale)}</h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10">
+          <div className="snap-row lg:gap-y-10 no-scrollbar">
             {related.map((p) => (
               <ProductCard key={p.productId} product={p} locale={locale} />
             ))}

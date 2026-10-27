@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LOCALES, type Locale } from "@/i18n/dict";
-import { getAllProducts, getProductBySlug, primaryImage } from "@/lib/catalog";
+import { getAllProducts, getProductBySlug, getRelatedRandom, primaryImage } from "@/lib/catalog";
 import { productPath, shopPath, homePath, absoluteUrl } from "@/lib/routes";
 import { pageMetadata, productJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import ProductDetailClient from "./ProductDetailClient";
@@ -44,12 +44,7 @@ export default async function ProductPage({ params }: { params: Promise<{ lang: 
   const product = getProductBySlug(slug, locale);
   if (!product) notFound();
 
-  const related = getAllProducts()
-    .filter((p) => p.type === product.type && p.productId !== product.productId)
-    .slice(0, 4);
-  const fallbackRelated = related.length
-    ? related
-    : getAllProducts().filter((p) => p.productId !== product.productId).slice(0, 4);
+  const fallbackRelated = getRelatedRandom(product, 4);
 
   const jsonLd = [
     productJsonLd(product, locale),
