@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&family=Pirata+One&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #5E845F;
+  --color-forest-dark: #2E4A33;
+  --color-forest-deep: #1E3323;
+  --color-gold: #D39905;
+  --color-gold-dark: #A87A04;
+  --color-cream: #F4F2EC;
+  --color-ink: #0E0E0E;
+  --font-display: "Archivo", sans-serif;
+  --font-logo: "Pirata One", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body); background:#fff; color:#0E0E0E;}
+.font-display{font-family:var(--font-display)}
+.font-logo{font-family:var(--font-logo)}
+
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.animate-marquee{animation:marquee 22s linear infinite}
+@keyframes fadeUp{from{opacity:0; transform:translateY(18px)}to{opacity:1; transform:translateY(0)}}
+.animate-fadeUp{animation:fadeUp .7s cubic-bezier(.22,1,.36,1) both}
+@keyframes zoomSlow{from{transform:scale(1)}to{transform:scale(1.08)}}
+.animate-zoomSlow{animation:zoomSlow 8s ease-out both}
+@keyframes spinStar{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.animate-spin-slow{animation:spinStar 14s linear infinite}
+@keyframes drawerIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
+.animate-drawer{animation:drawerIn .35s cubic-bezier(.22,1,.36,1) both}
+@keyframes pop{0%{transform:scale(.6)}60%{transform:scale(1.15)}100%{transform:scale(1)}}
+.animate-pop{animation:pop .35s ease both}
+
+.no-scrollbar::-webkit-scrollbar{display:none}
+.no-scrollbar{scrollbar-width:none}
+::selection{background:#D39905; color:#000}
+input,select,textarea{outline:none}
