@@ -10,6 +10,9 @@ out/
 .env.*
 !.env.example
 
+# TypeScript caches
+tsconfig.tsbuildinfo
+
 # Local logs
 *.log
 npm-debug.log*
