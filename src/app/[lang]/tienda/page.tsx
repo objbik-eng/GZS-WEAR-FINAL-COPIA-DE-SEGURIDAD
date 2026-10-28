@@ -64,12 +64,12 @@ export default async function ShopPage({
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/28 to-black/10" />
         <div className="container-gzs relative z-10 py-20">
-          <h1 className="text-[clamp(38px,7vw,84px)] font-black uppercase leading-none text-white">
+          <h1 className="font-ahsing font-normal text-[clamp(40px,7.5vw,88px)] uppercase leading-none text-white">
             {t(locale)}
           </h1>
-          <p className="mt-3 text-brand-red font-display font-extrabold uppercase tracking-[0.25em] text-[clamp(18px,2.6vw,28px)]">
+          <p className="mt-3 text-brand-red font-garet font-[850] uppercase tracking-[0.16em] text-[clamp(20px,3vw,32px)]">
             Disruptive
           </p>
         </div>

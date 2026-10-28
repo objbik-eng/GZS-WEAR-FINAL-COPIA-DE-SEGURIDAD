@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import { X, Minus, Plus, Trash2 } from "lucide-react";
 import { useCart, cartKey } from "@/context/CartContext";
 import { t, formatPrice, type Locale } from "@/i18n/dict";
@@ -10,15 +11,30 @@ import { cartPath, checkoutPath, shopPath } from "@/lib/routes";
 export default function CartDrawer({ locale }: { locale: Locale }) {
   const loc = locale;
   const { items, subtotal, drawerOpen, closeDrawer, remove, setQty } = useCart();
+
+  useEffect(() => {
+    if (!drawerOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeDrawer();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [drawerOpen, closeDrawer]);
+
   if (!drawerOpen) return null;
 
   const remaining = Math.max(0, 6000 - subtotal);
   const progress = Math.min(100, (subtotal / 6000) * 100);
 
   return (
-    <div className="fixed inset-0 z-[70]" role="dialog" aria-modal="true" aria-label={t("cart.title", loc)}>
+    <div className="fixed inset-0 z-[70] overflow-hidden" role="dialog" aria-modal="true" aria-label={t("cart.title", loc)}>
       <div className="absolute inset-0 bg-black/50 animate-fade" onClick={closeDrawer} />
-      <aside className="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl animate-drawer flex flex-col">
+      <aside className="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl animate-drawer flex flex-col overflow-hidden">
         <div className="flex items-center justify-between px-5 py-4 border-b border-line">
           <h2 className="font-display text-lg font-extrabold">{t("cart.title", loc)} <span className="text-smoke font-medium">({items.length})</span></h2>
           <button onClick={closeDrawer} aria-label="Cerrar" className="p-2 hover:text-forest"><X size={22} /></button>

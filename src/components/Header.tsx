@@ -29,7 +29,7 @@ export default async function Header() {
           </div>
         </div>
       </div>
-      <div className="container-gzs flex items-center justify-between gap-4 py-3.5">
+      <div className="container-gzs flex items-center justify-between gap-2 sm:gap-4 py-2.5 sm:py-3.5">
         <Logo locale={locale} />
         <nav className="hidden lg:flex items-center gap-8">
           <Link href={shopPath(locale)} className="header-link">{t("nav.shop", locale)}</Link>

@@ -23,6 +23,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Salvaguarda horizontal: los paneles off-canvas animados con translateX
+   no deben ampliar el viewport ni generar scroll lateral en móvil.
+   clip (no hidden) para no romper el header sticky. */
+html,
+body {
+  overflow-x: clip;
+}
 body {
   font-family: var(--font-body);
   background: #fff;

@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { Menu, X, ShoppingBag, Globe } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { t, type Locale } from "@/i18n/dict";
@@ -84,7 +85,7 @@ export function CartButton({ locale }: { locale: Locale }) {
     <button
       type="button"
       onClick={openDrawer}
-      className="relative p-2 hover:text-forest transition-colors"
+      className="relative p-1.5 sm:p-2 hover:text-forest transition-colors"
       aria-label={t("nav.cart", locale)}
     >
       <ShoppingBag size={22} strokeWidth={2} />
@@ -105,43 +106,62 @@ const NAV_CATS: { cat: CategoryId; key: "nav.tees" | "nav.sweatshirts" | "nav.ac
 
 export function MobileMenu({ locale }: { locale: Locale }) {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
   return (
     <>
-      <button type="button" className="p-2 lg:hidden" onClick={() => setOpen(true)} aria-label="Abrir menú">
+      <button type="button" className="p-1.5 sm:p-2 lg:hidden" onClick={() => setOpen(true)} aria-label="Abrir menú">
         <Menu size={24} strokeWidth={2} />
       </button>
-      {open && (
-        <div className="fixed inset-0 z-[60] lg:hidden">
-          <div className="absolute inset-0 bg-black/45 animate-fade" onClick={() => setOpen(false)} />
-          <div className="absolute right-0 top-0 h-full w-[82%] max-w-sm bg-white shadow-2xl animate-drawer flex flex-col">
-            <div className="flex items-center justify-between px-5 py-4 border-b border-line">
-              <span className="font-ahsing text-xl text-ink tracking-wide">GZS WEAR</span>
-              <button type="button" onClick={() => setOpen(false)} aria-label="Cerrar menú" className="p-2">
-                <X size={24} />
-              </button>
-            </div>
-            <nav className="flex flex-col p-5 gap-1 text-[15px] font-semibold overflow-y-auto">
-              <Link href={shopPath(locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">
-                {t("nav.shop", locale)}
-              </Link>
-              {NAV_CATS.map(({ cat, key }) => (
-                <Link key={cat} href={categoryPath(cat, locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">
-                  {t(key, locale)}
-                </Link>
-              ))}
-              <Link href={contactPath(locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">
-                {t("nav.contact", locale)}
-              </Link>
-              <Link href={cartPath(locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">
-                {t("nav.cart", locale)}
-              </Link>
-              <div className="pt-5">
-                <LanguageSwitch locale={locale} />
+      {open &&
+        /* Portal a document.body: el header tiene backdrop-blur, que crea un
+           bloque contenedor para los fixed y rompería el panel a pantalla completa. */
+        createPortal(
+          <div className="fixed inset-0 z-[60] lg:hidden overflow-hidden">
+            <div className="absolute inset-0 bg-black/45 animate-fade" onClick={() => setOpen(false)} />
+            <div className="absolute right-0 top-0 h-full w-[82%] max-w-sm bg-white shadow-2xl animate-drawer flex flex-col overflow-hidden">
+              <div className="flex items-center justify-between px-5 py-4 border-b border-line shrink-0">
+                <span className="font-ahsing text-xl text-ink tracking-wide">GZS WEAR</span>
+                <button type="button" onClick={() => setOpen(false)} aria-label="Cerrar menú" className="p-2 -mr-2">
+                  <X size={24} />
+                </button>
               </div>
-            </nav>
-          </div>
-        </div>
-      )}
+              <nav className="flex flex-col p-5 gap-1 text-[15px] font-semibold overflow-y-auto">
+                <Link href={shopPath(locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">
+                  {t("nav.shop", locale)}
+                </Link>
+                {NAV_CATS.map(({ cat, key }) => (
+                  <Link key={cat} href={categoryPath(cat, locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">
+                    {t(key, locale)}
+                  </Link>
+                ))}
+                <Link href={contactPath(locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">
+                  {t("nav.contact", locale)}
+                </Link>
+                <Link href={cartPath(locale)} onClick={() => setOpen(false)} className="py-3 border-b border-line">
+                  {t("nav.cart", locale)}
+                </Link>
+                <div className="pt-5">
+                  <LanguageSwitch locale={locale} />
+                </div>
+              </nav>
+            </div>
+          </div>,
+          document.body,
+        )}
     </>
   );
 }
