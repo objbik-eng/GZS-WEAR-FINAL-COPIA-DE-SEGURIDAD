@@ -55,7 +55,7 @@ export default async function ShopPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* PORTADA */}
-      <section className="relative overflow-hidden bg-ink text-white min-h-[46vh] flex items-center">
+      <section className="relative overflow-hidden bg-ink text-white min-h-[60vh] lg:min-h-[70vh] flex items-center">
         <Image
           src="/images/hero-tienda.jpg"
           alt="Colección DISRUPTIVE de GZS WEAR"
