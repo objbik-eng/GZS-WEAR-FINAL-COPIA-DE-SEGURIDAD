@@ -15,11 +15,15 @@ export default async function Header() {
       <div className="bg-forest text-white">
         <div className="overflow-hidden py-2">
           <div className="marquee-track text-[12px] font-semibold tracking-wide">
-            {[0, 1].map((k) => (
-              <div key={k} className="marquee-group" aria-hidden={k === 1}>
-                <span>✦ {t("shipping.banner", locale)}</span>
-                <span>✦ {t("newsletter.title", locale)}</span>
-                <span>✦ {t("hero.badge", locale)}</span>
+            {[0, 1].map((half) => (
+              <div key={half} className="marquee-half" aria-hidden={half === 1}>
+                {[0, 1, 2, 3].map((r) => (
+                  <div key={r} className="marquee-group">
+                    <span>✦ {t("shipping.banner", locale)}</span>
+                    <span>✦ {t("newsletter.title", locale)}</span>
+                    <span>✦ {t("hero.badge", locale)}</span>
+                  </div>
+                ))}
               </div>
             ))}
           </div>

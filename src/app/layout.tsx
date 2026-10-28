@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Inter, Pirata_One } from "next/font/google";
+import localFont from "next/font/local";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
@@ -11,7 +12,21 @@ import { getLocale } from "@/lib/locale-server";
 
 const archivo = Archivo({ subsets: ["latin"], variable: "--font-archivo", display: "swap", weight: ["400", "500", "600", "700", "800", "900"] });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap", weight: ["400", "500", "600", "700"] });
-const pirata = Pirata_One({ subsets: ["latin"], variable: "--font-pirata", display: "swap", weight: ["400"] });
+const pirata = Pirata_One({ subsets: ["latin"], variable: "--font-pirata", display: "swap", weight: "400" });
+const ahsing = localFont({
+  src: "./fonts/Ahsing-Regular.otf",
+  variable: "--ahsing",
+  display: "swap",
+  weight: "400",
+});
+const garet = localFont({
+  src: [
+    { path: "./fonts/Garet-Book.ttf", weight: "300", style: "normal" },
+    { path: "./fonts/Garet-Heavy.ttf", weight: "850", style: "normal" },
+  ],
+  variable: "--garet",
+  display: "swap",
+});
 
 const SITE_URL = process.env.SITE_URL || "https://gzswear.roadshop.online";
 
@@ -56,7 +71,7 @@ export const viewport: Viewport = {
 export default async function RootLayout({ children }: { children: ReactNode }) {
   const locale = await getLocale();
   return (
-    <html lang={locale === "es" ? "es-ES" : "en-US"} className={`${archivo.variable} ${inter.variable} ${pirata.variable}`}>
+    <html lang={locale === "es" ? "es-ES" : "en-US"} className={`${archivo.variable} ${inter.variable} ${pirata.variable} ${ahsing.variable} ${garet.variable}`}>
       <body className="bg-white text-ink antialiased min-h-screen flex flex-col">
         <script
           type="application/ld+json"

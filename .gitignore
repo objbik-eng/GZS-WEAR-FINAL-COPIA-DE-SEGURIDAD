@@ -30,3 +30,6 @@ scripts/.tmp-req.json
 
 # Mapas internos con URLs del proveedor de imágenes
 scripts/image-map.json
+
+# Vercel CLI local link
+.vercel

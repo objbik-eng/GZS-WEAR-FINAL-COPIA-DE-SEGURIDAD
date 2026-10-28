@@ -115,7 +115,7 @@ export function MobileMenu({ locale }: { locale: Locale }) {
           <div className="absolute inset-0 bg-black/45 animate-fade" onClick={() => setOpen(false)} />
           <div className="absolute right-0 top-0 h-full w-[82%] max-w-sm bg-white shadow-2xl animate-drawer flex flex-col">
             <div className="flex items-center justify-between px-5 py-4 border-b border-line">
-              <span className="font-display font-800 text-lg">GZS WEAR<span className="text-gold">*</span></span>
+              <span className="font-ahsing text-xl text-ink tracking-wide">GZS WEAR</span>
               <button type="button" onClick={() => setOpen(false)} aria-label="Cerrar menú" className="p-2">
                 <X size={24} />
               </button>

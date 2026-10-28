@@ -69,26 +69,26 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <div className="absolute inset-0 bg-black/55" />
         <div className="container-gzs relative z-10 py-24 lg:py-32">
           <div className="max-w-3xl animate-fadeUp">
-            <h1 className="text-[clamp(44px,8.5vw,104px)] leading-[0.95] font-black text-white uppercase tracking-tight">
+            <h1 className="font-ahsing text-[clamp(48px,9vw,112px)] leading-[0.95] font-normal text-white uppercase tracking-tight">
               {locale === "es" ? (
                 <>
                   El arte
                   <br />
-                  <span className="text-gold">se viste</span>
+                  se viste
                 </>
               ) : (
                 <>
                   Art
                   <br />
-                  <span className="text-gold">is worn</span>
+                  is worn
                 </>
               )}
             </h1>
-            <p className="mt-6 text-brand-red font-display font-extrabold uppercase tracking-[0.22em] text-[clamp(16px,2.2vw,24px)]">
+            <p className="mt-6 text-brand-red font-garet font-[850] uppercase tracking-[0.18em] text-[clamp(20px,3vw,32px)]">
               {t("hero.collection", locale)}
             </p>
             <div className="mt-10">
-              <Link href={shopPath(locale)} className="btn btn-gold text-base px-9 py-4">
+              <Link href={shopPath(locale)} className="btn btn-primary text-base px-9 py-4">
                 {t("hero.cta", locale)} <ArrowRight size={18} />
               </Link>
             </div>
@@ -143,6 +143,17 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
+      {/* NEWSLETTER (encima del FAQ, fondo verde) */}
+      <section className="newsletter-light bg-forest text-white py-16 lg:py-20">
+        <div className="container-gzs text-center">
+          <h2 className="font-display text-[clamp(24px,3.4vw,38px)] font-black text-white">{t("newsletter.title", locale)}</h2>
+          <p className="mt-3 text-white/85 max-w-xl mx-auto">{t("newsletter.subtitle", locale)}</p>
+          <div className="mt-8 max-w-xl mx-auto">
+            <NewsletterForm locale={locale} />
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="bg-cream py-16 lg:py-20">
         <div className="container-gzs max-w-3xl">
@@ -157,17 +168,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                 <p className="mt-3 text-sm text-smoke leading-relaxed">{f.a}</p>
               </details>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* NEWSLETTER (pegada al footer, sin separación blanca) */}
-      <section className="bg-ink text-white py-16 lg:py-20">
-        <div className="container-gzs text-center">
-          <h2 className="font-display text-[clamp(24px,3.4vw,38px)] font-black text-white">{t("newsletter.title", locale)}</h2>
-          <p className="mt-3 text-white/75 max-w-xl mx-auto">{t("newsletter.subtitle", locale)}</p>
-          <div className="mt-8 max-w-xl mx-auto">
-            <NewsletterForm locale={locale} />
           </div>
         </div>
       </section>
