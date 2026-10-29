@@ -88,7 +88,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
               {t("hero.collection", locale)}
             </p>
             <div className="mt-10">
-              <Link href={shopPath(locale)} className="btn btn-primary text-base px-9 py-4">
+              <Link href={`${shopPath(locale)}#todos`} className="btn btn-primary text-base px-9 py-4">
                 {t("hero.cta", locale)} <ArrowRight size={18} />
               </Link>
             </div>
@@ -120,6 +120,20 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             {bestSellers.map((p: Product, i: number) => (
               <ProductCard key={p.productId} product={p} locale={locale} priority={i < 4} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* UNA COLECCIÓN, TU FORMA DE LLEVARLA */}
+      <section className="container-gzs py-16 lg:py-24">
+        <div className="border-y border-line py-10 lg:py-14 grid lg:grid-cols-2 gap-6 lg:gap-16 items-center">
+          <div>
+            <span className="eyebrow">GZS WEAR · DISRUPTIVE</span>
+            <h2 className="font-display font-black text-[clamp(28px,4vw,48px)] leading-tight mt-3">{locale === "es" ? "El arte también se lleva puesto." : "Art is made to be worn."}</h2>
+          </div>
+          <div>
+            <p className="text-smoke leading-relaxed">{locale === "es" ? "Una colección de prendas y accesorios unisex donde el arte y el estilo urbano se encuentran. Explora los diseños y encuentra la pieza que habla de ti." : "A collection of unisex clothing and accessories where art meets streetwear. Explore the designs and find the piece that speaks to you."}</p>
+            <Link href={`${shopPath(locale)}#todos`} className="mt-6 inline-flex items-center gap-2 text-forest font-bold hover:underline underline-offset-4">{locale === "es" ? "Descubrir las prendas" : "Discover the collection"} <ArrowRight size={17} /></Link>
           </div>
         </div>
       </section>

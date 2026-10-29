@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { useMemo, useState } from "react";
 import type { Product, ProductType } from "@/lib/catalog";
 import { TYPE_FILTERS } from "@/lib/catalog";
 import { t, type Locale } from "@/i18n/dict";
@@ -18,14 +17,8 @@ export default function ShopClient({
   locale: Locale;
   initialFilter: ProductType | "all";
 }) {
-  const [open, setOpen] = useState(initialFilter !== "all");
   const [filter, setFilter] = useState<ProductType | "all">(initialFilter);
   const [sort, setSort] = useState<Sort>("featured");
-
-  // Al volver desde una tarjeta con #todos, desplegar automáticamente.
-  useEffect(() => {
-    if (window.location.hash === "#todos") setOpen(true);
-  }, []);
 
   const visible = useMemo(() => {
     const list = filter === "all" ? [...products] : products.filter((p) => p.type === filter);
@@ -39,22 +32,13 @@ export default function ShopClient({
 
   return (
     <div id="todos" className="scroll-mt-28">
-      <div className="text-center py-10">
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          className="inline-flex items-center gap-2 text-forest font-display font-extrabold text-lg lg:text-xl underline underline-offset-8 decoration-2 hover:text-forest-deep transition-colors"
-        >
-          {open ? t("shop.hideAll", locale) : t("shop.viewAll", locale)}
-          <ChevronDown size={20} className={`transition-transform ${open ? "rotate-180" : ""}`} />
-        </button>
+      <div className="mb-8 border-b border-line pb-6">
+        <span className="eyebrow">DISRUPTIVE</span>
+        <h2 className="font-display font-black text-[clamp(26px,3.4vw,40px)] mt-2">{locale === "es" ? "Explora la colección" : "Explore the collection"}</h2>
+        <p className="mt-2 text-smoke">{locale === "es" ? "Encuentra tu próxima prenda entre camisetas, sudaderas y accesorios." : "Find your next piece among tees, sweatshirts and accessories."}</p>
       </div>
-
-      {open && (
-        <>
           <div className="flex flex-col lg:flex-row lg:items-center gap-4 justify-between mb-8">
-            <div className="flex flex-wrap gap-2" role="tablist" aria-label="Filtros">
+            <div className="flex flex-wrap gap-2" role="tablist" aria-label={locale === "es" ? "Filtrar productos" : "Filter products"}>
               {TYPE_FILTERS.map((f) => (
                 <button
                   key={f.id}
@@ -91,8 +75,6 @@ export default function ShopClient({
               <ProductCard key={p.productId} product={p} locale={locale} priority={i < 4} />
             ))}
           </div>
-        </>
-      )}
     </div>
   );
 }

@@ -82,9 +82,13 @@ export default async function ShopPage({
           <span className="text-ink font-semibold">{locale === "es" ? "Tienda" : "Shop"}</span>
         </nav>
 
-        <CategoryCards locale={locale} />
-
         <ShopClient products={products} locale={locale} initialFilter={initialFilter} />
+
+        <section className="pt-20 lg:pt-28" aria-labelledby="shop-categories">
+          <span className="eyebrow">GZS WEAR</span>
+          <h2 id="shop-categories" className="font-display font-black text-[clamp(26px,3.4vw,40px)] mt-2 mb-8">{locale === "es" ? "Compra por categoría" : "Shop by category"}</h2>
+          <CategoryCards locale={locale} />
+        </section>
       </div>
     </div>
   );
