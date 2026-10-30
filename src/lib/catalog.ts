@@ -40,6 +40,7 @@ export interface Product {
   sizeGuide: SizeGuide;
   gpsr: Record<string, string> | null;
   modelImage: string | null;
+  modelColorId?: string;
   tags: string[];
   updatedAt: string;
 }

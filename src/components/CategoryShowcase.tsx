@@ -16,11 +16,12 @@ function Section({ product, locale, flip, index, alternating }: { product: Produ
   const [error, setError] = useState(false);
   const [added, setAdded] = useState(false);
 
+  const displayColor = product.colors.find((c) => c.id === product.modelColorId) || product.colors[0];
   const gallery = useMemo(() => {
-    const imgs = product.colors[0].images.gallery.filter(Boolean);
+    const imgs = displayColor.images.gallery.filter(Boolean);
     const all = product.modelImage ? [product.modelImage, ...imgs] : imgs;
     return [...new Set(all)];
-  }, [product]);
+  }, [product, displayColor]);
 
   const current = gallery[active] || gallery[0];
 
@@ -29,7 +30,7 @@ function Section({ product, locale, flip, index, alternating }: { product: Produ
       setError(true);
       return;
     }
-    const color = product.colors[0];
+    const color = displayColor;
     add({
       id: product.productId,
       slugEs: product.slug.es,
@@ -80,6 +81,7 @@ function Section({ product, locale, flip, index, alternating }: { product: Produ
             <p className="text-2xl font-extrabold mt-3 text-white">{formatPrice(product.priceEurCents, locale)}</p>
             <p className="mt-4 text-white/85 text-[15px] leading-relaxed max-w-lg">{product.description[locale]}</p>
 
+            {product.modelColorId && <p className="mt-3 text-sm text-white/85">{t("product.color", locale)}: {locale === "es" ? displayColor.nameEs : displayColor.nameEn}</p>}
             {/* Tallas */}
             <div className="mt-6">
               <p className="text-xs font-bold uppercase tracking-widest text-white/70 mb-2.5">{t("product.size", locale)}</p>

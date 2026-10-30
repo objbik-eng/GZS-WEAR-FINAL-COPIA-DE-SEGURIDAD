@@ -2208,6 +2208,7 @@
             "front": "/catalog/9471ca5573e67ef0.jpg",
             "back": null,
             "gallery": [
+              "/models/accesorios-usuario/17-b.jpg",
               "/catalog/9471ca5573e67ef0.jpg",
               "/catalog/0656c14f0b4bbfa9.jpg",
               "/catalog/6f68570882a02f64.jpg"
@@ -2321,14 +2322,15 @@
         "Product information": "Econscious EC7000, two year warranty in the EU and Northern Ireland",
         "Care instructions": "Use warm water and dish soap and clean spots off your hat. It's not necessary to soak the whole item. For hard to clean spots use a soft bristled brush."
       },
-      "modelImage": null,
+      "modelImage": "/models/accesorios-usuario/17-principal.jpg",
       "tags": [
         "Unisex",
         "Hats",
         "Embroidery",
         "Accessories"
       ],
-      "updatedAt": "2026-10-27 09:44:03+00:00"
+      "updatedAt": "2026-10-27 09:44:03+00:00",
+      "modelColorId": "Black"
     },
     {
       "productId": "6ae07261136de5382006afc6",
@@ -2420,6 +2422,7 @@
             "front": "/catalog/15ebfc8a4781706f.jpg",
             "back": null,
             "gallery": [
+              "/models/accesorios-usuario/18-b.jpg",
               "/catalog/15ebfc8a4781706f.jpg",
               "/catalog/30249ce952353ccf.jpg",
               "/catalog/6f9fb57993a473af.jpg"
@@ -2470,14 +2473,15 @@
         "Product information": "Econscious EC7000, two year warranty in the EU and Northern Ireland",
         "Care instructions": "Use warm water and dish soap and clean spots off your hat. It's not necessary to soak the whole item. For hard to clean spots use a soft bristled brush."
       },
-      "modelImage": null,
+      "modelImage": "/models/accesorios-usuario/18-principal.jpg",
       "tags": [
         "Unisex",
         "Hats",
         "Embroidery",
         "Accessories"
       ],
-      "updatedAt": "2026-10-27 09:44:01+00:00"
+      "updatedAt": "2026-10-27 09:44:01+00:00",
+      "modelColorId": "Oyster"
     },
     {
       "productId": "6ae0773575e663e3a60cd4bf",
@@ -2527,6 +2531,7 @@
             "front": "/catalog/39fb4ead24ccd2e3.jpg",
             "back": null,
             "gallery": [
+              "/models/accesorios-usuario/19-c.jpg",
               "/catalog/39fb4ead24ccd2e3.jpg",
               "/catalog/305a3b3d86ed32ef.jpg"
             ]
@@ -2687,6 +2692,7 @@
             "front": "/catalog/c9c839ff99cfe56f.jpg",
             "back": null,
             "gallery": [
+              "/models/accesorios-usuario/19-b.jpg",
               "/catalog/c9c839ff99cfe56f.jpg",
               "/catalog/ccb5caa8d919963c.jpg"
             ]
@@ -2757,7 +2763,7 @@
         "Warnings, Hazard": "For adults",
         "Care instructions": "Use warm water and dish soap and clean spots off your hat. It's not necessary to soak the whole item. For hard to clean spots use a soft bristled brush."
       },
-      "modelImage": null,
+      "modelImage": "/models/accesorios-usuario/19-principal.jpg",
       "tags": [
         "Embroidery",
         "Hats",
@@ -2765,7 +2771,8 @@
         "Unisex",
         "Beanies"
       ],
-      "updatedAt": "2026-10-27 12:26:58+00:00"
+      "updatedAt": "2026-10-27 12:26:58+00:00",
+      "modelColorId": "White"
     },
     {
       "productId": "6ae075cf9d3ed354f7003d89",
@@ -2835,6 +2842,7 @@
             "front": "/catalog/75c3a64f44c30841.jpg",
             "back": null,
             "gallery": [
+              "/models/accesorios-usuario/20-b.jpg",
               "/catalog/75c3a64f44c30841.jpg",
               "/catalog/442ac57986333463.jpg"
             ]
@@ -2985,7 +2993,7 @@
         "Warnings, Hazard": "For adults",
         "Care instructions": "Use warm water and dish soap and clean spots off your hat. It's not necessary to soak the whole item. For hard to clean spots use a soft bristled brush."
       },
-      "modelImage": null,
+      "modelImage": "/models/accesorios-usuario/20-principal.jpg",
       "tags": [
         "Embroidery",
         "Hats",
@@ -2993,7 +3001,8 @@
         "Unisex",
         "Beanies"
       ],
-      "updatedAt": "2026-10-27 12:26:59+00:00"
+      "updatedAt": "2026-10-27 12:26:59+00:00",
+      "modelColorId": "Black"
     }
   ]
 }

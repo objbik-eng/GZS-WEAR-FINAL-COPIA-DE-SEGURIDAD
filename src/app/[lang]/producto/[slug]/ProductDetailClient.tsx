@@ -24,7 +24,7 @@ export default function ProductDetailClient({
   const { add } = useCart();
   const intlZones = internationalPreview(product.type);
   const gpsrRows = product.gpsr ? localizeGpsr(product.gpsr, locale) : [];
-  const [colorId, setColorId] = useState(product.colors[0].id);
+  const [colorId, setColorId] = useState(product.modelColorId || product.colors[0].id);
   const [size, setSize] = useState<string | null>(product.sizes.length === 1 ? product.sizes[0] : null);
   const [qty, setQty] = useState(1);
   const [error, setError] = useState("");
@@ -33,9 +33,9 @@ export default function ProductDetailClient({
   const color = product.colors.find((c) => c.id === colorId) || product.colors[0];
   const gallery = useMemo(() => {
     const imgs = color.images.gallery.filter(Boolean);
-    const all = product.modelImage ? [product.modelImage, ...imgs] : imgs;
+    const all = product.modelImage && (!product.modelColorId || color.id === product.modelColorId) ? [product.modelImage, ...imgs] : imgs;
     return [...new Set(all)];
-  }, [color, product.modelImage]);
+  }, [color, product.modelImage, product.modelColorId]);
   const [active, setActive] = useState(0);
 
   const cartPayload = () => ({
@@ -107,7 +107,7 @@ export default function ProductDetailClient({
               <span className="bg-gold text-ink text-[11px] font-extrabold uppercase tracking-wider px-3 py-1.5 rounded-full">
                 {t("product.unisex", locale)}
               </span>
-              {product.modelImage && active === 0 && (
+              {product.modelImage && gallery[active] === product.modelImage && (
                 <span className="bg-forest text-white text-[11px] font-extrabold uppercase tracking-wider px-3 py-1.5 rounded-full">
                   {locale === "es" ? "Foto de modelo" : "Model image"}
                 </span>
@@ -309,8 +309,9 @@ export default function ProductDetailClient({
               </h2>
               <p className="text-sm text-smoke">
                 {locale === "es"
-                  ? "Así queda esta prenda en un look real de ciudad."
-                  : "How this piece looks in a real city outfit."}
+                  ? "Un look de inspiración urbana."
+                  : "An urban-inspired look."}
+                {product.modelColorId && ` · ${locale === "es" ? "Color" : "Colour"}: ${locale === "es" ? (product.colors.find(c => c.id === product.modelColorId)?.nameEs || "") : (product.colors.find(c => c.id === product.modelColorId)?.nameEn || "")}`}
               </p>
             </div>
           </div>
