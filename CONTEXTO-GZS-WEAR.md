@@ -1,6 +1,6 @@
 # GZS WEAR — traspaso completo del proyecto
 
-Actualizado el 29 de octubre de 2026. Documento de continuidad para un nuevo chat. **Este documento no contiene claves ni contraseñas.** Al retomarlo, comprobar el estado real antes de actuar: los sistemas externos, DNS y datos pueden haber cambiado.
+Actualizado el 30 de octubre de 2026. Documento de continuidad para un nuevo chat. **Este documento no contiene claves ni contraseñas.** Al retomarlo, comprobar el estado real antes de actuar: los sistemas externos, DNS y datos pueden haber cambiado.
 
 ## Último estado y acceso para el próximo chat — 30 de octubre de 2026
 
@@ -15,8 +15,14 @@ Actualizado el 29 de octubre de 2026. Documento de continuidad para un nuevo cha
 ## Ajuste responsive de categorías — 30 de octubre de 2026
 
 - En camisetas, sudaderas y accesorios, el hero conserva el nombre de categoría en Ahsing blanco y muestra «COLECCIÓN DISRUPTIVE» en Garet rojo (EN «DISRUPTIVE COLLECTION»). `CategoryPage.tsx`.
-- La imagen principal de cada sección utiliza `object-contain` en móvil para no recortar la foto y `object-cover` en escritorio. La cuadrícula móvil usa `grid-cols-1` y `min-w-0` para impedir que las miniaturas hagan desbordar la imagen. Flechas accesibles anterior/siguiente cambian la foto en bucle, sincronizadas con miniaturas; el fondo permanece fijo. `CategoryShowcase.tsx`.
+- La imagen principal de cada sección conserva su proporción natural en móvil y escritorio, con ancho 100 % y altura automática, sin marco oscuro ni recorte. La cuadrícula móvil usa `grid-cols-1` y `min-w-0` para impedir que las miniaturas hagan desbordar la imagen. Flechas accesibles anterior/siguiente cambian la foto en bucle, sincronizadas con miniaturas; el fondo permanece fijo. `CategoryShowcase.tsx`.
 - Al verificar o modificar, probar los tres tipos de categoría, 320/390 px, escritorio y ES/EN, navegación por flechas, miniaturas, foto completa y fondo invariable. La compilación local puede fallar por errores intermitentes de Next/font Google; no sustituir las fuentes sin autorización ni confundir un build fallido con un despliegue exitoso.
+
+## Ajuste final de fotos — 30 de octubre de 2026
+
+- A petición del usuario, `CategoryShowcase.tsx` ya no encaja fotos en un rectángulo fijo con marco oscuro: cada imagen se presenta a ancho disponible y altura automática según su proporción natural. Las flechas y miniaturas siguen cambiando la foto, sin cambiar el fondo fijo de la sección.
+- En las fichas individuales `ProductDetailClient.tsx` la galería principal y la foto editorial de modelo también conservan la proporción de la imagen sin recortarla. La cuadrícula y las miniaturas tienen restricciones de anchura para evitar el desbordamiento móvil. La foto de cada variante sigue ligada al color correspondiente.
+- Al cambiar imágenes, probar fichas ES/EN, móvil 320/390, escritorio, imágenes horizontales y verticales, selección de color y navegación por miniaturas; asegurar que no se recorta ni desborda. No modificar la relación entre foto, color y variante de compra.
 
 ## Instrucciones prioritarias para el próximo asistente
 

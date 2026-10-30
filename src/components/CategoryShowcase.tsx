@@ -69,8 +69,8 @@ function Section({ product, locale, flip, index, alternating }: { product: Produ
       <div className="container-gzs relative z-10 py-16 lg:py-24 min-h-[72vh] flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full min-w-0 items-center">
           {/* La imagen aparece primero en móvil; en escritorio alterna con el texto. */}
-          <div className={`relative w-full min-w-0 aspect-[4/5] rounded-2xl overflow-hidden bg-ink ${alternating ? (flip ? "lg:order-1" : "lg:order-2") : "lg:hidden"}`}>
-            <Image src={current} alt={`${product.name[locale]} — ${locale === "es" ? "vista de producto" : "product view"}`} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain lg:object-cover" priority={index < 2} />
+          <div className={`relative w-full min-w-0 rounded-2xl overflow-hidden ${alternating ? (flip ? "lg:order-1" : "lg:order-2") : "lg:hidden"}`}>
+            <Image src={current} alt={`${product.name[locale]} — ${locale === "es" ? "vista de producto" : "product view"}`} width={1600} height={1600} sizes="(min-width: 1024px) 50vw, 100vw" className="block w-full h-auto" priority={index < 2} />
             {gallery.length > 1 && (
               <>
                 <button type="button" onClick={() => setActive((i) => (i - 1 + gallery.length) % gallery.length)} aria-label={locale === "es" ? "Imagen anterior" : "Previous image"} className="absolute left-3 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-11 h-11 rounded-full bg-ink/75 text-white hover:bg-ink focus-visible:outline-2 focus-visible:outline-white">

@@ -73,10 +73,10 @@ export default function ProductDetailClient({
 
   return (
     <div className="container-gzs py-8 lg:py-12">
-      <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 min-w-0">
         {/* GALERÍA */}
-        <div className="flex flex-col-reverse sm:flex-row gap-4">
-          <div className="flex sm:flex-col gap-3 overflow-x-auto no-scrollbar sm:w-20 shrink-0">
+        <div className="flex flex-col-reverse sm:flex-row gap-4 min-w-0">
+          <div className="flex sm:flex-col gap-3 overflow-x-auto sm:overflow-y-auto no-scrollbar w-full sm:w-20 sm:max-h-[70vh] min-w-0 shrink-0">
             {gallery.map((src, i) => (
               <button
                 key={src + i}
@@ -90,17 +90,18 @@ export default function ProductDetailClient({
               </button>
             ))}
           </div>
-          <div className="relative flex-1 aspect-[4/5] rounded-2xl overflow-hidden bg-cream">
+          <div className="relative flex-1 w-full min-w-0 rounded-2xl overflow-hidden">
             {gallery[active] && (
               <Image
                 src={gallery[active]}
                 alt={
                   `${product.name[locale]} — ${locale === "es" ? "imagen de producto" : "product image"} ${active + 1}`
                 }
-                fill
+                width={1600}
+                height={1600}
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="block w-full h-auto"
               />
             )}
             <div className="absolute top-4 left-4 flex flex-col gap-2">
@@ -315,13 +316,14 @@ export default function ProductDetailClient({
               </p>
             </div>
           </div>
-          <div className="relative w-full max-w-md mx-auto aspect-[4/5] rounded-2xl overflow-hidden bg-cream">
+          <div className="relative w-full max-w-md mx-auto rounded-2xl overflow-hidden">
             <Image
               src={product.modelImage}
               alt={`${product.name[locale]} — ${locale === "es" ? "modelo en entorno urbano" : "urban model shot"}`}
-              fill
+              width={1600}
+              height={1600}
               sizes="(max-width: 768px) 100vw, 448px"
-              className="object-cover"
+              className="block w-full h-auto"
             />
           </div>
         </section>
