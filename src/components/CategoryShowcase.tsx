@@ -9,7 +9,7 @@ import { t, formatPrice, type Locale } from "@/i18n/dict";
 import { useCart } from "@/context/CartContext";
 import { productPath } from "@/lib/routes";
 
-function Section({ product, locale, flip, index }: { product: Product; locale: Locale; flip: boolean; index: number }) {
+function Section({ product, locale, flip, index, alternating }: { product: Product; locale: Locale; flip: boolean; index: number; alternating: boolean }) {
   const { add } = useCart();
   const [active, setActive] = useState(0);
   const [size, setSize] = useState<string | null>(product.sizes.length === 1 ? product.sizes[0] : null);
@@ -55,8 +55,8 @@ function Section({ product, locale, flip, index }: { product: Product; locale: L
       {/* Fondo: foto principal con oscurecimiento fijo del 60% */}
       <div className="absolute inset-0">
         <Image
-          src={current}
-          alt={`${product.name[locale]} — fotografía principal`}
+          src={alternating ? (product.modelImage || gallery[0]) : current}
+          alt=""
           fill
           priority={index < 2}
           sizes="100vw"
@@ -66,13 +66,13 @@ function Section({ product, locale, flip, index }: { product: Product; locale: L
       </div>
 
       <div className="container-gzs relative z-10 py-16 lg:py-24 min-h-[72vh] flex items-center">
-        <div className={`grid lg:grid-cols-2 gap-10 w-full ${flip ? "lg:[&>*:first-child]:order-2" : ""}`}>
-          {/* En móvil: foto primero */}
-          <div className="lg:hidden relative aspect-[4/5] rounded-2xl overflow-hidden">
-            <Image src={current} alt="" fill sizes="100vw" className="object-cover" priority={index < 2} />
+        <div className="grid lg:grid-cols-2 gap-10 w-full items-center">
+          {/* La imagen aparece primero en móvil; en escritorio alterna con el texto. */}
+          <div className={`relative aspect-[4/5] rounded-2xl overflow-hidden ${alternating ? (flip ? "lg:order-1" : "lg:order-2") : "lg:hidden"}`}>
+            <Image src={current} alt={`${product.name[locale]} — ${locale === "es" ? "vista de producto" : "product view"}`} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" priority={index < 2} />
           </div>
 
-          <div className="text-white">
+          <div className={`text-white ${alternating ? (flip ? "lg:order-2" : "lg:order-1") : ""}`}>
             <p className="text-gold text-[11px] font-extrabold uppercase tracking-[0.25em]">{product.collection}</p>
             <h2 className="font-display font-black text-[clamp(26px,3.6vw,42px)] leading-tight mt-2 text-white">
               {product.name[locale]}
@@ -134,7 +134,8 @@ function Section({ product, locale, flip, index }: { product: Product; locale: L
                     key={src + i}
                     type="button"
                     onClick={() => setActive(i)}
-                    aria-label={`Imagen ${i + 1}`}
+                    aria-label={`${locale === "es" ? "Ver imagen" : "View image"} ${i + 1}`}
+                    aria-pressed={active === i}
                     className={`relative w-20 h-24 rounded-lg overflow-hidden shrink-0 border-2 transition-colors ${
                       active === i ? "border-gold" : "border-white/25 hover:border-white/60"
                     }`}
@@ -176,11 +177,11 @@ function Section({ product, locale, flip, index }: { product: Product; locale: L
   );
 }
 
-export default function CategoryShowcase({ products, locale }: { products: Product[]; locale: Locale }) {
+export default function CategoryShowcase({ products, locale, alternating = false }: { products: Product[]; locale: Locale; alternating?: boolean }) {
   return (
     <div>
       {products.map((p, i) => (
-        <Section key={p.productId} product={p} locale={locale} flip={i % 2 === 1} index={i} />
+        <Section key={p.productId} product={p} locale={locale} flip={i % 2 === 1} index={i} alternating={alternating} />
       ))}
     </div>
   );

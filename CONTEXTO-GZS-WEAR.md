@@ -18,6 +18,13 @@ Actualizado el 29 de octubre de 2026. Documento de continuidad para un nuevo cha
 - Compilación y TypeScript correctos. Probado en producción con Playwright en 390 y 1440 px: 20 productos en `/tienda` y `/en/shop`; filtro de camisetas devuelve 4; sin desbordamiento horizontal en esas vistas. Home mantiene 6 destacados. No se ha realizado una compra.
 - El trabajo es una mejora concreta, **no una auditoría completa ni garantía de que todo el sitio esté terminado**. Continuar revisando páginas de categoría, fichas, cesta, accesibilidad, rendimiento, contenido, coherencia comercial y móviles/televisores si el usuario lo desea. El usuario ha usado una frase ambigua sobre televisiones: si se necesita compatibilidad TV específica, preguntar qué dispositivos y navegador tiene en mente.
 
+## Actualización de camisetas — 30 de octubre de 2026
+
+- El usuario envió 13 fotos, y autorizó expresamente usar tal cual las fotos que muestran «GZS WEAR BRANDS» o el logo de Nike en el calzado. No interpretar esta autorización puntual como permiso para cualquier otra imagen futura con marcas.
+- Las fotos se asignaron por orden de catálogo y contraste de diseños, en `public/models/camisetas-usuario/`: principales 1–8 y extras para 2, 3, 6, 7 y 8; la imagen del puente se asoció a la camiseta 7 tras contrastar con el catálogo (en la lista del usuario faltaba su etiqueta). `modelImage` es el fondo fijo y la imagen inicial; las fotos extras están al inicio de la galería del color en `catalog.json`.
+- Camisetas en `CategoryPage` usa cabecera verde, títulos Ahsing blancos y DISRUPTIVE Garet rojo. En `CategoryShowcase` alterna texto/imagen en escritorio; móvil imagen arriba. Cambiar el selector cambia solo la imagen principal, no el fondo. Las otras categorías mantienen su distribución anterior.
+- Fotos suministradas por el usuario: no se ha verificado si son fotografías reales o imágenes sintéticas. No asegurar autenticidad. Typecheck y build correctos; prueba local a 390 y 1440 px de orden y selector.
+
 ## Identidad y requisitos del usuario
 
 - Marca pública: **GZS WEAR**, nunca añadir BRANDS a la denominación visible. No mencionar proveedor salvo donde corresponda legalmente; no usar “bajo demanda”. No mencionar Stripe en textos de cliente. Sin promociones.

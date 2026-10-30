@@ -95,9 +95,7 @@ export default function ProductDetailClient({
               <Image
                 src={gallery[active]}
                 alt={
-                  product.modelImage && active === 0
-                    ? `${product.name[locale]} — ${locale === "es" ? "foto de modelo en entorno urbano" : "urban model photograph"}`
-                    : `${product.name[locale]} — ${active === 0 || (product.modelImage && active === 1) ? (locale === "es" ? "vista frontal" : "front view") : locale === "es" ? "vista trasera" : "back view"}`
+                  `${product.name[locale]} — ${locale === "es" ? "imagen de producto" : "product image"} ${active + 1}`
                 }
                 fill
                 priority
@@ -111,7 +109,7 @@ export default function ProductDetailClient({
               </span>
               {product.modelImage && active === 0 && (
                 <span className="bg-forest text-white text-[11px] font-extrabold uppercase tracking-wider px-3 py-1.5 rounded-full">
-                  {locale === "es" ? "Foto real de modelo" : "Real model shot"}
+                  {locale === "es" ? "Foto de modelo" : "Model image"}
                 </span>
               )}
             </div>
