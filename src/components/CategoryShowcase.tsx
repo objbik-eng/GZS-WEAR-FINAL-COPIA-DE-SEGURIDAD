@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Check, ChevronDown } from "lucide-react";
+import { Check, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import type { Product } from "@/lib/catalog";
 import { t, formatPrice, type Locale } from "@/i18n/dict";
 import { useCart } from "@/context/CartContext";
@@ -67,13 +67,23 @@ function Section({ product, locale, flip, index, alternating }: { product: Produ
       </div>
 
       <div className="container-gzs relative z-10 py-16 lg:py-24 min-h-[72vh] flex items-center">
-        <div className="grid lg:grid-cols-2 gap-10 w-full items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full min-w-0 items-center">
           {/* La imagen aparece primero en móvil; en escritorio alterna con el texto. */}
-          <div className={`relative aspect-[4/5] rounded-2xl overflow-hidden ${alternating ? (flip ? "lg:order-1" : "lg:order-2") : "lg:hidden"}`}>
-            <Image src={current} alt={`${product.name[locale]} — ${locale === "es" ? "vista de producto" : "product view"}`} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" priority={index < 2} />
+          <div className={`relative w-full min-w-0 aspect-[4/5] rounded-2xl overflow-hidden bg-ink ${alternating ? (flip ? "lg:order-1" : "lg:order-2") : "lg:hidden"}`}>
+            <Image src={current} alt={`${product.name[locale]} — ${locale === "es" ? "vista de producto" : "product view"}`} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain lg:object-cover" priority={index < 2} />
+            {gallery.length > 1 && (
+              <>
+                <button type="button" onClick={() => setActive((i) => (i - 1 + gallery.length) % gallery.length)} aria-label={locale === "es" ? "Imagen anterior" : "Previous image"} className="absolute left-3 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-11 h-11 rounded-full bg-ink/75 text-white hover:bg-ink focus-visible:outline-2 focus-visible:outline-white">
+                  <ChevronLeft size={22} aria-hidden="true" />
+                </button>
+                <button type="button" onClick={() => setActive((i) => (i + 1) % gallery.length)} aria-label={locale === "es" ? "Imagen siguiente" : "Next image"} className="absolute right-3 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-11 h-11 rounded-full bg-ink/75 text-white hover:bg-ink focus-visible:outline-2 focus-visible:outline-white">
+                  <ChevronRight size={22} aria-hidden="true" />
+                </button>
+              </>
+            )}
           </div>
 
-          <div className={`text-white ${alternating ? (flip ? "lg:order-2" : "lg:order-1") : ""}`}>
+          <div className={`text-white min-w-0 ${alternating ? (flip ? "lg:order-2" : "lg:order-1") : ""}`}>
             <p className="text-gold text-[11px] font-extrabold uppercase tracking-[0.25em]">{product.collection}</p>
             <h2 className="font-display font-black text-[clamp(26px,3.6vw,42px)] leading-tight mt-2 text-white">
               {product.name[locale]}

@@ -79,8 +79,8 @@ export default function CategoryPage({ cat, lang }: { cat: CategoryId; lang: str
               <span className="text-white font-semibold">{cat === "camisetas" ? (locale === "es" ? "Camisetas" : "T-shirts") : cat === "sudaderas" ? (locale === "es" ? "Sudaderas" : "Sweatshirts") : (locale === "es" ? "Accesorios" : "Accessories")}</span>
             </nav>
             <h1 className="font-ahsing font-normal text-white text-[clamp(32px,5.5vw,64px)] uppercase leading-[1.02]">
-              {cat === "camisetas" ? (locale === "es" ? "Camisetas colección" : "T-shirts collection") : cat === "sudaderas" ? (locale === "es" ? "Sudaderas colección" : "Sweatshirts collection") : (locale === "es" ? "Accesorios colección" : "Accessories collection")}
-              <span className="block mt-3 font-garet font-[850] text-brand-red text-[clamp(20px,3vw,32px)] tracking-[0.16em]">Disruptive</span>
+              {cat === "camisetas" ? (locale === "es" ? "Camisetas" : "T-shirts") : cat === "sudaderas" ? (locale === "es" ? "Sudaderas" : "Sweatshirts") : (locale === "es" ? "Accesorios" : "Accessories")}
+              <span className="block mt-3 font-garet font-[850] text-brand-red text-[clamp(20px,3vw,32px)] tracking-[0.16em]">{locale === "es" ? "Colección Disruptive" : "Disruptive Collection"}</span>
             </h1>
             <p className="text-white/85 mt-3 max-w-2xl">{DESCRIPTIONS[cat][locale]}</p>
           </div>

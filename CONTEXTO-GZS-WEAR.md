@@ -12,6 +12,12 @@ Actualizado el 29 de octubre de 2026. Documento de continuidad para un nuevo cha
 - El usuario compartió un token de GitHub en este chat; se aconsejó revocarlo o rotarlo en GitHub. No está incluido intencionalmente en este archivo ni configurado en la URL remota. Las conexiones de GitHub deben autenticarse por medio seguro, con permisos mínimos. No inferir que el nuevo chat tenga acceso.
 - **Lección de persistencia:** el workspace recuperado llegó con `HEAD` anterior y archivos de sudaderas como cambios locales, aunque GitHub ya tenía commit posterior. Antes de editar o desplegar, comparar remoto, HEAD y archivos sin perder trabajo, recuperar history con `git fetch`, verificar ancestros y hashes. No hacer reset destructivo ni forzar push. Nunca desplegar una copia antigua.
 
+## Ajuste responsive de categorías — 30 de octubre de 2026
+
+- En camisetas, sudaderas y accesorios, el hero conserva el nombre de categoría en Ahsing blanco y muestra «COLECCIÓN DISRUPTIVE» en Garet rojo (EN «DISRUPTIVE COLLECTION»). `CategoryPage.tsx`.
+- La imagen principal de cada sección utiliza `object-contain` en móvil para no recortar la foto y `object-cover` en escritorio. La cuadrícula móvil usa `grid-cols-1` y `min-w-0` para impedir que las miniaturas hagan desbordar la imagen. Flechas accesibles anterior/siguiente cambian la foto en bucle, sincronizadas con miniaturas; el fondo permanece fijo. `CategoryShowcase.tsx`.
+- Al verificar o modificar, probar los tres tipos de categoría, 320/390 px, escritorio y ES/EN, navegación por flechas, miniaturas, foto completa y fondo invariable. La compilación local puede fallar por errores intermitentes de Next/font Google; no sustituir las fuentes sin autorización ni confundir un build fallido con un despliegue exitoso.
+
 ## Instrucciones prioritarias para el próximo asistente
 
 1. El usuario quiere una tienda profesional, estética y enfocada a vender, no una maqueta apresurada. Optimizar el recorrido y enriquecer el contenido, **sin eliminar elementos ni cambiar fuentes, colores o diseño sin permiso**. Mantener ES/EN, móvil y escritorio. No inventar datos, testimonios, urgencia, promociones ni garantías.
