@@ -25,6 +25,12 @@ Actualizado el 29 de octubre de 2026. Documento de continuidad para un nuevo cha
 - Camisetas en `CategoryPage` usa cabecera verde, títulos Ahsing blancos y DISRUPTIVE Garet rojo. En `CategoryShowcase` alterna texto/imagen en escritorio; móvil imagen arriba. Cambiar el selector cambia solo la imagen principal, no el fondo. Las otras categorías mantienen su distribución anterior.
 - Fotos suministradas por el usuario: no se ha verificado si son fotografías reales o imágenes sintéticas. No asegurar autenticidad. Typecheck y build correctos; prueba local a 390 y 1440 px de orden y selector.
 
+## Actualización de sudaderas — 30 de octubre de 2026
+
+- El usuario aportó las imágenes 9–16 y variantes B, más 13C. Las principales van en `public/models/sudaderas-usuario/<n>-principal.jpg` y las variantes a la galería de cada producto, respetando el orden del catálogo. Hero verde con Ahsing blanco y DISRUPTIVE rojo Garet, igual a camisetas; secciones alternadas escritorio, foto arriba en móvil y fondo fijo.
+- Aviso de calidad: la foto 13C parece escribir «NOISSE» en lugar de «NOISE», distinto de 13B. El usuario pidió usarla, pero conviene sustituirla por una imagen fiel al producto si lo confirma. No generar ni retocar la prenda sin autorización.
+- Tests locales 390/1440 y ES/EN: ocho secciones, alternancia, selector, fondo inmutable y sin desbordamiento.
+
 ## Identidad y requisitos del usuario
 
 - Marca pública: **GZS WEAR**, nunca añadir BRANDS a la denominación visible. No mencionar proveedor salvo donde corresponda legalmente; no usar “bajo demanda”. No mencionar Stripe en textos de cliente. Sin promociones.

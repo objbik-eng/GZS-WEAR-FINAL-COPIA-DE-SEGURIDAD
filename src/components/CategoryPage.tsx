@@ -70,16 +70,16 @@ export default function CategoryPage({ cat, lang }: { cat: CategoryId; lang: str
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      {cat === "camisetas" ? (
+      {cat === "camisetas" || cat === "sudaderas" ? (
         <header className="bg-forest text-white">
           <div className="container-gzs pt-12 lg:pt-16 pb-10 lg:pb-14">
             <nav aria-label={locale === "es" ? "Ruta de navegación" : "Breadcrumb"} className="text-xs text-white/80 mb-5">
               <a href={homePath(locale)}>{locale === "es" ? "Inicio" : "Home"}</a>
               <span className="mx-2">/</span>
-              <span className="text-white font-semibold">{locale === "es" ? "Camisetas" : "T-shirts"}</span>
+              <span className="text-white font-semibold">{cat === "camisetas" ? (locale === "es" ? "Camisetas" : "T-shirts") : (locale === "es" ? "Sudaderas" : "Sweatshirts")}</span>
             </nav>
             <h1 className="font-ahsing font-normal text-white text-[clamp(32px,5.5vw,64px)] uppercase leading-[1.02]">
-              {locale === "es" ? "Camisetas colección" : "T-shirts collection"}
+              {cat === "camisetas" ? (locale === "es" ? "Camisetas colección" : "T-shirts collection") : (locale === "es" ? "Sudaderas colección" : "Sweatshirts collection")}
               <span className="block mt-3 font-garet font-[850] text-brand-red text-[clamp(20px,3vw,32px)] tracking-[0.16em]">Disruptive</span>
             </h1>
             <p className="text-white/85 mt-3 max-w-2xl">{DESCRIPTIONS[cat][locale]}</p>
@@ -96,7 +96,7 @@ export default function CategoryPage({ cat, lang }: { cat: CategoryId; lang: str
           <p className="text-smoke mt-3 max-w-2xl">{DESCRIPTIONS[cat][locale]}</p>
         </header>
       )}
-      <CategoryShowcase products={products} locale={locale} alternating={cat === "camisetas"} />
+      <CategoryShowcase products={products} locale={locale} alternating={cat === "camisetas" || cat === "sudaderas"} />
     </>
   );
 }
