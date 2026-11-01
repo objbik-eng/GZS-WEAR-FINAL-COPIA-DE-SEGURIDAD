@@ -1,6 +1,9 @@
 # GZS WEAR — traspaso completo del proyecto
 
-Actualizado el 30 de octubre de 2026. Documento de continuidad para un nuevo chat. **Este documento no contiene claves ni contraseñas.** Al retomarlo, comprobar el estado real antes de actuar: los sistemas externos, DNS y datos pueden haber cambiado.
+Actualizado el 30 de octubre de 2026. **Novedades del 1 de noviembre de 2026:** auditoría completa en
+`docs/QUE-FALTA-2026-11-01.md` (qué falta, bloqueantes, decisiones pendientes y correcciones
+aplicadas). Hallazgo crítico: `https://gzswear.roadshop.online` devuelve 404
+`DEPLOYMENT_NOT_FOUND`, así que canonical, sitemap y enlaces de email apuntan a un dominio caído. Documento de continuidad para un nuevo chat. **Este documento no contiene claves ni contraseñas.** Al retomarlo, comprobar el estado real antes de actuar: los sistemas externos, DNS y datos pueden haber cambiado.
 
 ## Último estado y acceso para el próximo chat — 30 de octubre de 2026
 

@@ -138,6 +138,7 @@ export const T: Dict = {
   "legal.cookies": { es: "Política de cookies", en: "Cookie policy" },
   "legal.shipping": { es: "Envíos y devoluciones", en: "Shipping & returns" },
   "legal.contact": { es: "Contacto", en: "Contact" },
+  "legal.orderStatus": { es: "Estado del pedido", en: "Order status" },
   "legal.updated": { es: "Última actualización: octubre de 2026", en: "Last updated: October 2026" },
   "breadcrumb.home": { es: "Inicio", en: "Home" },
   "common.from": { es: "Desde", en: "From" },

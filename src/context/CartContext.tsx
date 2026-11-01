@@ -44,8 +44,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
+    /* La cesta vive en localStorage y solo puede leerse en el cliente: leerla
+       antes provocaría un desajuste de hidratación. */
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       if (raw) setItems(JSON.parse(raw));
     } catch { /* ignore */ }
     setReady(true);

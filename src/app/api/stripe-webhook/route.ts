@@ -81,7 +81,11 @@ async function handlePaidSession(sessionId: string) {
   const order = await upsertOrder(row);
   if (order?.id) {
     try {
-      await insertOrderItems(order.id, dbItems);
+      /* Stripe puede reenviar el mismo evento: no duplicar las líneas del pedido. */
+      const existing = await sb<{ id: string }[]>(
+        `order_items?order_id=eq.${encodeURIComponent(order.id)}&select=id&limit=1`,
+      );
+      if (!existing?.length) await insertOrderItems(order.id, dbItems);
     } catch (e) {
       console.error("order_items:", (e as Error).message);
     }

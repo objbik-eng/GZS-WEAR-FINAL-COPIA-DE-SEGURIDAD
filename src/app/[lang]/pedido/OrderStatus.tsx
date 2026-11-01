@@ -26,19 +26,22 @@ const STEPS: { key: string; es: string; en: string }[] = [
 function Inner({ locale }: { locale: Locale }) {
   const params = useSearchParams();
   const sessionId = params.get("session_id");
-  const [order, setOrder] = useState<OrderData | null>(null);
-  const [loading, setLoading] = useState(true);
+  /* undefined = consultando; null = sin pedido. Evita setState síncrono en el efecto. */
+  const [order, setOrder] = useState<OrderData | null | undefined>(undefined);
 
   useEffect(() => {
-    if (!sessionId) { setLoading(false); return; }
+    if (!sessionId) return;
+    let alive = true;
     fetch(`/api/order?session_id=${encodeURIComponent(sessionId)}`)
       .then((r) => (r.ok ? r.json() : null))
-      .then((d) => setOrder(d))
-      .catch(() => {})
-      .finally(() => setLoading(false));
+      .then((d) => { if (alive) setOrder(d); })
+      .catch(() => { if (alive) setOrder(null); });
+    return () => { alive = false; };
   }, [sessionId]);
 
-  if (loading) return <p className="container-gzs py-28 text-center text-smoke">…</p>;
+  if (sessionId && order === undefined) {
+    return <p className="container-gzs py-28 text-center text-smoke">…</p>;
+  }
   if (!order) {
     return (
       <div className="container-gzs py-28 max-w-xl text-center">

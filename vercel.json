@@ -1,32 +1,100 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/shop.html", "destination": "/tienda", "permanent": true },
-    { "source": "/about.html", "destination": "/", "permanent": true },
-    { "source": "/product.html", "destination": "/tienda", "permanent": true },
-    { "source": "/cart.html", "destination": "/carrito", "permanent": true },
-    { "source": "/checkout.html", "destination": "/checkout", "permanent": true },
-    { "source": "/pedido.html", "destination": "/pedido", "permanent": true },
-    { "source": "/envios-devoluciones.html", "destination": "/legal/envios-devoluciones", "permanent": true },
-    { "source": "/aviso-legal.html", "destination": "/legal/aviso-legal", "permanent": true },
-    { "source": "/privacidad.html", "destination": "/legal/privacidad", "permanent": true },
-    { "source": "/terminos.html", "destination": "/legal/terminos", "permanent": true },
-    { "source": "/cookies.html", "destination": "/legal/cookies", "permanent": true }
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/shop.html",
+      "destination": "/tienda",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "destination": "/tienda",
+      "permanent": true
+    },
+    {
+      "source": "/cart.html",
+      "destination": "/carrito",
+      "permanent": true
+    },
+    {
+      "source": "/checkout.html",
+      "destination": "/checkout",
+      "permanent": true
+    },
+    {
+      "source": "/pedido.html",
+      "destination": "/pedido",
+      "permanent": true
+    },
+    {
+      "source": "/envios-devoluciones.html",
+      "destination": "/legal/envios-devoluciones",
+      "permanent": true
+    },
+    {
+      "source": "/aviso-legal.html",
+      "destination": "/legal/aviso-legal",
+      "permanent": true
+    },
+    {
+      "source": "/privacidad.html",
+      "destination": "/legal/privacidad",
+      "permanent": true
+    },
+    {
+      "source": "/terminos.html",
+      "destination": "/legal/terminos",
+      "permanent": true
+    },
+    {
+      "source": "/cookies.html",
+      "destination": "/legal/cookies",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/api/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
       ]
     },
     {
       "source": "/((?!api/).*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=(self)"
+        }
       ]
     }
   ]

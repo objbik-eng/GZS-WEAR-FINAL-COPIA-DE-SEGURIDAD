@@ -149,11 +149,12 @@ export default function ProductDetailClient({
           <div className="mt-7">
             <div className="flex items-center justify-between">
               <p className="field-label mb-0">{t("product.size", locale)}</p>
-              <details className="group">
-                <summary className="text-xs font-bold text-forest cursor-pointer list-none flex items-center gap-1">
-                  {t("product.sizeGuide", locale)} <ChevronDown size={14} className="group-open:rotate-180 transition-transform" />
-                </summary>
-              </details>
+              <a
+                href="#guia-tallas"
+                className="text-xs font-bold text-forest hover:underline flex items-center gap-1"
+              >
+                {t("product.sizeGuide", locale)} <ChevronDown size={14} />
+              </a>
             </div>
             <div className="flex flex-wrap gap-2.5 mt-3">
               {product.sizes.map((s) => (
@@ -168,7 +169,7 @@ export default function ProductDetailClient({
             </div>
             {error && <p className="text-red-600 text-sm font-semibold mt-2">{error}</p>}
 
-            <details className="group mt-4 rounded-xl border border-line overflow-hidden">
+            <details id="guia-tallas" className="group mt-4 scroll-mt-28 rounded-xl border border-line overflow-hidden">
               <summary className="cursor-pointer list-none px-5 py-4 font-bold text-sm flex items-center gap-2 bg-cream">
                 <ChevronDown size={16} className="group-open:rotate-180 transition-transform" />
                 {t("product.sizeGuide", locale)}

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Mail } from "lucide-react";
 import { getLocale } from "@/lib/locale-server";
 import { t } from "@/i18n/dict";
-import { shopPath, contactPath, cartPath, legalPath, categoryPath } from "@/lib/routes";
+import { shopPath, contactPath, cartPath, legalPath, categoryPath, orderStatusPath } from "@/lib/routes";
 import Logo from "@/components/Logo";
 import NewsletterForm from "@/components/NewsletterForm";
 
@@ -39,6 +39,7 @@ export default async function Footer() {
             <li><Link href={legalPath("terminos", locale)} className="hover:text-gold transition-colors">{t("legal.terms", locale)}</Link></li>
             <li><Link href={legalPath("cookies", locale)} className="hover:text-gold transition-colors">{t("legal.cookies", locale)}</Link></li>
             <li><Link href={legalPath("envios-devoluciones", locale)} className="hover:text-gold transition-colors">{t("legal.shipping", locale)}</Link></li>
+            <li><Link href={orderStatusPath(locale)} className="hover:text-gold transition-colors">{t("legal.orderStatus", locale)}</Link></li>
             <li><Link href={contactPath(locale)} className="hover:text-gold transition-colors">{t("legal.contact", locale)}</Link></li>
           </ul>
         </nav>

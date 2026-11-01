@@ -57,6 +57,10 @@ export function contactPath(locale: Locale): string {
   return locale === "es" ? "/contacto" : "/en/contact";
 }
 
+export function orderStatusPath(locale: Locale): string {
+  return locale === "es" ? "/pedido" : "/en/pedido";
+}
+
 export function productPath(p: Product, locale: Locale): string {
   const slug = p.slug[locale];
   return locale === "es" ? `/producto/${slug}` : `/en/product/${slug}`;

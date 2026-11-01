@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { sb } from "@/lib/supabase";
 import { SHOP_ID } from "@/lib/catalog";
+import { sendShipmentNotification } from "@/lib/mail";
 
 export const runtime = "nodejs";
 
@@ -10,6 +11,14 @@ interface Shipment {
   tracking_number?: string;
   tracking_url?: string;
   shipped_at?: string | null;
+}
+
+interface OrderContact {
+  id: string;
+  email: string | null;
+  customer_name: string | null;
+  fulfillment_status?: string | null;
+  shipment_email_sent_at?: string | null;
 }
 
 function validSignature(raw: string, signature: string | null, secret: string) {
@@ -71,15 +80,16 @@ export async function POST(req: NextRequest) {
 
     const pOrder = await getPrintifyOrder(providerOrderId);
     const sessionId = pOrder.external_id;
-    let rows: { id: string; email: string | null; customer_name: string | null }[] = [];
+    const COLS = "id,email,customer_name,fulfillment_status,shipment_email_sent_at";
+    let rows: OrderContact[] = [];
     if (sessionId) {
       rows = await sb(
-        `orders?stripe_session_id=eq.${encodeURIComponent(sessionId)}&select=id,email,customer_name,fulfillment_status`,
+        `orders?stripe_session_id=eq.${encodeURIComponent(sessionId)}&select=${COLS}`,
       );
     }
     if (!rows.length) {
       rows = await sb(
-        `orders?printify_order_id=eq.${encodeURIComponent(providerOrderId)}&select=id,email,customer_name,fulfillment_status`,
+        `orders?printify_order_id=eq.${encodeURIComponent(providerOrderId)}&select=${COLS}`,
       );
     }
     const order = rows[0];
@@ -103,7 +113,45 @@ export async function POST(req: NextRequest) {
     }
 
     await sb(`orders?id=eq.${order.id}`, { method: "PATCH", body: base, prefer: "return=minimal" });
-    return NextResponse.json({ received: true, updated: base.fulfillment_status || "ok" });
+
+    /* Aviso de envío con seguimiento (una sola vez por pedido). */
+    let emailSent = false;
+    if (
+      base.fulfillment_status === "shipped" &&
+      sessionId &&
+      order.email &&
+      !order.shipment_email_sent_at &&
+      process.env.EMAILS_ENABLED === "true"
+    ) {
+      const shipments = (base.tracking_info as Shipment[] | undefined) || [];
+      try {
+        await sendShipmentNotification({
+          to: order.email,
+          name: order.customer_name || "",
+          sessionId,
+          shipments,
+        });
+        await sb(`orders?id=eq.${order.id}`, {
+          method: "PATCH",
+          body: { shipment_email_sent_at: new Date().toISOString(), email_last_error: null },
+          prefer: "return=minimal",
+        });
+        emailSent = true;
+      } catch (e) {
+        console.error("shipment email:", (e as Error).message);
+        await sb(`orders?id=eq.${order.id}`, {
+          method: "PATCH",
+          body: { email_last_error: String((e as Error).message).slice(0, 500) },
+          prefer: "return=minimal",
+        }).catch(() => {});
+      }
+    }
+
+    return NextResponse.json({
+      received: true,
+      updated: base.fulfillment_status || "ok",
+      ...(emailSent ? { email: "shipment_notification_sent" } : {}),
+    });
   } catch (err) {
     console.error("printify webhook:", err);
     return NextResponse.json({ error: "No se pudo procesar la actualización" }, { status: 500 });

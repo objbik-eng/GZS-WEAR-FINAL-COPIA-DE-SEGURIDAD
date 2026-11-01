@@ -7,7 +7,8 @@ import { Loader2, Lock, ShieldCheck } from "lucide-react";
 import { useCart, cartKey } from "@/context/CartContext";
 import { t, formatPrice, type Locale } from "@/i18n/dict";
 import { shopPath, legalPath } from "@/lib/routes";
-import { ALLOWED_COUNTRIES } from "@/lib/shipping";
+import { ALLOWED_COUNTRIES, quoteShipping } from "@/lib/shipping";
+import type { ProductType } from "@/lib/catalog";
 
 export default function CheckoutClient({ locale }: { locale: Locale }) {
   const { items, subtotal, ready } = useCart();
@@ -18,26 +19,19 @@ export default function CheckoutClient({ locale }: { locale: Locale }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  /* Mismo cálculo que el servidor: el cliente ve el total exacto de su zona
+     antes de ir a pagar, en lugar de un importe pendiente. */
   const shippingPreview = useMemo(() => {
-    const zone = ALLOWED_COUNTRIES.find((c) => c.code === country)?.zone || "eu";
-    if (zone === "eu") {
-      const free = subtotal >= 6000;
-      return {
-        cost: free ? 0 : 495,
-        label: free
-          ? (locale === "es" ? "Envío gratuito" : "Free shipping")
-          : (locale === "es" ? "Envío estándar UE" : "EU standard shipping"),
-      };
-    }
-    // aproximación informativa; el servidor calcula el coste exacto
-    const labels: Record<string, string> = {
-      ie: locale === "es" ? "Envío Irlanda (tarifa real)" : "Ireland shipping (real rate)",
-      uk: locale === "es" ? "Envío Reino Unido (tarifa real)" : "UK shipping (real rate)",
-      us: locale === "es" ? "Envío EE. UU. (tarifa real)" : "US shipping (real rate)",
-      efta: locale === "es" ? "Envío EFTA (tarifa real)" : "EFTA shipping (real rate)",
+    const quote = quoteShipping(
+      items.map((i) => ({ type: i.type as ProductType, qty: i.qty })),
+      subtotal,
+      country,
+    );
+    return {
+      cost: quote.costCents,
+      label: locale === "es" ? quote.labelEs : quote.labelEn,
     };
-    return { cost: null, label: labels[zone] };
-  }, [country, subtotal, locale]);
+  }, [country, items, subtotal, locale]);
 
   async function submit(e: FormEvent) {
     e.preventDefault();
@@ -146,14 +140,14 @@ export default function CheckoutClient({ locale }: { locale: Locale }) {
             <div className="flex justify-between">
               <span className="text-smoke">{t("cart.shipping", locale)}</span>
               <span className="font-bold">
-                {shippingPreview.cost === null ? "—" : shippingPreview.cost === 0 ? t("cart.free", locale) : formatPrice(shippingPreview.cost, locale)}
+                {shippingPreview.cost === 0 ? t("cart.free", locale) : formatPrice(shippingPreview.cost, locale)}
               </span>
             </div>
             <p className="text-xs text-smoke">{shippingPreview.label}</p>
             <div className="flex justify-between text-base border-t border-line pt-3">
               <span className="font-extrabold">{t("cart.total", locale)}</span>
               <span className="font-extrabold">
-                {shippingPreview.cost === null ? "—" : formatPrice(subtotal + shippingPreview.cost, locale)}
+                {formatPrice(subtotal + shippingPreview.cost, locale)}
               </span>
             </div>
           </div>
